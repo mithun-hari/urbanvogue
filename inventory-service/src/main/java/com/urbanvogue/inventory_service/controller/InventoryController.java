@@ -6,7 +6,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("/inventory")
+@RequestMapping("/api/inventory")
 @RequiredArgsConstructor
 public class InventoryController {
 
@@ -14,7 +14,17 @@ public class InventoryController {
 
     @GetMapping("/{productId}")
     public Inventory getInventory(@PathVariable Long productId) {
-
         return inventoryService.getInventoryByProductId(productId);
+    }
+
+    @PostMapping("/deduct")
+    public void deductInventory(@RequestParam Long productId,
+                                @RequestParam Integer quantity) {
+        inventoryService.deductInventory(productId, quantity);
+    }
+    @PostMapping("/restore")
+    public void restoreInventory(@RequestParam Long productId,
+                                 @RequestParam Integer quantity) {
+        inventoryService.restoreInventory(productId, quantity);
     }
 }

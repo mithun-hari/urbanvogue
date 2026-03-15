@@ -24,19 +24,20 @@ public class AuthService {
     private final PasswordEncoder passwordEncoder;
     private final JwtService jwtService;
 
+    public String register(String email, String password, String username) {
 
-    public String register(String email, String password) {
-
-        logger.info("Register request received for email: {}", email);
+        logger.info("Register request received for email: {} and username: {}", email, username);
 
         if (userRepository.findByEmail(email).isPresent()) {
 
             logger.error("Registration failed. User already exists: {}", email);
 
-            throw new RuntimeException("User already exists");
+            return "User already exists";
         }
 
+
         User user = User.builder()
+                .username(username)
                 .email(email)
                 .password(passwordEncoder.encode(password))
                 .role(Role.USER)
@@ -44,11 +45,10 @@ public class AuthService {
 
         userRepository.save(user);
 
-        logger.info("User registered successfully: {}", email);
+        logger.info("User registered successfully: {}", username);
 
         return "User registered successfully";
     }
-
 
     public LoginResponse login(String email, String password) {
 

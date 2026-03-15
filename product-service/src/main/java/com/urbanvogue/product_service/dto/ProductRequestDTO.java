@@ -18,7 +18,4 @@ public class ProductRequestDTO {
     @Positive(message = "Price must be greater than 0")
     private Double price;
 
-    @NotNull(message = "Quantity is required")
-    @Positive(message = "Quantity must be greater than 0")
-    private Integer quantity;
 }
