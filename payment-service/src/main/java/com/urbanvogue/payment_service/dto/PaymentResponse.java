@@ -10,4 +10,6 @@ public class PaymentResponse {
     private String transactionId;
 
     private String paymentStatus;
+
+    private String checkoutUrl;
 }

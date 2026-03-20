@@ -125,4 +125,11 @@ public class OrderService {
     public List<Order> getOrdersByUser(Long userId) {
         return orderRepository.findByUserId(userId);
     }
+
+    public void updateOrderStatus(Long id, String status) {
+        Order order = getOrderById(id);
+        order.setStatus(status);
+        orderRepository.save(order);
+        log.info("Order {} status updated to {}", id, status);
+    }
 }

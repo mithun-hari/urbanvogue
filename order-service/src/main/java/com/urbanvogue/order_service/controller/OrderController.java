@@ -29,4 +29,9 @@ public class OrderController {
     public List<Order> getOrdersByUser(@PathVariable Long userId) {
         return orderService.getOrdersByUser(userId);
     }
+
+    @PutMapping("/{id}/status")
+    public void updateOrderStatus(@PathVariable Long id, @RequestParam String status) {
+        orderService.updateOrderStatus(id, status);
+    }
 }

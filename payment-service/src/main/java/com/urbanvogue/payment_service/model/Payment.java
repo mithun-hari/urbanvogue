@@ -26,5 +26,7 @@ public class Payment {
 
     private String transactionId;
 
+    private String stripeSessionId;
+
     private LocalDateTime createdAt;
 }
