@@ -8,5 +8,7 @@ public class CreateOrderRequest {
 
     private Long userId;
 
+    private String userEmail;
+
     private List<OrderItemRequest> items;
 }

@@ -20,6 +20,8 @@ public class Order {
 
     private Long userId;
 
+    private String userEmail;
+
     private Double totalAmount;
 
     private String status;

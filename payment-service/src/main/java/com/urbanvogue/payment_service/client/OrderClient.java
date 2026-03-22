@@ -1,6 +1,8 @@
 package com.urbanvogue.payment_service.client;
 
+import com.urbanvogue.payment_service.dto.OrderDTO;
 import org.springframework.cloud.openfeign.FeignClient;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -10,4 +12,7 @@ public interface OrderClient {
 
     @PutMapping("/orders/{orderId}/status")
     void updateOrderStatus(@PathVariable("orderId") Long orderId, @RequestParam("status") String status);
+
+    @GetMapping("/orders/{orderId}")
+    OrderDTO getOrder(@PathVariable("orderId") Long orderId);
 }

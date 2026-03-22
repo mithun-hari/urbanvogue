@@ -102,9 +102,13 @@ public class PaymentService {
             // Tell Order Service to update status
             orderClient.updateOrderStatus(payment.getOrderId(), "PAID");
 
-            // Tell Notification Service to send an email
+            // Fetch order details to get the customer's email
+            com.urbanvogue.payment_service.dto.OrderDTO order = orderClient.getOrder(payment.getOrderId());
+            String customerEmail = order.getUserEmail();
+
+            // Tell Notification Service to send an email to the real customer
             EmailRequest emailReq = new EmailRequest();
-            emailReq.setTo("customer@example.com"); // In a real app, we'd fetch user email via Order Service
+            emailReq.setTo(customerEmail);
             emailReq.setSubject("UrbanVogue Receipt: Order #" + payment.getOrderId());
             emailReq.setBody("Thank you for your purchase! Your payment of $" + payment.getAmount() + " was successful.");
             notificationClient.sendEmail(emailReq);

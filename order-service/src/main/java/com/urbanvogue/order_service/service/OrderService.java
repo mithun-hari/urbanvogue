@@ -35,6 +35,7 @@ public class OrderService {
 
         Order order = new Order();
         order.setUserId(request.getUserId());
+        order.setUserEmail(request.getUserEmail());
         order.setStatus("CREATED");
         order.setCreatedAt(LocalDateTime.now());
 
