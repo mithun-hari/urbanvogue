@@ -1,5 +1,7 @@
 package com.urbanvogue.order_service.service;
 
+import com.fasterxml.jackson.databind.JsonNode;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.urbanvogue.order_service.client.InventoryClient;
 import com.urbanvogue.order_service.client.PaymentClient;
 import com.urbanvogue.order_service.client.ProductClient;
@@ -29,13 +31,13 @@ public class OrderService {
     private final PaymentClient paymentClient;
     private static final Logger log = LoggerFactory.getLogger(OrderService.class);
 
-    public OrderResponse createOrder(CreateOrderRequest request) {
+    public OrderResponse createOrder(Long userId, String userEmail, CreateOrderRequest request) {
 
-        log.info("Creating order for userId: {}", request.getUserId());
+        log.info("Creating order for userId: {}", userId);
 
         Order order = new Order();
-        order.setUserId(request.getUserId());
-        order.setUserEmail(request.getUserEmail());
+        order.setUserId(userId);
+        order.setUserEmail(userEmail);
         order.setStatus("CREATED");
         order.setCreatedAt(LocalDateTime.now());
 
@@ -85,13 +87,24 @@ public class OrderService {
 
         Order savedOrder = orderRepository.save(order);
 
+        String paymentUrl = null;
         try {
 
             log.info("Processing payment for orderId: {}", savedOrder.getId());
-            paymentClient.processPayment(savedOrder.getId(), totalAmount);
+            String paymentStr = paymentClient.processPayment(savedOrder.getId(), totalAmount);
+            
+            try {
+                ObjectMapper mapper = new ObjectMapper();
+                JsonNode rootNode = mapper.readTree(paymentStr);
+                if(rootNode.has("checkoutUrl")) {
+                    paymentUrl = rootNode.get("checkoutUrl").asText();
+                }
+            } catch (Exception parseEx) {
+                log.error("Failed to parse payment URL", parseEx);
+            }
 
-            savedOrder.setStatus("PAID");
-            log.info("Payment successful for orderId: {}", savedOrder.getId());
+            savedOrder.setStatus("PENDING");
+            log.info("Payment link generated successfully. Order is PENDING for orderId: {}", savedOrder.getId());
 
         } catch (Exception e) {
 
@@ -115,6 +128,7 @@ public class OrderService {
                 .orderId(savedOrder.getId())
                 .totalAmount(savedOrder.getTotalAmount())
                 .status(savedOrder.getStatus())
+                .paymentUrl(paymentUrl)
                 .build();
     }
 

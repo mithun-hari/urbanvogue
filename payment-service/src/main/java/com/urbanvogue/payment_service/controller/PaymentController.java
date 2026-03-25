@@ -39,6 +39,24 @@ public class PaymentController {
         return paymentService.getPaymentByOrderId(orderId);
     }
 
+    @GetMapping("/cancel")
+    public ResponseEntity<String> cancelPayment(@RequestParam Long orderId) {
+        paymentService.handleCancelEvent(orderId);
+        return ResponseEntity.ok("Payment Cancelled safely. Inventory has been manually restored under the Saga Pattern.");
+    }
+
+    @PostMapping("/mock-webhook/{orderId}")
+    public ResponseEntity<String> mockStripeWebhook(@PathVariable Long orderId) {
+        try {
+            Payment payment = paymentService.getPaymentByOrderId(orderId);
+            paymentService.handleWebhookEvent(payment.getStripeSessionId());
+            return ResponseEntity.ok("MOCK WEBHOOK SUCCESS: Order " + orderId + " is now PAID, RabbitMQ event fired, and Email is sending!");
+        } catch (Exception e) {
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("Mock Webhook Failed: " + e.getMessage());
+        }
+    }
+
+
     @PostMapping("/webhook")
     public ResponseEntity<String> handleStripeWebhook(@RequestBody String payload, @RequestHeader("Stripe-Signature") String sigHeader) {
         Event event = null;
@@ -52,13 +70,19 @@ public class PaymentController {
         }
 
         if ("checkout.session.completed".equals(event.getType())) {
-            EventDataObjectDeserializer dataObjectDeserializer = event.getDataObjectDeserializer();
-            if (dataObjectDeserializer.getObject().isPresent()) {
-                StripeObject stripeObject = dataObjectDeserializer.getObject().get();
+            try {
+                EventDataObjectDeserializer dataObjectDeserializer = event.getDataObjectDeserializer();
+                StripeObject stripeObject = dataObjectDeserializer.deserializeUnsafe();
+                
                 if (stripeObject instanceof Session) {
                     Session session = (Session) stripeObject;
                     paymentService.handleWebhookEvent(session.getId());
+                } else {
+                    System.err.println("Webhook checkout.session.completed object is not a Session!");
                 }
+            } catch (Exception e) {
+                System.err.println("Stripe Webhook Deserialization Failed: " + e.getMessage());
+                return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("Deserialization failed");
             }
         }
 

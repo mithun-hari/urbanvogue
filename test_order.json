@@ -1,0 +1,10 @@
+{
+  "userId": 1,
+  "userEmail": "test@example.com",
+  "items": [
+    {
+      "productId": 1,
+      "quantity": 1
+    }
+  ]
+}

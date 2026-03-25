@@ -5,10 +5,5 @@ import java.util.List;
 
 @Data
 public class CreateOrderRequest {
-
-    private Long userId;
-
-    private String userEmail;
-
     private List<OrderItemRequest> items;
 }

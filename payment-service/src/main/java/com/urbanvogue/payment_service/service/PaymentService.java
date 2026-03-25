@@ -1,12 +1,14 @@
 package com.urbanvogue.payment_service.service;
 
+import org.springframework.scheduling.annotation.Scheduled;
+
 import com.stripe.Stripe;
 import com.stripe.exception.StripeException;
 import com.stripe.model.checkout.Session;
 import com.stripe.param.checkout.SessionCreateParams;
-import com.urbanvogue.payment_service.client.NotificationClient;
-import com.urbanvogue.payment_service.client.OrderClient;
-import com.urbanvogue.payment_service.dto.EmailRequest;
+import com.urbanvogue.payment_service.config.MessagingConfig;
+import com.urbanvogue.payment_service.dto.PaymentCompletedEvent;
+import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import com.urbanvogue.payment_service.dto.PaymentRequest;
 import com.urbanvogue.payment_service.dto.PaymentResponse;
 import com.urbanvogue.payment_service.model.Payment;
@@ -22,8 +24,7 @@ import java.util.UUID;
 public class PaymentService {
 
     private final PaymentRepository paymentRepository;
-    private final OrderClient orderClient;
-    private final NotificationClient notificationClient;
+    private final RabbitTemplate rabbitTemplate;
 
     @Value("${stripe.api.key}")
     private String stripeApiKey;
@@ -34,10 +35,9 @@ public class PaymentService {
     @Value("${stripe.cancel.url}")
     private String cancelUrl;
 
-    public PaymentService(PaymentRepository paymentRepository, OrderClient orderClient, NotificationClient notificationClient) {
+    public PaymentService(PaymentRepository paymentRepository, RabbitTemplate rabbitTemplate) {
         this.paymentRepository = paymentRepository;
-        this.orderClient = orderClient;
-        this.notificationClient = notificationClient;
+        this.rabbitTemplate = rabbitTemplate;
     }
 
     @PostConstruct
@@ -53,7 +53,7 @@ public class PaymentService {
             SessionCreateParams params = SessionCreateParams.builder()
                 .setMode(SessionCreateParams.Mode.PAYMENT)
                 .setSuccessUrl(successUrl + "?session_id={CHECKOUT_SESSION_ID}")
-                .setCancelUrl(cancelUrl)
+                .setCancelUrl(cancelUrl + "?orderId=" + request.getOrderId())
                 .addLineItem(SessionCreateParams.LineItem.builder()
                     .setQuantity(1L)
                     .setPriceData(SessionCreateParams.LineItem.PriceData.builder()
@@ -87,7 +87,7 @@ public class PaymentService {
     }
 
     public Payment getPaymentByOrderId(Long orderId) {
-        return paymentRepository.findByOrderId(orderId)
+        return paymentRepository.findFirstByOrderIdOrderByCreatedAtDesc(orderId)
                 .orElseThrow(() -> new RuntimeException("Payment not found"));
     }
 
@@ -95,26 +95,54 @@ public class PaymentService {
         Payment payment = paymentRepository.findByStripeSessionId(sessionId)
                 .orElseThrow(() -> new RuntimeException("Payment not found for session: " + sessionId));
         
+        if ("SUCCESS".equals(payment.getPaymentStatus())) return;
+
         payment.setPaymentStatus("SUCCESS");
         paymentRepository.save(payment);
 
         try {
-            // Tell Order Service to update status
-            orderClient.updateOrderStatus(payment.getOrderId(), "PAID");
-
-            // Fetch order details to get the customer's email
-            com.urbanvogue.payment_service.dto.OrderDTO order = orderClient.getOrder(payment.getOrderId());
-            String customerEmail = order.getUserEmail();
-
-            // Tell Notification Service to send an email to the real customer
-            EmailRequest emailReq = new EmailRequest();
-            emailReq.setTo(customerEmail);
-            emailReq.setSubject("UrbanVogue Receipt: Order #" + payment.getOrderId());
-            emailReq.setBody("Thank you for your purchase! Your payment of $" + payment.getAmount() + " was successful.");
-            notificationClient.sendEmail(emailReq);
-
+            PaymentCompletedEvent event = new PaymentCompletedEvent(payment.getOrderId(), payment.getAmount());
+            rabbitTemplate.convertAndSend(MessagingConfig.EXCHANGE_NAME, MessagingConfig.ROUTING_KEY, event);
+            System.out.println("PaymentCompletedEvent published to RabbitMQ for orderId: " + payment.getOrderId());
         } catch (Exception e) {
-            System.err.println("Failed to notify downstream services via Feign: " + e.getMessage());
+            System.err.println("Failed to publish PaymentCompletedEvent: " + e.getMessage());
+        }
+    }
+
+    public void handleCancelEvent(Long orderId) {
+        Payment payment = getPaymentByOrderId(orderId);
+        if (!"PENDING".equals(payment.getPaymentStatus())) return;
+        
+        payment.setPaymentStatus("FAILED");
+        paymentRepository.save(payment);
+
+        try {
+            com.urbanvogue.payment_service.dto.PaymentFailedEvent event = new com.urbanvogue.payment_service.dto.PaymentFailedEvent(orderId);
+            rabbitTemplate.convertAndSend(MessagingConfig.EXCHANGE_NAME, "payment.failed", event);
+            System.out.println("PaymentFailedEvent published to RabbitMQ for orderId: " + orderId);
+        } catch (Exception e) {
+            System.err.println("Failed to publish PaymentFailedEvent: " + e.getMessage());
+        }
+    }
+
+    @Scheduled(fixedRate = 10000)
+    public void pollStripeEvents() {
+        try {
+            java.util.List<Payment> pending = paymentRepository.findByPaymentStatus("PENDING");
+            for (Payment payment : pending) {
+                if (payment.getStripeSessionId() == null) continue;
+                Session session = Session.retrieve(payment.getStripeSessionId());
+                if ("complete".equals(session.getStatus()) && "paid".equals(session.getPaymentStatus())) {
+                    System.out.println("AUTOMATIC POLLER: Found completed payment for order " + payment.getOrderId());
+                    handleWebhookEvent(session.getId());
+                } else if ("expired".equals(session.getStatus())) {
+                    System.out.println("AUTOMATIC POLLER: Found expired checkout for order " + payment.getOrderId());
+                    handleCancelEvent(payment.getOrderId());
+                }
+            }
+        } catch (Exception e) {
+            System.err.println("AUTOMATIC POLLER CRASHED! Exact Reason:");
+            e.printStackTrace();
         }
     }
 }

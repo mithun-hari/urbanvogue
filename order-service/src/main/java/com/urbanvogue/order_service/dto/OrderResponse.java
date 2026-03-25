@@ -12,4 +12,6 @@ public class OrderResponse {
     private Double totalAmount;
 
     private String status;
+
+    private String paymentUrl;
 }

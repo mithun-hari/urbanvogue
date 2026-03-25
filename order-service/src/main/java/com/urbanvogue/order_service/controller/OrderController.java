@@ -17,21 +17,24 @@ public class OrderController {
     private final OrderService orderService;
 
     @PostMapping
-    public OrderResponse createOrder(@RequestBody CreateOrderRequest request) {
+    public OrderResponse createOrder(
+            @RequestHeader("X-User-Id") Long userId,
+            @RequestHeader("X-User-Email") String userEmail,
+            @RequestBody CreateOrderRequest request) {
 
-        return orderService.createOrder(request);
+        return orderService.createOrder(userId, userEmail, request);
     }
     @GetMapping("/{id}")
-    public Order getOrderById(@PathVariable Long id) {
+    public Order getOrderById(@PathVariable("id") Long id) {
         return orderService.getOrderById(id);
     }
     @GetMapping("/user/{userId}")
-    public List<Order> getOrdersByUser(@PathVariable Long userId) {
+    public List<Order> getOrdersByUser(@PathVariable("userId") Long userId) {
         return orderService.getOrdersByUser(userId);
     }
 
     @PutMapping("/{id}/status")
-    public void updateOrderStatus(@PathVariable Long id, @RequestParam String status) {
+    public void updateOrderStatus(@PathVariable("id") Long id, @RequestParam("status") String status) {
         orderService.updateOrderStatus(id, status);
     }
 }

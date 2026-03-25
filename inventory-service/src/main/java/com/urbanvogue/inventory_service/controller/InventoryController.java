@@ -27,4 +27,17 @@ public class InventoryController {
                                  @RequestParam Integer quantity) {
         inventoryService.restoreInventory(productId, quantity);
     }
+
+    @PostMapping("/add-stock")
+    public void addStock(@RequestHeader(value = "X-User-Role", required = false) String role,
+                         @RequestParam Long productId,
+                         @RequestParam Integer quantity) {
+        
+        if (role == null || !role.equalsIgnoreCase("ADMIN")) {
+            throw new RuntimeException("UNAUTHORIZED: Only an ADMIN can manipulate stock levels.");
+        }
+        
+        System.out.println("ADMIN User successfully updated stock for Product ID: " + productId + " (+ " + quantity + " units)");
+        inventoryService.restoreInventory(productId, quantity);
+    }
 }
