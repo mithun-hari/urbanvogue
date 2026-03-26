@@ -29,16 +29,32 @@ public class AuthenticationFilter extends OncePerRequestFilter {
     @Override
     protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain) throws ServletException, IOException {
         String path = request.getRequestURI();
+        String method = request.getMethod();
 
-        // 1. Skip validation for Auth Service routes
-        if (path.startsWith("/api/auth/")) {
+        // 1. Skip validation for public routes and CORS Preflight requests
+        if (path.startsWith("/api/auth/") || "OPTIONS".equalsIgnoreCase(method)) {
             filterChain.doFilter(request, response);
             return;
+        }
+
+        // Allow public (unauthenticated) GET access to products for browsing
+        if (path.startsWith("/api/products") && "GET".equalsIgnoreCase(method)) {
+            filterChain.doFilter(request, response);
+            return;
+        }
+
+        // DEBUG: Print all request headers to see if Authorization is somehow mutated or missing
+        System.out.println("--- INCOMING HEADERS for " + method + " " + path + " ---");
+        Enumeration<String> headerNames = request.getHeaderNames();
+        while (headerNames.hasMoreElements()) {
+            String hName = headerNames.nextElement();
+            System.out.println(hName + ": " + request.getHeader(hName));
         }
 
         // 2. Extract Authorization Header
         String authHeader = request.getHeader(HttpHeaders.AUTHORIZATION);
         if (authHeader == null || !authHeader.startsWith("Bearer ")) {
+            System.out.println("REJECTED: AuthHeader was " + authHeader);
             response.setStatus(HttpServletResponse.SC_UNAUTHORIZED);
             response.getWriter().write("UNAUTHORIZED: Missing or invalid Authorization header");
             return;

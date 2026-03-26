@@ -8,6 +8,7 @@ import jakarta.servlet.http.HttpServletResponse;
 import lombok.RequiredArgsConstructor;
 
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.web.authentication.WebAuthenticationDetailsSource;
 import org.springframework.stereotype.Component;
@@ -30,23 +31,41 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
 
         String authHeader = request.getHeader("Authorization");
 
-        if (authHeader == null || !authHeader.startsWith("Bearer ")) {
-            filterChain.doFilter(request, response);
-            return;
+        // 1. Try JWT from Authorization header first
+        if (authHeader != null && authHeader.startsWith("Bearer ")) {
+            String token = authHeader.substring(7);
+
+            if (jwtService.isTokenValid(token)) {
+                String email = jwtService.extractEmail(token);
+                String role = jwtService.extractRole(token);
+
+                UsernamePasswordAuthenticationToken authentication =
+                        new UsernamePasswordAuthenticationToken(
+                                email,
+                                null,
+                                List.of(new SimpleGrantedAuthority("ROLE_" + role))
+                        );
+
+                authentication.setDetails(
+                        new WebAuthenticationDetailsSource().buildDetails(request)
+                );
+
+                SecurityContextHolder.getContext().setAuthentication(authentication);
+                filterChain.doFilter(request, response);
+                return;
+            }
         }
 
-        String token = authHeader.substring(7);
+        // 2. Fallback: trust gateway-injected X-User-Role / X-User-Email headers
+        String gatewayRole = request.getHeader("X-User-Role");
+        String gatewayEmail = request.getHeader("X-User-Email");
 
-        if (jwtService.isTokenValid(token)) {
-
-            String email = jwtService.extractEmail(token);
-            String role = jwtService.extractRole(token);
-
+        if (gatewayRole != null && gatewayEmail != null) {
             UsernamePasswordAuthenticationToken authentication =
                     new UsernamePasswordAuthenticationToken(
-                            email,
+                            gatewayEmail,
                             null,
-                            List.of(() -> "ROLE_" + role)
+                            List.of(new SimpleGrantedAuthority("ROLE_" + gatewayRole))
                     );
 
             authentication.setDetails(

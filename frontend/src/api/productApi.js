@@ -12,7 +12,7 @@ api.interceptors.request.use((config) => {
 })
 
 export const getAllProducts = async () => {
-  const res = await api.get('/')
+  const res = await api.get('')
   return res.data
 }
 
@@ -22,7 +22,7 @@ export const getProductById = async (id) => {
 }
 
 export const createProduct = async (product) => {
-  const res = await api.post('/', product)
+  const res = await api.post('', product)
   return res.data
 }
 

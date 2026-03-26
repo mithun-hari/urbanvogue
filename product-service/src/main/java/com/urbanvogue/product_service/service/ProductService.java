@@ -33,6 +33,7 @@ public class ProductService {
                 .name(request.getName())
                 .description(request.getDescription())
                 .price(request.getPrice())
+                .imageUrl(request.getImageUrl())
                 .build();
 
         Product saved = productRepository.save(product);
@@ -44,6 +45,7 @@ public class ProductService {
                 .name(saved.getName())
                 .description(saved.getDescription())
                 .price(saved.getPrice())
+                .imageUrl(saved.getImageUrl())
                 .build();
     }
 
@@ -62,6 +64,7 @@ public class ProductService {
                         .name(product.getName())
                         .description(product.getDescription())
                         .price(product.getPrice())
+                        .imageUrl(product.getImageUrl())
                         .build())
                 .toList();
     }
@@ -84,6 +87,7 @@ public class ProductService {
                 .name(product.getName())
                 .description(product.getDescription())
                 .price(product.getPrice())
+                .imageUrl(product.getImageUrl())
                 .build();
     }
 
@@ -101,6 +105,7 @@ public class ProductService {
         product.setName(request.getName());
         product.setDescription(request.getDescription());
         product.setPrice(request.getPrice());
+        product.setImageUrl(request.getImageUrl());
 
         Product updatedProduct = productRepository.save(product);
 
@@ -111,6 +116,7 @@ public class ProductService {
                 .name(updatedProduct.getName())
                 .description(updatedProduct.getDescription())
                 .price(updatedProduct.getPrice())
+                .imageUrl(updatedProduct.getImageUrl())
                 .build();
     }
 

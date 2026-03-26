@@ -1,13 +1,9 @@
 import { useNavigate } from 'react-router-dom'
 import { useCart } from '../hooks/useCart.js'
 
-const FASHION_ICONS = ['👗', '👔', '👟', '👜', '🧥', '👕', '🩳', '👒', '🧣', '🕶️']
-
 function ProductCard({ product, index = 0 }) {
   const navigate = useNavigate()
   const { addToCart } = useCart()
-
-  const icon = FASHION_ICONS[product.id ? product.id % FASHION_ICONS.length : index % FASHION_ICONS.length]
 
   const handleAdd = (e) => {
     e.stopPropagation()
@@ -21,8 +17,39 @@ function ProductCard({ product, index = 0 }) {
       style={{ animationDelay: `${index * 0.06}s` }}
     >
       <div className="product-image-box">
-        <span className="product-image-icon">{icon}</span>
-        <span className="product-image-label">UrbanVogue</span>
+        {product.imageUrl ? (
+          <img
+            src={product.imageUrl}
+            alt={product.name}
+            style={{
+              width: '100%',
+              height: '100%',
+              objectFit: 'cover',
+              borderRadius: 'inherit',
+            }}
+            onError={(e) => {
+              e.target.style.display = 'none'
+              e.target.nextSibling.style.display = 'flex'
+            }}
+          />
+        ) : null}
+        <div
+          className="product-image-placeholder"
+          style={{
+            display: product.imageUrl ? 'none' : 'flex',
+            width: '100%',
+            height: '100%',
+            alignItems: 'center',
+            justifyContent: 'center',
+            flexDirection: 'column',
+            gap: '0.5rem',
+            background: 'linear-gradient(135deg, rgba(212,175,55,0.15), rgba(212,175,55,0.05))',
+            borderRadius: 'inherit',
+          }}
+        >
+          <span style={{ fontSize: '2.5rem', opacity: 0.6 }}>🛍️</span>
+          <span className="product-image-label">UrbanVogue</span>
+        </div>
       </div>
       <div className="product-info">
         <div className="product-name">{product.name}</div>

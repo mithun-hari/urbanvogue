@@ -125,7 +125,8 @@ public class PaymentService {
         }
     }
 
-    @Scheduled(fixedRate = 10000)
+    // Disabled during local dev to stop log spam. Webhooks handle updates anyway!
+    // @Scheduled(fixedRate = 10000)
     public void pollStripeEvents() {
         try {
             java.util.List<Payment> pending = paymentRepository.findByPaymentStatus("PENDING");

@@ -15,3 +15,8 @@ export const getInventory = async (productId) => {
   const res = await api.get(`/${productId}`)
   return res.data
 }
+
+export const addStock = async (productId, quantity) => {
+  const res = await api.post(`/add-stock?productId=${productId}&quantity=${quantity}`)
+  return res.data
+}

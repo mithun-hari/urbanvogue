@@ -28,8 +28,8 @@ function Navbar() {
   }, [])
 
   const isActive = (path) => location.pathname === path || location.pathname.startsWith(path + '/')
-
   const username = user?.sub?.split('@')[0] || 'User'
+  const isAdmin = user?.role === 'ADMIN'
 
   return (
     <nav className="navbar">
@@ -43,6 +43,9 @@ function Navbar() {
         <Link to="/products" className={`nav-center-link${isActive('/products') ? ' active' : ''}`}>Shop</Link>
         {isAuthenticated && (
           <Link to="/orders" className={`nav-center-link${isActive('/orders') ? ' active' : ''}`}>Orders</Link>
+        )}
+        {isAuthenticated && isAdmin && (
+          <Link to="/dashboard" className={`nav-center-link${isActive('/dashboard') ? ' active' : ''}`} style={{ color: 'var(--accent)' }}>Admin</Link>
         )}
       </div>
 
@@ -66,6 +69,14 @@ function Navbar() {
                 <Link to="/orders" className="dropdown-item" onClick={() => setDropdownOpen(false)}>
                   My Orders
                 </Link>
+                {isAdmin && (
+                  <>
+                    <div className="dropdown-divider" />
+                    <Link to="/dashboard" className="dropdown-item" onClick={() => setDropdownOpen(false)} style={{ color: 'var(--accent)' }}>
+                      ⚡ Admin Panel
+                    </Link>
+                  </>
+                )}
                 <div className="dropdown-divider" />
                 <button className="dropdown-item danger" onClick={handleLogout}>
                   Sign Out

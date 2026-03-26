@@ -7,32 +7,27 @@ export default defineConfig({
     port: 5173,
     proxy: {
       '/api/auth': {
-        target: 'http://localhost:8082',
+        target: 'http://localhost:8080',
         changeOrigin: true,
         secure: false,
       },
       '/api/products': {
-        target: 'http://localhost:8083',
+        target: 'http://localhost:8080',
         changeOrigin: true,
         secure: false,
       },
       '/orders': {
-        target: 'http://localhost:8085',
+        target: 'http://localhost:8080',
         changeOrigin: true,
         secure: false,
       },
       '/api/inventory': {
-        target: 'http://localhost:8086',
+        target: 'http://localhost:8080',
         changeOrigin: true,
         secure: false,
       },
       '/payments': {
-        target: 'http://localhost:8087',
-        changeOrigin: true,
-        secure: false,
-      },
-      '/api/notifications': {
-        target: 'http://localhost:8088',
+        target: 'http://localhost:8080',
         changeOrigin: true,
         secure: false,
       },

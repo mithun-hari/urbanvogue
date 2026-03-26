@@ -36,7 +36,13 @@ public class InventoryService {
 
         Inventory inventory = inventoryRepository
                 .findByProductId(productId)
-                .orElseThrow(() -> new RuntimeException("Inventory not found"));
+                .orElseGet(() -> {
+                    Inventory newInv = new Inventory();
+                    newInv.setProductId(productId);
+                    newInv.setAvailableQuantity(0);
+                    newInv.setReservedQuantity(0);
+                    return newInv;
+                });
 
         inventory.setAvailableQuantity(
                 inventory.getAvailableQuantity() + quantity

@@ -12,7 +12,7 @@ api.interceptors.request.use((config) => {
 })
 
 export const createOrder = async (orderData) => {
-  const res = await api.post('/', orderData)
+  const res = await api.post('', orderData)
   return res.data
 }
 

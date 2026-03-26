@@ -4,7 +4,7 @@ import { registerUser } from '../api/authApi.js'
 import InputField from '../components/InputField.jsx'
 
 function RegisterPage() {
-  const [form, setForm] = useState({ username: '', email: '', password: '', confirm: '' })
+  const [form, setForm] = useState({ username: '', email: '', password: '', confirm: '', role: 'USER' })
   const [errors, setErrors] = useState({})
   const [apiError, setApiError] = useState('')
   const [success, setSuccess] = useState('')
@@ -31,7 +31,7 @@ function RegisterPage() {
     if (Object.keys(errs).length > 0) { setErrors(errs); return }
     setErrors({}); setApiError(''); setLoading(true)
     try {
-      await registerUser(form.username, form.email, form.password)
+      await registerUser(form.username, form.email, form.password, form.role)
       setSuccess('Account created! Redirecting…')
       setTimeout(() => navigate('/login'), 1500)
     } catch (err) {
@@ -62,6 +62,8 @@ function RegisterPage() {
           <InputField id="reg-email" label="Email Address" type="email" value={form.email} onChange={update('email')} error={errors.email} placeholder="you@example.com" required />
           <InputField id="reg-password" label="Password" type="password" value={form.password} onChange={update('password')} error={errors.password} placeholder="Min. 6 characters" required />
           <InputField id="reg-confirm" label="Confirm Password" type="password" value={form.confirm} onChange={update('confirm')} error={errors.confirm} placeholder="Re-enter password" required />
+
+
           <button type="submit" className="btn btn-primary btn-full" id="register-submit-btn" disabled={loading}>
             {loading ? <span className="btn-loading"><span className="spinner" />Creating…</span> : 'Create Account'}
           </button>

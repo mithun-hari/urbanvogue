@@ -904,6 +904,8 @@ img { max-width: 100%; display: block; }
   padding: 1.8rem;
   transition: all var(--transition);
   animation: fadeInUp 0.5s ease both;
+  position: relative;
+  z-index: 2;
 }
 .info-card:hover { background: var(--bg-card-hover); border-color: var(--border-hover); }
 .info-card-header {

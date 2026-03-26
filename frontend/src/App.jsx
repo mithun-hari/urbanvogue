@@ -13,6 +13,7 @@ import CheckoutPage from './pages/CheckoutPage.jsx'
 import OrdersPage from './pages/OrdersPage.jsx'
 import OrderDetailPage from './pages/OrderDetailPage.jsx'
 import DashboardPage from './pages/DashboardPage.jsx'
+import PaymentSuccessPage from './pages/PaymentSuccessPage.jsx'
 
 function App() {
   return (
@@ -42,6 +43,7 @@ function App() {
             path="/dashboard"
             element={<PrivateRoute><DashboardPage /></PrivateRoute>}
           />
+          <Route path="/payment/success" element={<PaymentSuccessPage />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </div>

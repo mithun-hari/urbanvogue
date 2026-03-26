@@ -3,7 +3,6 @@ import { useNavigate } from 'react-router-dom'
 import { useCart } from '../hooks/useCart.js'
 import { useAuth } from '../hooks/useAuth.js'
 import { createOrder } from '../api/orderApi.js'
-import { processPayment } from '../api/paymentApi.js'
 
 function CheckoutPage() {
   const { cartItems, cartTotal, clearCart } = useCart()
@@ -18,8 +17,6 @@ function CheckoutPage() {
     setError('')
     try {
       const orderData = {
-        userId: user?.userId || 1,
-        userEmail: user?.sub || '',
         items: cartItems.map((item) => ({
           productId: item.id,
           quantity: item.quantity,
@@ -27,19 +24,10 @@ function CheckoutPage() {
       }
       const order = await createOrder(orderData)
 
-      try {
-        const paymentRes = await processPayment({
-          orderId: order.orderId,
-          amount: order.totalAmount || cartTotal,
-          paymentMethod: 'STRIPE',
-        })
-        if (paymentRes.checkoutUrl) {
-          clearCart()
-          window.location.href = paymentRes.checkoutUrl
-          return
-        }
-      } catch {
-        // Payment service might not be running — still show success
+      if (order.paymentUrl) {
+        clearCart()
+        window.location.href = order.paymentUrl
+        return
       }
 
       clearCart()
@@ -75,7 +63,13 @@ function CheckoutPage() {
           <div className="checkout-items-list">
             {cartItems.map((item) => (
               <div key={item.id} className="checkout-item">
-                <div className="checkout-item-thumb"><span>👗</span></div>
+                <div className="checkout-item-thumb">
+                  {item.imageUrl ? (
+                    <img src={item.imageUrl} alt={item.name} style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '8px' }} />
+                  ) : (
+                    <span>👗</span>
+                  )}
+                </div>
                 <div className="checkout-item-info">
                   <div className="checkout-item-name">{item.name}</div>
                   <div className="checkout-item-qty">Qty: {item.quantity}</div>
