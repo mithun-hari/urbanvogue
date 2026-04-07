@@ -1,0 +1,1226 @@
+﻿[INFO] Scanning for projects...
+[INFO] 
+[INFO] -------------------< com.urbanvogue:payment-service >-------------------
+[INFO] Building payment-service 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ payment-service ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.14.1:compile (default-compile) @ payment-service ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ payment-service ---
+[INFO] Copying 1 resource from src\test\resources to target\test-classes
+[INFO] 
+[INFO] --- compiler:3.14.1:testCompile (default-testCompile) @ payment-service ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- surefire:3.5.4:test (default-test) @ payment-service ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running PaymentService - Integration Tests
+12:44:26.474 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.urbanvogue.payment_service.integration.PaymentIntegrationTest]: PaymentIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+12:44:26.612 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.urbanvogue.payment_service.PaymentServiceApplication for test class com.urbanvogue.payment_service.integration.PaymentIntegrationTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::               (v3.5.11)
+
+2026-04-06T12:44:27.202+05:30  INFO 43776 --- [payment-service] [           main] [                                                 ] c.u.p.i.PaymentIntegrationTest           : Starting PaymentIntegrationTest using Java 21.0.7 with PID 43776 (started by mithu in C:\Users\mithu\Desktop\urbanvogue\payment-service)
+2026-04-06T12:44:27.205+05:30  INFO 43776 --- [payment-service] [           main] [                                                 ] c.u.p.i.PaymentIntegrationTest           : The following 1 profile is active: "test"
+2026-04-06T12:44:28.310+05:30  INFO 43776 --- [payment-service] [           main] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-06T12:44:28.396+05:30  INFO 43776 --- [payment-service] [           main] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 69 ms. Found 1 JPA repository interface.
+2026-04-06T12:44:28.740+05:30  INFO 43776 --- [payment-service] [           main] [                                                 ] o.s.cloud.context.scope.GenericScope     : BeanFactory id=013e88c9-fb36-378e-877c-e076cd39952c
+mvn : Mockito is currently 
+self-attaching to enable the 
+inline-mock-maker. This will 
+no longer work in future 
+releases of the JDK. Please 
+add Mockito as an agent to 
+your build as described in 
+Mockito's documentation: https:
+//javadoc.io/doc/org.mockito/mo
+ckito-core/latest/org.mockito/o
+rg/mockito/Mockito.html#0.3
+At line:1 char:1
++ mvn test 
+-Dtest=PaymentIntegrationTest 
+> output.log 2>&1; Select-Obje 
+...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          :  
+   NotSpecified: (Mockito is   
+  curr...ockito.html#0.3:Str   
+ ing) [], RemoteException
+    + FullyQualifiedErrorId :  
+   NativeCommandError
+ 
+Java HotSpot(TM) 64-Bit Server 
+VM warning: Sharing is only 
+supported for boot loader 
+classes because bootstrap 
+classpath has been appended
+WARNING: A Java agent has been 
+loaded dynamically (C:\Users\mi
+thu\.m2\repository\net\bytebudd
+y\byte-buddy-agent\1.17.8\byte-
+buddy-agent-1.17.8.jar)
+WARNING: If a serviceability 
+tool is in use, please run 
+with 
+-XX:+EnableDynamicAgentLoading 
+to hide this warning
+WARNING: If a serviceability 
+tool is not in use, please run 
+with 
+-Djdk.instrument.traceUsage 
+for more information
+WARNING: Dynamic loading of 
+agents will be disallowed by 
+default in a future release
+2026-04-06T12:44:30.619+05:30  INFO 43776 --- [payment-service] [           main] [                                                 ] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-04-06T12:44:30.739+05:30  INFO 43776 --- [payment-service] [           main] [                                                 ] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.42.Final
+2026-04-06T12:44:30.888+05:30  INFO 43776 --- [payment-service] [           main] [                                                 ] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-04-06T12:44:31.172+05:30  INFO 43776 --- [payment-service] [           main] [                                                 ] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-06T12:44:31.235+05:30  INFO 43776 --- [payment-service] [           main] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-04-06T12:44:31.516+05:30  INFO 43776 --- [payment-service] [           main] [                                                 ] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2026-04-06T12:44:31.519+05:30  INFO 43776 --- [payment-service] [           main] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-04-06T12:44:31.572+05:30  WARN 43776 --- [payment-service] [           main] [                                                 ] org.hibernate.dialect.Dialect            : HHH000511: The 2.3.232 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2026-04-06T12:44:31.587+05:30  WARN 43776 --- [payment-service] [           main] [                                                 ] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-04-06T12:44:31.643+05:30  INFO 43776 --- [payment-service] [           main] [                                                 ] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-04-06T12:44:32.476+05:30  INFO 43776 --- [payment-service] [           main] [                                                 ] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+Hibernate: drop table if exists payments
+Hibernate: create table payments (amount float(53), created_at datetime(6), id bigint not null auto_increment, order_id bigint, payment_method varchar(255), payment_status varchar(255), stripe_session_id varchar(255), transaction_id varchar(255), primary key (id)) engine=InnoDB
+2026-04-06T12:44:32.499+05:30  WARN 43776 --- [payment-service] [           main] [                                                 ] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "create table payments (amount float(53), created_at datetime(6), id bigint not null auto_increment, order_id bigint, payment_method varchar(255), payment_status varchar(255), stripe_session_id varchar(255), transaction_id varchar(255), primary key (id)) engine=InnoDB" via JDBC [Syntax error in SQL statement "create table payments (amount float(53), created_at datetime(6), id bigint not null auto_increment, order_id bigint, payment_method varchar(255), payment_status varchar(255), stripe_session_id varchar(255), transaction_id varchar(255), primary key (id)) engine[*]=InnoDB"; expected "identifier";]
+
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "create table payments (amount float(53), created_at datetime(6), id bigint not null auto_increment, order_id bigint, payment_method varchar(255), payment_status varchar(255), stripe_session_id varchar(255), transaction_id varchar(255), primary key (id)) engine=InnoDB" via JDBC [Syntax error in SQL statement "create table payments (amount float(53), created_at datetime(6), id bigint not null auto_increment, order_id bigint, payment_method varchar(255), payment_status varchar(255), stripe_session_id varchar(255), transaction_id varchar(255), primary key (id)) engine[*]=InnoDB"; expected "identifier";]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:94) ~[hibernate-core-6.6.42.Final.jar:6.6.42.Final]
+	at org.hibernate.tool.schema.internal.Helper.applySqlString(Helper.java:233) ~[hibernate-core-6.6.42.Final.jar:6.6.42.Final]
+	at org.hibernate.tool.schema.internal.Helper.applySqlStrings(Helper.java:217) ~[hibernate-core-6.6.42.Final.jar:6.6.42.Final]
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.createTables(SchemaCreatorImpl.java:430) ~[hibernate-core-6.6.42.Final.jar:6.6.42.Final]
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.createSequencesTablesConstraints(SchemaCreatorImpl.java:346) ~[hibernate-core-6.6.42.Final.jar:6.6.42.Final]
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.createFromMetadata(SchemaCreatorImpl.java:241) ~[hibernate-core-6.6.42.Final.jar:6.6.42.Final]
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.performCreation(SchemaCreatorImpl.java:174) ~[hibernate-core-6.6.42.Final.jar:6.6.42.Final]
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:144) ~[hibernate-core-6.6.42.Final.jar:6.6.42.Final]
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:120) ~[hibernate-core-6.6.42.Final.jar:6.6.42.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:250) ~[hibernate-core-6.6.42.Final.jar:6.6.42.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$5(SchemaManagementToolCoordinator.java:144) ~[hibernate-core-6.6.42.Final.jar:6.6.42.Final]
+	at java.base/java.util.HashMap.forEach(HashMap.java:1429) ~[na:na]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:141) ~[hibernate-core-6.6.42.Final.jar:6.6.42.Final]
+	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:37) ~[hibernate-core-6.6.42.Final.jar:6.6.42.Final]
+	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:35) ~[hibernate-core-6.6.42.Final.jar:6.6.42.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:324) ~[hibernate-core-6.6.42.Final.jar:6.6.42.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:463) ~[hibernate-core-6.6.42.Final.jar:6.6.42.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1517) ~[hibernate-core-6.6.42.Final.jar:6.6.42.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66) ~[spring-orm-6.2.16.jar:6.2.16]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:388) ~[spring-orm-6.2.16.jar:6.2.16]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:419) ~[spring-orm-6.2.16.jar:6.2.16]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:400) ~[spring-orm-6.2.16.jar:6.2.16]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:364) ~[spring-orm-6.2.16.jar:6.2.16]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1873) ~[spring-beans-6.2.16.jar:6.2.16]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1822) ~[spring-beans-6.2.16.jar:6.2.16]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:607) ~[spring-beans-6.2.16.jar:6.2.16]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.16.jar:6.2.16]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.16.jar:6.2.16]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373) ~[spring-beans-6.2.16.jar:6.2.16]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.16.jar:6.2.16]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207) ~[spring-beans-6.2.16.jar:6.2.16]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:974) ~[spring-context-6.2.16.jar:6.2.16]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:628) ~[spring-context-6.2.16.jar:6.2.16]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.5.11.jar:3.5.11]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.5.11.jar:3.5.11]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.5.11.jar:3.5.11]
+	at org.springframework.boot.test.context.SpringBootContextLoader.lambda$loadContext$3(SpringBootContextLoader.java:152) ~[spring-boot-test-3.5.11.jar:3.5.11]
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:58) ~[spring-core-6.2.16.jar:6.2.16]
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:46) ~[spring-core-6.2.16.jar:6.2.16]
+	at org.springframework.boot.SpringApplication.withHook(SpringApplication.java:1461) ~[spring-boot-3.5.11.jar:3.5.11]
+	at org.springframework.boot.test.context.SpringBootContextLoader$ContextLoaderHook.run(SpringBootContextLoader.java:595) ~[spring-boot-test-3.5.11.jar:3.5.11]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:152) ~[spring-boot-test-3.5.11.jar:3.5.11]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:111) ~[spring-boot-test-3.5.11.jar:3.5.11]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:225) ~[spring-test-6.2.16.jar:6.2.16]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:152) ~[spring-test-6.2.16.jar:6.2.16]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:130) ~[spring-test-6.2.16.jar:6.2.16]
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:200) ~[spring-test-6.2.16.jar:6.2.16]
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:139) ~[spring-test-6.2.16.jar:6.2.16]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:260) ~[spring-test-6.2.16.jar:6.2.16]
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:159) ~[spring-test-6.2.16.jar:6.2.16]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$10(ClassBasedTestDescriptor.java:383) ~[junit-jupiter-engine-5.12.2.jar:5.12.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:388) ~[junit-jupiter-engine-5.12.2.jar:5.12.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$11(ClassBasedTestDescriptor.java:382) ~[junit-jupiter-engine-5.12.2.jar:5.12.2]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[na:na]
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1708) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[na:na]
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151) ~[na:na]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596) ~[na:na]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:382) ~[junit-jupiter-engine-5.12.2.jar:5.12.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$6(ClassBasedTestDescriptor.java:293) ~[junit-jupiter-engine-5.12.2.jar:5.12.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:292) ~[junit-jupiter-engine-5.12.2.jar:5.12.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$4(ClassBasedTestDescriptor.java:281) ~[junit-jupiter-engine-5.12.2.jar:5.12.2]
+	at java.base/java.util.Optional.orElseGet(Optional.java:364) ~[na:na]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$5(ClassBasedTestDescriptor.java:280) ~[junit-jupiter-engine-5.12.2.jar:5.12.2]
+	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:27) ~[junit-jupiter-engine-5.12.2.jar:5.12.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:112) ~[junit-jupiter-engine-5.12.2.jar:5.12.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:111) ~[junit-jupiter-engine-5.12.2.jar:5.12.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:69) ~[junit-jupiter-engine-5.12.2.jar:5.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$2(NodeTestTask.java:128) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:128) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596) ~[na:na]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596) ~[na:na]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54) ~[junit-platform-engine-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:201) ~[junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:170) ~[junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:94) ~[junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:59) ~[junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:142) ~[junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:58) ~[junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103) ~[junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85) ~[junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47) ~[junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.InterceptingLauncher.lambda$execute$1(InterceptingLauncher.java:39) ~[junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.ClasspathAlignmentCheckingLauncherInterceptor.intercept(ClasspathAlignmentCheckingLauncherInterceptor.java:25) ~[junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.InterceptingLauncher.execute(InterceptingLauncher.java:38) ~[junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47) ~[junit-platform-launcher-1.12.2.jar:1.12.2]
+	at org.apache.maven.surefire.junitplatform.LauncherAdapter.executeWithoutCancellationToken(LauncherAdapter.java:60) ~[surefire-junit-platform-3.5.4.jar:3.5.4]
+	at org.apache.maven.surefire.junitplatform.LauncherAdapter.execute(LauncherAdapter.java:52) ~[surefire-junit-platform-3.5.4.jar:3.5.4]
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:203) ~[surefire-junit-platform-3.5.4.jar:3.5.4]
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:168) ~[surefire-junit-platform-3.5.4.jar:3.5.4]
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:136) ~[surefire-junit-platform-3.5.4.jar:3.5.4]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385) ~[surefire-booter-3.5.4.jar:3.5.4]
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162) ~[surefire-booter-3.5.4.jar:3.5.4]
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507) ~[surefire-booter-3.5.4.jar:3.5.4]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495) ~[surefire-booter-3.5.4.jar:3.5.4]
+Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table payments (amount float(53), created_at datetime(6), id bigint not null auto_increment, order_id bigint, payment_method varchar(255), payment_status varchar(255), stripe_session_id varchar(255), transaction_id varchar(255), primary key (id)) engine[*]=InnoDB"; expected "identifier"; SQL statement:
+create table payments (amount float(53), created_at datetime(6), id bigint not null auto_increment, order_id bigint, payment_method varchar(255), payment_status varchar(255), stripe_session_id varchar(255), transaction_id varchar(255), primary key (id)) engine=InnoDB [42001-232]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:514) ~[h2-2.3.232.jar:2.3.232]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489) ~[h2-2.3.232.jar:2.3.232]
+	at org.h2.message.DbException.getSyntaxError(DbException.java:261) ~[h2-2.3.232.jar:2.3.232]
+	at org.h2.command.Parser.readIdentifier(Parser.java:5527) ~[h2-2.3.232.jar:2.3.232]
+	at org.h2.command.Parser.parseCreateTable(Parser.java:8827) ~[h2-2.3.232.jar:2.3.232]
+	at org.h2.command.Parser.parseCreate(Parser.java:6398) ~[h2-2.3.232.jar:2.3.232]
+	at org.h2.command.Parser.parsePrepared(Parser.java:645) ~[h2-2.3.232.jar:2.3.232]
+	at org.h2.command.Parser.parse(Parser.java:581) ~[h2-2.3.232.jar:2.3.232]
+	at org.h2.command.Parser.parse(Parser.java:556) ~[h2-2.3.232.jar:2.3.232]
+	at org.h2.command.Parser.prepareCommand(Parser.java:484) ~[h2-2.3.232.jar:2.3.232]
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:645) ~[h2-2.3.232.jar:2.3.232]
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:561) ~[h2-2.3.232.jar:2.3.232]
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1164) ~[h2-2.3.232.jar:2.3.232]
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:245) ~[h2-2.3.232.jar:2.3.232]
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:231) ~[h2-2.3.232.jar:2.3.232]
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:95) ~[HikariCP-6.3.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java) ~[HikariCP-6.3.3.jar:na]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:80) ~[hibernate-core-6.6.42.Final.jar:6.6.42.Final]
+	... 124 common frames omitted
+
+2026-04-06T12:44:32.510+05:30  INFO 43776 --- [payment-service] [           main] [                                                 ] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-06T12:44:33.257+05:30  WARN 43776 --- [payment-service] [           main] [                                                 ] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-06T12:44:33.333+05:30  WARN 43776 --- [payment-service] [           main] [                                                 ] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 4656e886-6d93-49d4-ac01-d9b05f976f08
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-04-06T12:44:33.354+05:30  INFO 43776 --- [payment-service] [           main] [                                                 ] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-04-06T12:44:34.881+05:30  INFO 43776 --- [payment-service] [           main] [                                                 ] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-04-06T12:44:34.976+05:30  INFO 43776 --- [payment-service] [           main] [                                                 ] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-04-06T12:44:34.976+05:30  INFO 43776 --- [payment-service] [           main] [                                                 ] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-04-06T12:44:34.978+05:30  INFO 43776 --- [payment-service] [           main] [                                                 ] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 2 ms
+2026-04-06T12:44:35.096+05:30  INFO 43776 --- [payment-service] [           main] [                                                 ] c.u.p.i.PaymentIntegrationTest           : Started PaymentIntegrationTest in 8.218 seconds (process running for 9.339)
+Hibernate: select p1_0.id,p1_0.amount,p1_0.created_at,p1_0.order_id,p1_0.payment_method,p1_0.payment_status,p1_0.stripe_session_id,p1_0.transaction_id from payments p1_0 where p1_0.payment_status=?
+2026-04-06T12:44:35.430+05:30  WARN 43776 --- [payment-service] [   scheduling-1] [69d35d5bc601e8edf85ff7b5f45dcf86-f85ff7b5f45dcf86] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 42104, SQLState: 42S04
+2026-04-06T12:44:35.430+05:30 ERROR 43776 --- [payment-service] [   scheduling-1] [69d35d5bc601e8edf85ff7b5f45dcf86-f85ff7b5f45dcf86] o.h.engine.jdbc.spi.SqlExceptionHelper   : Table "PAYMENTS" not found (this database is empty); SQL statement:
+select p1_0.id,p1_0.amount,p1_0.created_at,p1_0.order_id,p1_0.payment_method,p1_0.payment_status,p1_0.stripe_session_id,p1_0.transaction_id from payments p1_0 where p1_0.payment_status=? [42104-232]
+AUTOMATIC POLLER CRASHED! 
+Exact Reason:
+org.springframework.dao.Invalid
+DataAccessResourceUsageExceptio
+n: could not prepare statement 
+[Table "PAYMENTS" not found 
+(this database is empty); SQL 
+statement:
+select p1_0.id,p1_0.amount,p1_0
+.created_at,p1_0.order_id,p1_0.
+payment_method,p1_0.payment_sta
+tus,p1_0.stripe_session_id,p1_0
+.transaction_id from payments 
+p1_0 where 
+p1_0.payment_status=? 
+[42104-232]] [select p1_0.id,p1
+_0.amount,p1_0.created_at,p1_0.
+order_id,p1_0.payment_method,p1
+_0.payment_status,p1_0.stripe_s
+ession_id,p1_0.transaction_id 
+from payments p1_0 where 
+p1_0.payment_status=?]; SQL 
+[select p1_0.id,p1_0.amount,p1_
+0.created_at,p1_0.order_id,p1_0
+.payment_method,p1_0.payment_st
+atus,p1_0.stripe_session_id,p1_
+0.transaction_id from payments 
+p1_0 where 
+p1_0.payment_status=?]
+	at org.springframework.orm.jpa
+.vendor.HibernateJpaDialect.con
+vertHibernateAccessException(Hi
+bernateJpaDialect.java:281)
+	at org.springframework.orm.jpa
+.vendor.HibernateJpaDialect.con
+vertHibernateAccessException(Hi
+bernateJpaDialect.java:256)
+	at org.springframework.orm.jpa
+.vendor.HibernateJpaDialect.tra
+nslateExceptionIfPossible(Hiber
+nateJpaDialect.java:241)
+	at org.springframework.orm.jpa
+.AbstractEntityManagerFactoryBe
+an.translateExceptionIfPossible
+(AbstractEntityManagerFactoryBe
+an.java:560)
+	at org.springframework.dao.sup
+port.ChainedPersistenceExceptio
+nTranslator.translateExceptionI
+fPossible(ChainedPersistenceExc
+eptionTranslator.java:61)
+	at org.springframework.dao.sup
+port.DataAccessUtils.translateI
+fNecessary(DataAccessUtils.java
+:343)
+	at org.springframework.dao.sup
+port.PersistenceExceptionTransl
+ationInterceptor.invoke(Persist
+enceExceptionTranslationInterce
+ptor.java:160)
+	at org.springframework.aop.fra
+mework.ReflectiveMethodInvocati
+on.proceed(ReflectiveMethodInvo
+cation.java:184)
+	at org.springframework.data.jp
+a.repository.support.CrudMethod
+MetadataPostProcessor$CrudMetho
+dMetadataPopulatingMethodInterc
+eptor.invoke(CrudMethodMetadata
+PostProcessor.java:136)
+	at org.springframework.aop.fra
+mework.ReflectiveMethodInvocati
+on.proceed(ReflectiveMethodInvo
+cation.java:184)
+	at org.springframework.aop.fra
+mework.JdkDynamicAopProxy.invok
+e(JdkDynamicAopProxy.java:223)
+	at jdk.proxy2/jdk.proxy2.$Prox
+y188.findByPaymentStatus(Unknow
+n Source)
+	at com.urbanvogue.payment_serv
+ice.service.PaymentService.poll
+StripeEvents(PaymentService.jav
+a:132)
+	at java.base/jdk.internal.refl
+ect.DirectMethodHandleAccessor.
+invoke(DirectMethodHandleAccess
+or.java:103)
+	at java.base/java.lang.reflect
+.Method.invoke(Method.java:580)
+	at org.springframework.schedul
+ing.support.ScheduledMethodRunn
+able.runInternal(ScheduledMetho
+dRunnable.java:130)
+	at org.springframework.schedul
+ing.support.ScheduledMethodRunn
+able.lambda$run$2(ScheduledMeth
+odRunnable.java:124)
+	at io.micrometer.observation.O
+bservation.observe(Observation.
+java:498)
+	at org.springframework.schedul
+ing.support.ScheduledMethodRunn
+able.run(ScheduledMethodRunnabl
+e.java:124)
+	at org.springframework.schedul
+ing.config.Task$OutcomeTracking
+Runnable.run(Task.java:87)
+	at org.springframework.schedul
+ing.support.DelegatingErrorHand
+lingRunnable.run(DelegatingErro
+rHandlingRunnable.java:54)
+	at java.base/java.util.concurr
+ent.Executors$RunnableAdapter.c
+all(Executors.java:572)
+	at java.base/java.util.concurr
+ent.FutureTask.runAndReset(Futu
+reTask.java:358)
+	at java.base/java.util.concurr
+ent.ScheduledThreadPoolExecutor
+$ScheduledFutureTask.run(Schedu
+ledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurr
+ent.ThreadPoolExecutor.runWorke
+r(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurr
+ent.ThreadPoolExecutor$Worker.r
+un(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.
+run(Thread.java:1583)
+Caused by: org.hibernate.except
+ion.SQLGrammarException: could 
+not prepare statement [Table 
+"PAYMENTS" not found (this 
+database is empty); SQL 
+statement:
+select p1_0.id,p1_0.amount,p1_0
+.created_at,p1_0.order_id,p1_0.
+payment_method,p1_0.payment_sta
+tus,p1_0.stripe_session_id,p1_0
+.transaction_id from payments 
+p1_0 where 
+p1_0.payment_status=? 
+[42104-232]] [select p1_0.id,p1
+_0.amount,p1_0.created_at,p1_0.
+order_id,p1_0.payment_method,p1
+_0.payment_status,p1_0.stripe_s
+ession_id,p1_0.transaction_id 
+from payments p1_0 where 
+p1_0.payment_status=?]
+	at org.hibernate.exception.int
+ernal.SQLExceptionTypeDelegate.
+convert(SQLExceptionTypeDelegat
+e.java:66)
+	at org.hibernate.exception.int
+ernal.StandardSQLExceptionConve
+rter.convert(StandardSQLExcepti
+onConverter.java:58)
+	at org.hibernate.engine.jdbc.s
+pi.SqlExceptionHelper.convert(S
+qlExceptionHelper.java:108)
+	at org.hibernate.engine.jdbc.i
+nternal.StatementPreparerImpl$S
+tatementPreparationTemplate.pre
+pareStatement(StatementPreparer
+Impl.java:191)
+	at org.hibernate.engine.jdbc.i
+nternal.StatementPreparerImpl.p
+repareQueryStatement(StatementP
+reparerImpl.java:153)
+	at org.hibernate.sql.exec.inte
+rnal.StandardStatementCreator.c
+reateStatement(StandardStatemen
+tCreator.java:49)
+	at org.hibernate.sql.results.j
+dbc.internal.DeferredResultSetA
+ccess.executeQuery(DeferredResu
+ltSetAccess.java:236)
+	at org.hibernate.sql.results.j
+dbc.internal.DeferredResultSetA
+ccess.getResultSet(DeferredResu
+ltSetAccess.java:172)
+	at org.hibernate.sql.results.j
+dbc.internal.JdbcValuesResultSe
+tImpl.<init>(JdbcValuesResultSe
+tImpl.java:74)
+	at org.hibernate.sql.exec.inte
+rnal.JdbcSelectExecutorStandard
+Impl.resolveJdbcValuesSource(Jd
+bcSelectExecutorStandardImpl.ja
+va:355)
+	at org.hibernate.sql.exec.inte
+rnal.JdbcSelectExecutorStandard
+Impl.doExecuteQuery(JdbcSelectE
+xecutorStandardImpl.java:137)
+	at org.hibernate.sql.exec.inte
+rnal.JdbcSelectExecutorStandard
+Impl.executeQuery(JdbcSelectExe
+cutorStandardImpl.java:102)
+	at org.hibernate.sql.exec.spi.
+JdbcSelectExecutor.executeQuery
+(JdbcSelectExecutor.java:91)
+	at org.hibernate.sql.exec.spi.
+JdbcSelectExecutor.list(JdbcSel
+ectExecutor.java:165)
+	at org.hibernate.query.sqm.int
+ernal.ConcreteSqmSelectQueryPla
+n.lambda$new$1(ConcreteSqmSelec
+tQueryPlan.java:149)
+	at org.hibernate.query.sqm.int
+ernal.ConcreteSqmSelectQueryPla
+n.withCacheableSqmInterpretatio
+n(ConcreteSqmSelectQueryPlan.ja
+va:439)
+	at org.hibernate.query.sqm.int
+ernal.ConcreteSqmSelectQueryPla
+n.performList(ConcreteSqmSelect
+QueryPlan.java:359)
+	at org.hibernate.query.sqm.int
+ernal.QuerySqmImpl.doList(Query
+SqmImpl.java:364)
+	at org.hibernate.query.spi.Abs
+tractSelectionQuery.list(Abstra
+ctSelectionQuery.java:143)
+	at org.hibernate.query.Query.g
+etResultList(Query.java:120)
+	at java.base/jdk.internal.refl
+ect.DirectMethodHandleAccessor.
+invoke(DirectMethodHandleAccess
+or.java:103)
+	at java.base/java.lang.reflect
+.Method.invoke(Method.java:580)
+	at org.springframework.orm.jpa
+.SharedEntityManagerCreator$Def
+erredQueryInvocationHandler.inv
+oke(SharedEntityManagerCreator.
+java:419)
+	at jdk.proxy2/jdk.proxy2.$Prox
+y212.getResultList(Unknown 
+Source)
+	at org.springframework.data.jp
+a.repository.query.JpaQueryExec
+ution$CollectionExecution.doExe
+cute(JpaQueryExecution.java:132
+)
+	at org.springframework.data.jp
+a.repository.query.JpaQueryExec
+ution.execute(JpaQueryExecution
+.java:95)
+	at org.springframework.data.jp
+a.repository.query.AbstractJpaQ
+uery.doExecute(AbstractJpaQuery
+.java:160)
+	at org.springframework.data.jp
+a.repository.query.AbstractJpaQ
+uery.execute(AbstractJpaQuery.j
+ava:148)
+	at org.springframework.data.re
+pository.core.support.Repositor
+yMethodInvoker.doInvoke(Reposit
+oryMethodInvoker.java:170)
+	at org.springframework.data.re
+pository.core.support.Repositor
+yMethodInvoker.invoke(Repositor
+yMethodInvoker.java:158)
+	at org.springframework.data.re
+pository.core.support.QueryExec
+utorMethodInterceptor.doInvoke(
+QueryExecutorMethodInterceptor.
+java:170)
+	at org.springframework.data.re
+pository.core.support.QueryExec
+utorMethodInterceptor.invoke(Qu
+eryExecutorMethodInterceptor.ja
+va:149)
+	at org.springframework.aop.fra
+mework.ReflectiveMethodInvocati
+on.proceed(ReflectiveMethodInvo
+cation.java:184)
+	at org.springframework.data.pr
+ojection.DefaultMethodInvokingM
+ethodInterceptor.invoke(Default
+MethodInvokingMethodInterceptor
+.java:69)
+	at org.springframework.aop.fra
+mework.ReflectiveMethodInvocati
+on.proceed(ReflectiveMethodInvo
+cation.java:184)
+	at org.springframework.transac
+tion.interceptor.TransactionAsp
+ectSupport.invokeWithinTransact
+ion(TransactionAspectSupport.ja
+va:380)
+	at org.springframework.transac
+tion.interceptor.TransactionInt
+erceptor.invoke(TransactionInte
+rceptor.java:119)
+	at org.springframework.aop.fra
+mework.ReflectiveMethodInvocati
+on.proceed(ReflectiveMethodInvo
+cation.java:184)
+	at org.springframework.dao.sup
+port.PersistenceExceptionTransl
+ationInterceptor.invoke(Persist
+enceExceptionTranslationInterce
+ptor.java:138)
+	... 20 more
+Caused by: org.h2.jdbc.JdbcSQLS
+yntaxErrorException: Table 
+"PAYMENTS" not found (this 
+database is empty); SQL 
+statement:
+select p1_0.id,p1_0.amount,p1_0
+.created_at,p1_0.order_id,p1_0.
+payment_method,p1_0.payment_sta
+tus,p1_0.stripe_session_id,p1_0
+.transaction_id from payments 
+p1_0 where 
+p1_0.payment_status=? 
+[42104-232]
+	at org.h2.message.DbException.
+getJdbcSQLException(DbException
+.java:514)
+	at org.h2.message.DbException.
+getJdbcSQLException(DbException
+.java:489)
+	at org.h2.message.DbException.
+get(DbException.java:223)
+	at org.h2.message.DbException.
+get(DbException.java:199)
+	at org.h2.command.Parser.getTa
+bleOrViewNotFoundDbException(Pa
+rser.java:7932)
+	at org.h2.command.Parser.getTa
+bleOrViewNotFoundDbException(Pa
+rser.java:7916)
+	at org.h2.command.Parser.readT
+ableOrView(Parser.java:7895)
+	at org.h2.command.Parser.readT
+ablePrimary(Parser.java:1769)
+	at org.h2.command.Parser.readT
+ableReference(Parser.java:2249)
+	at org.h2.command.Parser.parse
+SelectFromPart(Parser.java:2702
+)
+	at org.h2.command.Parser.parse
+Select(Parser.java:2810)
+	at org.h2.command.Parser.parse
+QueryPrimary(Parser.java:2692)
+	at org.h2.command.Parser.parse
+QueryTerm(Parser.java:2547)
+	at org.h2.command.Parser.parse
+QueryExpressionBody(Parser.java
+:2526)
+	at org.h2.command.Parser.parse
+QueryExpressionBodyAndEndOfQuer
+y(Parser.java:2519)
+	at org.h2.command.Parser.parse
+QueryExpression(Parser.java:251
+2)
+	at org.h2.command.Parser.parse
+Query(Parser.java:2479)
+	at org.h2.command.Parser.parse
+Prepared(Parser.java:610)
+	at org.h2.command.Parser.parse
+(Parser.java:581)
+	at org.h2.command.Parser.parse
+(Parser.java:556)
+	at org.h2.command.Parser.prepa
+reCommand(Parser.java:484)
+	at org.h2.engine.SessionLocal.
+prepareLocal(SessionLocal.java:
+645)
+	at org.h2.engine.SessionLocal.
+prepareCommand(SessionLocal.jav
+a:561)
+	at org.h2.jdbc.JdbcConnection.
+prepareCommand(JdbcConnection.j
+ava:1164)
+	at org.h2.jdbc.JdbcPreparedSta
+tement.<init>(JdbcPreparedState
+ment.java:93)
+	at org.h2.jdbc.JdbcConnection.
+prepareStatement(JdbcConnection
+.java:687)
+	at com.zaxxer.hikari.pool.Prox
+yConnection.prepareStatement(Pr
+oxyConnection.java:342)
+Hibernate: select p1_0.id,p1_0.amount,p1_0.created_at,p1_0.order_id,p1_0.payment_method,p1_0.payment_status,p1_0.stripe_session_id,p1_0.transaction_id from payments p1_0
+2026-04-06T12:44:35.488+05:30  WARN 43776 --- [payment-service] [           main] [                                                 ] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 42104, SQLState: 42S04
+2026-04-06T12:44:35.488+05:30 ERROR 43776 --- [payment-service] [           main] [                                                 ] o.h.engine.jdbc.spi.SqlExceptionHelper   : Table "PAYMENTS" not found (this database is empty); SQL statement:
+select p1_0.id,p1_0.amount,p1_0.created_at,p1_0.order_id,p1_0.payment_method,p1_0.payment_status,p1_0.stripe_session_id,p1_0.transaction_id from payments p1_0 [42104-232]
+	at com.zaxxer.hikari.pool.Hika
+riProxyConnection.prepareStatem
+ent(HikariProxyConnection.java)
+	at org.hibernate.engine.jdbc.i
+nternal.StatementPreparerImpl$4
+.doPrepare(StatementPreparerImp
+l.java:151)
+	at org.hibernate.engine.jdbc.i
+nternal.StatementPreparerImpl$S
+tatementPreparationTemplate.pre
+pareStatement(StatementPreparer
+Impl.java:180)
+	... 55 more
+Hibernate: select p1_0.id,p1_0.amount,p1_0.created_at,p1_0.order_id,p1_0.payment_method,p1_0.payment_status,p1_0.stripe_session_id,p1_0.transaction_id from payments p1_0
+2026-04-06T12:44:35.529+05:30  WARN 43776 --- [payment-service] [           main] [                                                 ] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 42104, SQLState: 42S04
+2026-04-06T12:44:35.529+05:30 ERROR 43776 --- [payment-service] [           main] [                                                 ] o.h.engine.jdbc.spi.SqlExceptionHelper   : Table "PAYMENTS" not found (this database is empty); SQL statement:
+select p1_0.id,p1_0.amount,p1_0.created_at,p1_0.order_id,p1_0.payment_method,p1_0.payment_status,p1_0.stripe_session_id,p1_0.transaction_id from payments p1_0 [42104-232]
+Hibernate: select p1_0.id,p1_0.amount,p1_0.created_at,p1_0.order_id,p1_0.payment_method,p1_0.payment_status,p1_0.stripe_session_id,p1_0.transaction_id from payments p1_0
+2026-04-06T12:44:35.546+05:30  WARN 43776 --- [payment-service] [           main] [                                                 ] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 42104, SQLState: 42S04
+2026-04-06T12:44:35.546+05:30 ERROR 43776 --- [payment-service] [           main] [                                                 ] o.h.engine.jdbc.spi.SqlExceptionHelper   : Table "PAYMENTS" not found (this database is empty); SQL statement:
+select p1_0.id,p1_0.amount,p1_0.created_at,p1_0.order_id,p1_0.payment_method,p1_0.payment_status,p1_0.stripe_session_id,p1_0.transaction_id from payments p1_0 [42104-232]
+Hibernate: select p1_0.id,p1_0.amount,p1_0.created_at,p1_0.order_id,p1_0.payment_method,p1_0.payment_status,p1_0.stripe_session_id,p1_0.transaction_id from payments p1_0
+2026-04-06T12:44:35.563+05:30  WARN 43776 --- [payment-service] [           main] [                                                 ] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 42104, SQLState: 42S04
+2026-04-06T12:44:35.564+05:30 ERROR 43776 --- [payment-service] [           main] [                                                 ] o.h.engine.jdbc.spi.SqlExceptionHelper   : Table "PAYMENTS" not found (this database is empty); SQL statement:
+select p1_0.id,p1_0.amount,p1_0.created_at,p1_0.order_id,p1_0.payment_method,p1_0.payment_status,p1_0.stripe_session_id,p1_0.transaction_id from payments p1_0 [42104-232]
+Hibernate: select p1_0.id,p1_0.amount,p1_0.created_at,p1_0.order_id,p1_0.payment_method,p1_0.payment_status,p1_0.stripe_session_id,p1_0.transaction_id from payments p1_0
+2026-04-06T12:44:35.579+05:30  WARN 43776 --- [payment-service] [           main] [                                                 ] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 42104, SQLState: 42S04
+2026-04-06T12:44:35.579+05:30 ERROR 43776 --- [payment-service] [           main] [                                                 ] o.h.engine.jdbc.spi.SqlExceptionHelper   : Table "PAYMENTS" not found (this database is empty); SQL statement:
+select p1_0.id,p1_0.amount,p1_0.created_at,p1_0.order_id,p1_0.payment_method,p1_0.payment_status,p1_0.stripe_session_id,p1_0.transaction_id from payments p1_0 [42104-232]
+[ERROR] Tests run: 5, Failures: 0, Errors: 5, Skipped: 0, Time elapsed: 9.246 s <<< FAILURE! -- in PaymentService - Integration Tests
+[ERROR] com.urbanvogue.payment_service.integration.PaymentIntegrationTest.getPaymentByOrderId_ShouldReturnFromDatabase -- Time elapsed: 0.306 s <<< ERROR!
+org.springframework.dao.InvalidDataAccessResourceUsageException: 
+could not prepare statement [Table "PAYMENTS" not found (this database is empty); SQL statement:
+select p1_0.id,p1_0.amount,p1_0.created_at,p1_0.order_id,p1_0.payment_method,p1_0.payment_status,p1_0.stripe_session_id,p1_0.transaction_id from payments p1_0 [42104-232]] [select p1_0.id,p1_0.amount,p1_0.created_at,p1_0.order_id,p1_0.payment_method,p1_0.payment_status,p1_0.stripe_session_id,p1_0.transaction_id from payments p1_0]; SQL [select p1_0.id,p1_0.amount,p1_0.created_at,p1_0.order_id,p1_0.payment_method,p1_0.payment_status,p1_0.stripe_session_id,p1_0.transaction_id from payments p1_0]
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:281)
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:256)
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:241)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.translateExceptionIfPossible(AbstractEntityManagerFactoryBean.java:560)
+	at org.springframework.dao.support.ChainedPersistenceExceptionTranslator.translateExceptionIfPossible(ChainedPersistenceExceptionTranslator.java:61)
+	at org.springframework.dao.support.DataAccessUtils.translateIfNecessary(DataAccessUtils.java:343)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:160)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:165)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:223)
+	at jdk.proxy2/jdk.proxy2.$Proxy188.deleteAll(Unknown Source)
+	at com.urbanvogue.payment_service.integration.PaymentIntegrationTest.cleanDatabase(PaymentIntegrationTest.java:39)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+Caused by: org.hibernate.exception.SQLGrammarException: could not prepare statement [Table "PAYMENTS" not found (this database is empty); SQL statement:
+select p1_0.id,p1_0.amount,p1_0.created_at,p1_0.order_id,p1_0.payment_method,p1_0.payment_status,p1_0.stripe_session_id,p1_0.transaction_id from payments p1_0 [42104-232]] [select p1_0.id,p1_0.amount,p1_0.created_at,p1_0.order_id,p1_0.payment_method,p1_0.payment_status,p1_0.stripe_session_id,p1_0.transaction_id from payments p1_0]
+	at org.hibernate.exception.internal.SQLExceptionTypeDelegate.convert(SQLExceptionTypeDelegate.java:66)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:58)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:108)
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl$StatementPreparationTemplate.prepareStatement(StatementPreparerImpl.java:191)
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl.prepareQueryStatement(StatementPreparerImpl.java:153)
+	at org.hibernate.sql.exec.internal.StandardStatementCreator.createStatement(StandardStatementCreator.java:49)
+	at org.hibernate.sql.results.jdbc.internal.DeferredResultSetAccess.executeQuery(DeferredResultSetAccess.java:236)
+	at org.hibernate.sql.results.jdbc.internal.DeferredResultSetAccess.getResultSet(DeferredResultSetAccess.java:172)
+	at org.hibernate.sql.results.jdbc.internal.JdbcValuesResultSetImpl.<init>(JdbcValuesResultSetImpl.java:74)
+	at org.hibernate.sql.exec.internal.JdbcSelectExecutorStandardImpl.resolveJdbcValuesSource(JdbcSelectExecutorStandardImpl.java:355)
+	at org.hibernate.sql.exec.internal.JdbcSelectExecutorStandardImpl.doExecuteQuery(JdbcSelectExecutorStandardImpl.java:137)
+	at org.hibernate.sql.exec.internal.JdbcSelectExecutorStandardImpl.executeQuery(JdbcSelectExecutorStandardImpl.java:102)
+	at org.hibernate.sql.exec.spi.JdbcSelectExecutor.executeQuery(JdbcSelectExecutor.java:91)
+	at org.hibernate.sql.exec.spi.JdbcSelectExecutor.list(JdbcSelectExecutor.java:165)
+	at org.hibernate.query.sqm.internal.ConcreteSqmSelectQueryPlan.lambda$new$1(ConcreteSqmSelectQueryPlan.java:149)
+	at org.hibernate.query.sqm.internal.ConcreteSqmSelectQueryPlan.withCacheableSqmInterpretation(ConcreteSqmSelectQueryPlan.java:439)
+	at org.hibernate.query.sqm.internal.ConcreteSqmSelectQueryPlan.performList(ConcreteSqmSelectQueryPlan.java:359)
+	at org.hibernate.query.sqm.internal.QuerySqmImpl.doList(QuerySqmImpl.java:364)
+	at org.hibernate.query.spi.AbstractSelectionQuery.list(AbstractSelectionQuery.java:143)
+	at org.hibernate.query.Query.getResultList(Query.java:120)
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll(SimpleJpaRepository.java:405)
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.deleteAll(SimpleJpaRepository.java:304)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:277)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:170)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:158)
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:515)
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:284)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:720)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:174)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:149)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:69)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:380)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:138)
+	... 9 more
+Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "PAYMENTS" not found (this database is empty); SQL statement:
+select p1_0.id,p1_0.amount,p1_0.created_at,p1_0.order_id,p1_0.payment_method,p1_0.payment_status,p1_0.stripe_session_id,p1_0.transaction_id from payments p1_0 [42104-232]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:514)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.command.Parser.getTableOrViewNotFoundDbException(Parser.java:7932)
+	at org.h2.command.Parser.getTableOrViewNotFoundDbException(Parser.java:7916)
+	at org.h2.command.Parser.readTableOrView(Parser.java:7895)
+	at org.h2.command.Parser.readTablePrimary(Parser.java:1769)
+	at org.h2.command.Parser.readTableReference(Parser.java:2249)
+	at org.h2.command.Parser.parseSelectFromPart(Parser.java:2702)
+	at org.h2.command.Parser.parseSelect(Parser.java:2810)
+	at org.h2.command.Parser.parseQueryPrimary(Parser.java:2692)
+	at org.h2.command.Parser.parseQueryTerm(Parser.java:2547)
+	at org.h2.command.Parser.parseQueryExpressionBody(Parser.java:2526)
+	at org.h2.command.Parser.parseQueryExpressionBodyAndEndOfQuery(Parser.java:2519)
+	at org.h2.command.Parser.parseQueryExpression(Parser.java:2512)
+	at org.h2.command.Parser.parseQuery(Parser.java:2479)
+	at org.h2.command.Parser.parsePrepared(Parser.java:610)
+	at org.h2.command.Parser.parse(Parser.java:581)
+	at org.h2.command.Parser.parse(Parser.java:556)
+	at org.h2.command.Parser.prepareCommand(Parser.java:484)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:645)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:561)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1164)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:93)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:687)
+	at com.zaxxer.hikari.pool.ProxyConnection.prepareStatement(ProxyConnection.java:342)
+	at com.zaxxer.hikari.pool.HikariProxyConnection.prepareStatement(HikariProxyConnection.java)
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl$4.doPrepare(StatementPreparerImpl.java:151)
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl$StatementPreparationTemplate.prepareStatement(StatementPreparerImpl.java:180)
+	... 46 more
+
+[ERROR] com.urbanvogue.payment_service.integration.PaymentIntegrationTest.mockWebhook_ShouldUpdatePaymentStatusInDatabase -- Time elapsed: 0.018 s <<< ERROR!
+org.springframework.dao.InvalidDataAccessResourceUsageException: 
+could not prepare statement [Table "PAYMENTS" not found (this database is empty); SQL statement:
+select p1_0.id,p1_0.amount,p1_0.created_at,p1_0.order_id,p1_0.payment_method,p1_0.payment_status,p1_0.stripe_session_id,p1_0.transaction_id from payments p1_0 [42104-232]] [select p1_0.id,p1_0.amount,p1_0.created_at,p1_0.order_id,p1_0.payment_method,p1_0.payment_status,p1_0.stripe_session_id,p1_0.transaction_id from payments p1_0]; SQL [select p1_0.id,p1_0.amount,p1_0.created_at,p1_0.order_id,p1_0.payment_method,p1_0.payment_status,p1_0.stripe_session_id,p1_0.transaction_id from payments p1_0]
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:281)
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:256)
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:241)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.translateExceptionIfPossible(AbstractEntityManagerFactoryBean.java:560)
+	at org.springframework.dao.support.ChainedPersistenceExceptionTranslator.translateExceptionIfPossible(ChainedPersistenceExceptionTranslator.java:61)
+	at org.springframework.dao.support.DataAccessUtils.translateIfNecessary(DataAccessUtils.java:343)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:160)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:165)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:223)
+	at jdk.proxy2/jdk.proxy2.$Proxy188.deleteAll(Unknown Source)
+	at com.urbanvogue.payment_service.integration.PaymentIntegrationTest.cleanDatabase(PaymentIntegrationTest.java:39)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+Caused by: org.hibernate.exception.SQLGrammarException: could not prepare statement [Table "PAYMENTS" not found (this database is empty); SQL statement:
+select p1_0.id,p1_0.amount,p1_0.created_at,p1_0.order_id,p1_0.payment_method,p1_0.payment_status,p1_0.stripe_session_id,p1_0.transaction_id from payments p1_0 [42104-232]] [select p1_0.id,p1_0.amount,p1_0.created_at,p1_0.order_id,p1_0.payment_method,p1_0.payment_status,p1_0.stripe_session_id,p1_0.transaction_id from payments p1_0]
+	at org.hibernate.exception.internal.SQLExceptionTypeDelegate.convert(SQLExceptionTypeDelegate.java:66)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:58)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:108)
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl$StatementPreparationTemplate.prepareStatement(StatementPreparerImpl.java:191)
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl.prepareQueryStatement(StatementPreparerImpl.java:153)
+	at org.hibernate.sql.exec.internal.StandardStatementCreator.createStatement(StandardStatementCreator.java:49)
+	at org.hibernate.sql.results.jdbc.internal.DeferredResultSetAccess.executeQuery(DeferredResultSetAccess.java:236)
+	at org.hibernate.sql.results.jdbc.internal.DeferredResultSetAccess.getResultSet(DeferredResultSetAccess.java:172)
+	at org.hibernate.sql.results.jdbc.internal.JdbcValuesResultSetImpl.<init>(JdbcValuesResultSetImpl.java:74)
+	at org.hibernate.sql.exec.internal.JdbcSelectExecutorStandardImpl.resolveJdbcValuesSource(JdbcSelectExecutorStandardImpl.java:355)
+	at org.hibernate.sql.exec.internal.JdbcSelectExecutorStandardImpl.doExecuteQuery(JdbcSelectExecutorStandardImpl.java:137)
+	at org.hibernate.sql.exec.internal.JdbcSelectExecutorStandardImpl.executeQuery(JdbcSelectExecutorStandardImpl.java:102)
+	at org.hibernate.sql.exec.spi.JdbcSelectExecutor.executeQuery(JdbcSelectExecutor.java:91)
+	at org.hibernate.sql.exec.spi.JdbcSelectExecutor.list(JdbcSelectExecutor.java:165)
+	at org.hibernate.query.sqm.internal.ConcreteSqmSelectQueryPlan.lambda$new$1(ConcreteSqmSelectQueryPlan.java:149)
+	at org.hibernate.query.sqm.internal.ConcreteSqmSelectQueryPlan.withCacheableSqmInterpretation(ConcreteSqmSelectQueryPlan.java:439)
+	at org.hibernate.query.sqm.internal.ConcreteSqmSelectQueryPlan.performList(ConcreteSqmSelectQueryPlan.java:359)
+	at org.hibernate.query.sqm.internal.QuerySqmImpl.doList(QuerySqmImpl.java:364)
+	at org.hibernate.query.spi.AbstractSelectionQuery.list(AbstractSelectionQuery.java:143)
+	at org.hibernate.query.Query.getResultList(Query.java:120)
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll(SimpleJpaRepository.java:405)
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.deleteAll(SimpleJpaRepository.java:304)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:277)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:170)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:158)
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:515)
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:284)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:720)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:174)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:149)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:69)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:380)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:138)
+	... 9 more
+Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "PAYMENTS" not found (this database is empty); SQL statement:
+select p1_0.id,p1_0.amount,p1_0.created_at,p1_0.order_id,p1_0.payment_method,p1_0.payment_status,p1_0.stripe_session_id,p1_0.transaction_id from payments p1_0 [42104-232]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:514)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.command.Parser.getTableOrViewNotFoundDbException(Parser.java:7932)
+	at org.h2.command.Parser.getTableOrViewNotFoundDbException(Parser.java:7916)
+	at org.h2.command.Parser.readTableOrView(Parser.java:7895)
+	at org.h2.command.Parser.readTablePrimary(Parser.java:1769)
+	at org.h2.command.Parser.readTableReference(Parser.java:2249)
+	at org.h2.command.Parser.parseSelectFromPart(Parser.java:2702)
+	at org.h2.command.Parser.parseSelect(Parser.java:2810)
+	at org.h2.command.Parser.parseQueryPrimary(Parser.java:2692)
+	at org.h2.command.Parser.parseQueryTerm(Parser.java:2547)
+	at org.h2.command.Parser.parseQueryExpressionBody(Parser.java:2526)
+	at org.h2.command.Parser.parseQueryExpressionBodyAndEndOfQuery(Parser.java:2519)
+	at org.h2.command.Parser.parseQueryExpression(Parser.java:2512)
+	at org.h2.command.Parser.parseQuery(Parser.java:2479)
+	at org.h2.command.Parser.parsePrepared(Parser.java:610)
+	at org.h2.command.Parser.parse(Parser.java:581)
+	at org.h2.command.Parser.parse(Parser.java:556)
+	at org.h2.command.Parser.prepareCommand(Parser.java:484)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:645)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:561)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1164)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:93)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:687)
+	at com.zaxxer.hikari.pool.ProxyConnection.prepareStatement(ProxyConnection.java:342)
+	at com.zaxxer.hikari.pool.HikariProxyConnection.prepareStatement(HikariProxyConnection.java)
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl$4.doPrepare(StatementPreparerImpl.java:151)
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl$StatementPreparationTemplate.prepareStatement(StatementPreparerImpl.java:180)
+	... 46 more
+
+[ERROR] com.urbanvogue.payment_service.integration.PaymentIntegrationTest.mockWebhook_CalledTwice_ShouldBeIdempotent -- Time elapsed: 0.014 s <<< ERROR!
+org.springframework.dao.InvalidDataAccessResourceUsageException: 
+could not prepare statement [Table "PAYMENTS" not found (this database is empty); SQL statement:
+select p1_0.id,p1_0.amount,p1_0.created_at,p1_0.order_id,p1_0.payment_method,p1_0.payment_status,p1_0.stripe_session_id,p1_0.transaction_id from payments p1_0 [42104-232]] [select p1_0.id,p1_0.amount,p1_0.created_at,p1_0.order_id,p1_0.payment_method,p1_0.payment_status,p1_0.stripe_session_id,p1_0.transaction_id from payments p1_0]; SQL [select p1_0.id,p1_0.amount,p1_0.created_at,p1_0.order_id,p1_0.payment_method,p1_0.payment_status,p1_0.stripe_session_id,p1_0.transaction_id from payments p1_0]
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:281)
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:256)
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:241)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.translateExceptionIfPossible(AbstractEntityManagerFactoryBean.java:560)
+	at org.springframework.dao.support.ChainedPersistenceExceptionTranslator.translateExceptionIfPossible(ChainedPersistenceExceptionTranslator.java:61)
+	at org.springframework.dao.support.DataAccessUtils.translateIfNecessary(DataAccessUtils.java:343)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:160)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:165)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:223)
+	at jdk.proxy2/jdk.proxy2.$Proxy188.deleteAll(Unknown Source)
+	at com.urbanvogue.payment_service.integration.PaymentIntegrationTest.cleanDatabase(PaymentIntegrationTest.java:39)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+Caused by: org.hibernate.exception.SQLGrammarException: could not prepare statement [Table "PAYMENTS" not found (this database is empty); SQL statement:
+select p1_0.id,p1_0.amount,p1_0.created_at,p1_0.order_id,p1_0.payment_method,p1_0.payment_status,p1_0.stripe_session_id,p1_0.transaction_id from payments p1_0 [42104-232]] [select p1_0.id,p1_0.amount,p1_0.created_at,p1_0.order_id,p1_0.payment_method,p1_0.payment_status,p1_0.stripe_session_id,p1_0.transaction_id from payments p1_0]
+	at org.hibernate.exception.internal.SQLExceptionTypeDelegate.convert(SQLExceptionTypeDelegate.java:66)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:58)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:108)
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl$StatementPreparationTemplate.prepareStatement(StatementPreparerImpl.java:191)
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl.prepareQueryStatement(StatementPreparerImpl.java:153)
+	at org.hibernate.sql.exec.internal.StandardStatementCreator.createStatement(StandardStatementCreator.java:49)
+	at org.hibernate.sql.results.jdbc.internal.DeferredResultSetAccess.executeQuery(DeferredResultSetAccess.java:236)
+	at org.hibernate.sql.results.jdbc.internal.DeferredResultSetAccess.getResultSet(DeferredResultSetAccess.java:172)
+	at org.hibernate.sql.results.jdbc.internal.JdbcValuesResultSetImpl.<init>(JdbcValuesResultSetImpl.java:74)
+	at org.hibernate.sql.exec.internal.JdbcSelectExecutorStandardImpl.resolveJdbcValuesSource(JdbcSelectExecutorStandardImpl.java:355)
+	at org.hibernate.sql.exec.internal.JdbcSelectExecutorStandardImpl.doExecuteQuery(JdbcSelectExecutorStandardImpl.java:137)
+	at org.hibernate.sql.exec.internal.JdbcSelectExecutorStandardImpl.executeQuery(JdbcSelectExecutorStandardImpl.java:102)
+	at org.hibernate.sql.exec.spi.JdbcSelectExecutor.executeQuery(JdbcSelectExecutor.java:91)
+	at org.hibernate.sql.exec.spi.JdbcSelectExecutor.list(JdbcSelectExecutor.java:165)
+	at org.hibernate.query.sqm.internal.ConcreteSqmSelectQueryPlan.lambda$new$1(ConcreteSqmSelectQueryPlan.java:149)
+	at org.hibernate.query.sqm.internal.ConcreteSqmSelectQueryPlan.withCacheableSqmInterpretation(ConcreteSqmSelectQueryPlan.java:439)
+	at org.hibernate.query.sqm.internal.ConcreteSqmSelectQueryPlan.performList(ConcreteSqmSelectQueryPlan.java:359)
+	at org.hibernate.query.sqm.internal.QuerySqmImpl.doList(QuerySqmImpl.java:364)
+	at org.hibernate.query.spi.AbstractSelectionQuery.list(AbstractSelectionQuery.java:143)
+	at org.hibernate.query.Query.getResultList(Query.java:120)
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll(SimpleJpaRepository.java:405)
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.deleteAll(SimpleJpaRepository.java:304)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:277)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:170)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:158)
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:515)
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:284)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:720)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:174)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:149)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:69)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:380)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:138)
+	... 9 more
+Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "PAYMENTS" not found (this database is empty); SQL statement:
+select p1_0.id,p1_0.amount,p1_0.created_at,p1_0.order_id,p1_0.payment_method,p1_0.payment_status,p1_0.stripe_session_id,p1_0.transaction_id from payments p1_0 [42104-232]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:514)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.command.Parser.getTableOrViewNotFoundDbException(Parser.java:7932)
+	at org.h2.command.Parser.getTableOrViewNotFoundDbException(Parser.java:7916)
+	at org.h2.command.Parser.readTableOrView(Parser.java:7895)
+	at org.h2.command.Parser.readTablePrimary(Parser.java:1769)
+	at org.h2.command.Parser.readTableReference(Parser.java:2249)
+	at org.h2.command.Parser.parseSelectFromPart(Parser.java:2702)
+	at org.h2.command.Parser.parseSelect(Parser.java:2810)
+	at org.h2.command.Parser.parseQueryPrimary(Parser.java:2692)
+	at org.h2.command.Parser.parseQueryTerm(Parser.java:2547)
+	at org.h2.command.Parser.parseQueryExpressionBody(Parser.java:2526)
+	at org.h2.command.Parser.parseQueryExpressionBodyAndEndOfQuery(Parser.java:2519)
+	at org.h2.command.Parser.parseQueryExpression(Parser.java:2512)
+	at org.h2.command.Parser.parseQuery(Parser.java:2479)
+	at org.h2.command.Parser.parsePrepared(Parser.java:610)
+	at org.h2.command.Parser.parse(Parser.java:581)
+	at org.h2.command.Parser.parse(Parser.java:556)
+	at org.h2.command.Parser.prepareCommand(Parser.java:484)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:645)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:561)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1164)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:93)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:687)
+	at com.zaxxer.hikari.pool.ProxyConnection.prepareStatement(ProxyConnection.java:342)
+	at com.zaxxer.hikari.pool.HikariProxyConnection.prepareStatement(HikariProxyConnection.java)
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl$4.doPrepare(StatementPreparerImpl.java:151)
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl$StatementPreparationTemplate.prepareStatement(StatementPreparerImpl.java:180)
+	... 46 more
+
+[ERROR] com.urbanvogue.payment_service.integration.PaymentIntegrationTest.getPayment_NonExistent_ShouldReturn500 -- Time elapsed: 0.014 s <<< ERROR!
+org.springframework.dao.InvalidDataAccessResourceUsageException: 
+could not prepare statement [Table "PAYMENTS" not found (this database is empty); SQL statement:
+select p1_0.id,p1_0.amount,p1_0.created_at,p1_0.order_id,p1_0.payment_method,p1_0.payment_status,p1_0.stripe_session_id,p1_0.transaction_id from payments p1_0 [42104-232]] [select p1_0.id,p1_0.amount,p1_0.created_at,p1_0.order_id,p1_0.payment_method,p1_0.payment_status,p1_0.stripe_session_id,p1_0.transaction_id from payments p1_0]; SQL [select p1_0.id,p1_0.amount,p1_0.created_at,p1_0.order_id,p1_0.payment_method,p1_0.payment_status,p1_0.stripe_session_id,p1_0.transaction_id from payments p1_0]
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:281)
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:256)
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:241)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.translateExceptionIfPossible(AbstractEntityManagerFactoryBean.java:560)
+	at org.springframework.dao.support.ChainedPersistenceExceptionTranslator.translateExceptionIfPossible(ChainedPersistenceExceptionTranslator.java:61)
+	at org.springframework.dao.support.DataAccessUtils.translateIfNecessary(DataAccessUtils.java:343)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:160)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:165)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:223)
+	at jdk.proxy2/jdk.proxy2.$Proxy188.deleteAll(Unknown Source)
+	at com.urbanvogue.payment_service.integration.PaymentIntegrationTest.cleanDatabase(PaymentIntegrationTest.java:39)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+Caused by: org.hibernate.exception.SQLGrammarException: could not prepare statement [Table "PAYMENTS" not found (this database is empty); SQL statement:
+select p1_0.id,p1_0.amount,p1_0.created_at,p1_0.order_id,p1_0.payment_method,p1_0.payment_status,p1_0.stripe_session_id,p1_0.transaction_id from payments p1_0 [42104-232]] [select p1_0.id,p1_0.amount,p1_0.created_at,p1_0.order_id,p1_0.payment_method,p1_0.payment_status,p1_0.stripe_session_id,p1_0.transaction_id from payments p1_0]
+	at org.hibernate.exception.internal.SQLExceptionTypeDelegate.convert(SQLExceptionTypeDelegate.java:66)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:58)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:108)
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl$StatementPreparationTemplate.prepareStatement(StatementPreparerImpl.java:191)
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl.prepareQueryStatement(StatementPreparerImpl.java:153)
+	at org.hibernate.sql.exec.internal.StandardStatementCreator.createStatement(StandardStatementCreator.java:49)
+	at org.hibernate.sql.results.jdbc.internal.DeferredResultSetAccess.executeQuery(DeferredResultSetAccess.java:236)
+	at org.hibernate.sql.results.jdbc.internal.DeferredResultSetAccess.getResultSet(DeferredResultSetAccess.java:172)
+	at org.hibernate.sql.results.jdbc.internal.JdbcValuesResultSetImpl.<init>(JdbcValuesResultSetImpl.java:74)
+	at org.hibernate.sql.exec.internal.JdbcSelectExecutorStandardImpl.resolveJdbcValuesSource(JdbcSelectExecutorStandardImpl.java:355)
+	at org.hibernate.sql.exec.internal.JdbcSelectExecutorStandardImpl.doExecuteQuery(JdbcSelectExecutorStandardImpl.java:137)
+	at org.hibernate.sql.exec.internal.JdbcSelectExecutorStandardImpl.executeQuery(JdbcSelectExecutorStandardImpl.java:102)
+	at org.hibernate.sql.exec.spi.JdbcSelectExecutor.executeQuery(JdbcSelectExecutor.java:91)
+	at org.hibernate.sql.exec.spi.JdbcSelectExecutor.list(JdbcSelectExecutor.java:165)
+	at org.hibernate.query.sqm.internal.ConcreteSqmSelectQueryPlan.lambda$new$1(ConcreteSqmSelectQueryPlan.java:149)
+	at org.hibernate.query.sqm.internal.ConcreteSqmSelectQueryPlan.withCacheableSqmInterpretation(ConcreteSqmSelectQueryPlan.java:439)
+	at org.hibernate.query.sqm.internal.ConcreteSqmSelectQueryPlan.performList(ConcreteSqmSelectQueryPlan.java:359)
+	at org.hibernate.query.sqm.internal.QuerySqmImpl.doList(QuerySqmImpl.java:364)
+	at org.hibernate.query.spi.AbstractSelectionQuery.list(AbstractSelectionQuery.java:143)
+	at org.hibernate.query.Query.getResultList(Query.java:120)
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll(SimpleJpaRepository.java:405)
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.deleteAll(SimpleJpaRepository.java:304)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:277)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:170)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:158)
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:515)
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:284)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:720)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:174)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:149)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:69)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:380)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:138)
+	... 9 more
+Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "PAYMENTS" not found (this database is empty); SQL statement:
+select p1_0.id,p1_0.amount,p1_0.created_at,p1_0.order_id,p1_0.payment_method,p1_0.payment_status,p1_0.stripe_session_id,p1_0.transaction_id from payments p1_0 [42104-232]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:514)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.command.Parser.getTableOrViewNotFoundDbException(Parser.java:7932)
+	at org.h2.command.Parser.getTableOrViewNotFoundDbException(Parser.java:7916)
+	at org.h2.command.Parser.readTableOrView(Parser.java:7895)
+	at org.h2.command.Parser.readTablePrimary(Parser.java:1769)
+	at org.h2.command.Parser.readTableReference(Parser.java:2249)
+	at org.h2.command.Parser.parseSelectFromPart(Parser.java:2702)
+	at org.h2.command.Parser.parseSelect(Parser.java:2810)
+	at org.h2.command.Parser.parseQueryPrimary(Parser.java:2692)
+	at org.h2.command.Parser.parseQueryTerm(Parser.java:2547)
+	at org.h2.command.Parser.parseQueryExpressionBody(Parser.java:2526)
+	at org.h2.command.Parser.parseQueryExpressionBodyAndEndOfQuery(Parser.java:2519)
+	at org.h2.command.Parser.parseQueryExpression(Parser.java:2512)
+	at org.h2.command.Parser.parseQuery(Parser.java:2479)
+	at org.h2.command.Parser.parsePrepared(Parser.java:610)
+	at org.h2.command.Parser.parse(Parser.java:581)
+	at org.h2.command.Parser.parse(Parser.java:556)
+	at org.h2.command.Parser.prepareCommand(Parser.java:484)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:645)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:561)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1164)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:93)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:687)
+	at com.zaxxer.hikari.pool.ProxyConnection.prepareStatement(ProxyConnection.java:342)
+	at com.zaxxer.hikari.pool.HikariProxyConnection.prepareStatement(HikariProxyConnection.java)
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl$4.doPrepare(StatementPreparerImpl.java:151)
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl$StatementPreparationTemplate.prepareStatement(StatementPreparerImpl.java:180)
+	... 46 more
+
+[ERROR] com.urbanvogue.payment_service.integration.PaymentIntegrationTest.cancelPayment_ShouldUpdateStatusToFailed -- Time elapsed: 0.013 s <<< ERROR!
+org.springframework.dao.InvalidDataAccessResourceUsageException: 
+could not prepare statement [Table "PAYMENTS" not found (this database is empty); SQL statement:
+select p1_0.id,p1_0.amount,p1_0.created_at,p1_0.order_id,p1_0.payment_method,p1_0.payment_status,p1_0.stripe_session_id,p1_0.transaction_id from payments p1_0 [42104-232]] [select p1_0.id,p1_0.amount,p1_0.created_at,p1_0.order_id,p1_0.payment_method,p1_0.payment_status,p1_0.stripe_session_id,p1_0.transaction_id from payments p1_0]; SQL [select p1_0.id,p1_0.amount,p1_0.created_at,p1_0.order_id,p1_0.payment_method,p1_0.payment_status,p1_0.stripe_session_id,p1_0.transaction_id from payments p1_0]
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:281)
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:256)
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:241)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.translateExceptionIfPossible(AbstractEntityManagerFactoryBean.java:560)
+	at org.springframework.dao.support.ChainedPersistenceExceptionTranslator.translateExceptionIfPossible(ChainedPersistenceExceptionTranslator.java:61)
+	at org.springframework.dao.support.DataAccessUtils.translateIfNecessary(DataAccessUtils.java:343)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:160)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:165)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:223)
+	at jdk.proxy2/jdk.proxy2.$Proxy188.deleteAll(Unknown Source)
+	at com.urbanvogue.payment_service.integration.PaymentIntegrationTest.cleanDatabase(PaymentIntegrationTest.java:39)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+Caused by: org.hibernate.exception.SQLGrammarException: could not prepare statement [Table "PAYMENTS" not found (this database is empty); SQL statement:
+select p1_0.id,p1_0.amount,p1_0.created_at,p1_0.order_id,p1_0.payment_method,p1_0.payment_status,p1_0.stripe_session_id,p1_0.transaction_id from payments p1_0 [42104-232]] [select p1_0.id,p1_0.amount,p1_0.created_at,p1_0.order_id,p1_0.payment_method,p1_0.payment_status,p1_0.stripe_session_id,p1_0.transaction_id from payments p1_0]
+	at org.hibernate.exception.internal.SQLExceptionTypeDelegate.convert(SQLExceptionTypeDelegate.java:66)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:58)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:108)
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl$StatementPreparationTemplate.prepareStatement(StatementPreparerImpl.java:191)
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl.prepareQueryStatement(StatementPreparerImpl.java:153)
+	at org.hibernate.sql.exec.internal.StandardStatementCreator.createStatement(StandardStatementCreator.java:49)
+	at org.hibernate.sql.results.jdbc.internal.DeferredResultSetAccess.executeQuery(DeferredResultSetAccess.java:236)
+	at org.hibernate.sql.results.jdbc.internal.DeferredResultSetAccess.getResultSet(DeferredResultSetAccess.java:172)
+	at org.hibernate.sql.results.jdbc.internal.JdbcValuesResultSetImpl.<init>(JdbcValuesResultSetImpl.java:74)
+	at org.hibernate.sql.exec.internal.JdbcSelectExecutorStandardImpl.resolveJdbcValuesSource(JdbcSelectExecutorStandardImpl.java:355)
+	at org.hibernate.sql.exec.internal.JdbcSelectExecutorStandardImpl.doExecuteQuery(JdbcSelectExecutorStandardImpl.java:137)
+	at org.hibernate.sql.exec.internal.JdbcSelectExecutorStandardImpl.executeQuery(JdbcSelectExecutorStandardImpl.java:102)
+	at org.hibernate.sql.exec.spi.JdbcSelectExecutor.executeQuery(JdbcSelectExecutor.java:91)
+	at org.hibernate.sql.exec.spi.JdbcSelectExecutor.list(JdbcSelectExecutor.java:165)
+	at org.hibernate.query.sqm.internal.ConcreteSqmSelectQueryPlan.lambda$new$1(ConcreteSqmSelectQueryPlan.java:149)
+	at org.hibernate.query.sqm.internal.ConcreteSqmSelectQueryPlan.withCacheableSqmInterpretation(ConcreteSqmSelectQueryPlan.java:439)
+	at org.hibernate.query.sqm.internal.ConcreteSqmSelectQueryPlan.performList(ConcreteSqmSelectQueryPlan.java:359)
+	at org.hibernate.query.sqm.internal.QuerySqmImpl.doList(QuerySqmImpl.java:364)
+	at org.hibernate.query.spi.AbstractSelectionQuery.list(AbstractSelectionQuery.java:143)
+	at org.hibernate.query.Query.getResultList(Query.java:120)
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll(SimpleJpaRepository.java:405)
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.deleteAll(SimpleJpaRepository.java:304)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:277)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:170)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:158)
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:515)
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:284)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:720)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:174)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:149)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:69)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:380)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:138)
+	... 9 more
+Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "PAYMENTS" not found (this database is empty); SQL statement:
+select p1_0.id,p1_0.amount,p1_0.created_at,p1_0.order_id,p1_0.payment_method,p1_0.payment_status,p1_0.stripe_session_id,p1_0.transaction_id from payments p1_0 [42104-232]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:514)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.command.Parser.getTableOrViewNotFoundDbException(Parser.java:7932)
+	at org.h2.command.Parser.getTableOrViewNotFoundDbException(Parser.java:7916)
+	at org.h2.command.Parser.readTableOrView(Parser.java:7895)
+	at org.h2.command.Parser.readTablePrimary(Parser.java:1769)
+	at org.h2.command.Parser.readTableReference(Parser.java:2249)
+	at org.h2.command.Parser.parseSelectFromPart(Parser.java:2702)
+	at org.h2.command.Parser.parseSelect(Parser.java:2810)
+	at org.h2.command.Parser.parseQueryPrimary(Parser.java:2692)
+	at org.h2.command.Parser.parseQueryTerm(Parser.java:2547)
+	at org.h2.command.Parser.parseQueryExpressionBody(Parser.java:2526)
+	at org.h2.command.Parser.parseQueryExpressionBodyAndEndOfQuery(Parser.java:2519)
+	at org.h2.command.Parser.parseQueryExpression(Parser.java:2512)
+	at org.h2.command.Parser.parseQuery(Parser.java:2479)
+	at org.h2.command.Parser.parsePrepared(Parser.java:610)
+	at org.h2.command.Parser.parse(Parser.java:581)
+	at org.h2.command.Parser.parse(Parser.java:556)
+	at org.h2.command.Parser.prepareCommand(Parser.java:484)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:645)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:561)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1164)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:93)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:687)
+	at com.zaxxer.hikari.pool.ProxyConnection.prepareStatement(ProxyConnection.java:342)
+	at com.zaxxer.hikari.pool.HikariProxyConnection.prepareStatement(HikariProxyConnection.java)
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl$4.doPrepare(StatementPreparerImpl.java:151)
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl$StatementPreparationTemplate.prepareStatement(StatementPreparerImpl.java:180)
+	... 46 more
+
+[INFO] 
+[INFO] Results:
+[INFO] 
+[ERROR] Errors: 
+[ERROR]   PaymentIntegrationTest.cleanDatabase:39 ╗ InvalidDataAccessResourceUsage could not prepare statement [Table "PAYMENTS" not found (this database is empty); SQL statement:
+select p1_0.id,p1_0.amount,p1_0.created_at,p1_0.order_id,p1_0.payment_method,p1_0.payment_status,p1_0.stripe_session_id,p1_0.transaction_id from payments p1_0 [42104-232]] [select p1_0.id,p1_0.amount,p1_0.created_at,p1_0.order_id,p1_0.payment_method,p1_0.payment_status,p1_0.stripe_session_id,p1_0.transaction_id from payments p1_0]; SQL [select p1_0.id,p1_0.amount,p1_0.created_at,p1_0.order_id,p1_0.payment_method,p1_0.payment_status,p1_0.stripe_session_id,p1_0.transaction_id from payments p1_0]
+[ERROR]   PaymentIntegrationTest.cleanDatabase:39 ╗ InvalidDataAccessResourceUsage could not prepare statement [Table "PAYMENTS" not found (this database is empty); SQL statement:
+select p1_0.id,p1_0.amount,p1_0.created_at,p1_0.order_id,p1_0.payment_method,p1_0.payment_status,p1_0.stripe_session_id,p1_0.transaction_id from payments p1_0 [42104-232]] [select p1_0.id,p1_0.amount,p1_0.created_at,p1_0.order_id,p1_0.payment_method,p1_0.payment_status,p1_0.stripe_session_id,p1_0.transaction_id from payments p1_0]; SQL [select p1_0.id,p1_0.amount,p1_0.created_at,p1_0.order_id,p1_0.payment_method,p1_0.payment_status,p1_0.stripe_session_id,p1_0.transaction_id from payments p1_0]
+[ERROR]   PaymentIntegrationTest.cleanDatabase:39 ╗ InvalidDataAccessResourceUsage could not prepare statement [Table "PAYMENTS" not found (this database is empty); SQL statement:
+select p1_0.id,p1_0.amount,p1_0.created_at,p1_0.order_id,p1_0.payment_method,p1_0.payment_status,p1_0.stripe_session_id,p1_0.transaction_id from payments p1_0 [42104-232]] [select p1_0.id,p1_0.amount,p1_0.created_at,p1_0.order_id,p1_0.payment_method,p1_0.payment_status,p1_0.stripe_session_id,p1_0.transaction_id from payments p1_0]; SQL [select p1_0.id,p1_0.amount,p1_0.created_at,p1_0.order_id,p1_0.payment_method,p1_0.payment_status,p1_0.stripe_session_id,p1_0.transaction_id from payments p1_0]
+[ERROR]   PaymentIntegrationTest.cleanDatabase:39 ╗ InvalidDataAccessResourceUsage could not prepare statement [Table "PAYMENTS" not found (this database is empty); SQL statement:
+select p1_0.id,p1_0.amount,p1_0.created_at,p1_0.order_id,p1_0.payment_method,p1_0.payment_status,p1_0.stripe_session_id,p1_0.transaction_id from payments p1_0 [42104-232]] [select p1_0.id,p1_0.amount,p1_0.created_at,p1_0.order_id,p1_0.payment_method,p1_0.payment_status,p1_0.stripe_session_id,p1_0.transaction_id from payments p1_0]; SQL [select p1_0.id,p1_0.amount,p1_0.created_at,p1_0.order_id,p1_0.payment_method,p1_0.payment_status,p1_0.stripe_session_id,p1_0.transaction_id from payments p1_0]
+[ERROR]   PaymentIntegrationTest.cleanDatabase:39 ╗ InvalidDataAccessResourceUsage could not prepare statement [Table "PAYMENTS" not found (this database is empty); SQL statement:
+select p1_0.id,p1_0.amount,p1_0.created_at,p1_0.order_id,p1_0.payment_method,p1_0.payment_status,p1_0.stripe_session_id,p1_0.transaction_id from payments p1_0 [42104-232]] [select p1_0.id,p1_0.amount,p1_0.created_at,p1_0.order_id,p1_0.payment_method,p1_0.payment_status,p1_0.stripe_session_id,p1_0.transaction_id from payments p1_0]; SQL [select p1_0.id,p1_0.amount,p1_0.created_at,p1_0.order_id,p1_0.payment_method,p1_0.payment_status,p1_0.stripe_session_id,p1_0.transaction_id from payments p1_0]
+[INFO] 
+[ERROR] Tests run: 5, Failures: 0, Errors: 5, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  12.746 s
+[INFO] Finished at: 2026-04-06T12:44:36+05:30
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:3.5.4:test (default-test) on project payment-service: 
+[ERROR] 
+[ERROR] See C:\Users\mithu\Desktop\urbanvogue\payment-service\target\surefire-reports for the individual test results.
+[ERROR] See dump files (if any exist) [date].dump, [date]-jvmRun[N].dump and [date].dumpstream.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

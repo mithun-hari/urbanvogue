@@ -1,0 +1,213 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -------------------< com.urbanvogue:payment-service >-------------------
+[INFO] Building payment-service 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ payment-service ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.14.1:compile (default-compile) @ payment-service ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ payment-service ---
+[INFO] skip non existing resourceDirectory C:\Users\mithu\Desktop\urbanvogue\payment-service\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.14.1:testCompile (default-testCompile) @ payment-service ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- surefire:3.5.4:test (default-test) @ payment-service ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running PaymentService - Performance Tests
+Mockito is currently self-attaching to enable the inline-mock-maker. This will no longer work in future releases of the JDK. Please add Mockito as an agent to your build as described in Mockito's documentation: https://javadoc.io/doc/org.mockito/mockito-core/latest/org.mockito/org/mockito/Mockito.html#0.3
+WARNING: A Java agent has been loaded dynamically (C:\Users\mithu\.m2\repository\net\bytebuddy\byte-buddy-agent\1.17.8\byte-buddy-agent-1.17.8.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+Java HotSpot(TM) 64-Bit Server VM warning: Sharing is only supported for boot loader classes because bootstrap classpath has been appended
+PaymentCompletedEvent published to RabbitMQ for orderId: 8
+PaymentCompletedEvent published to RabbitMQ for orderId: 1
+PaymentCompletedEvent published to RabbitMQ for orderId: 6
+PaymentCompletedEvent published to RabbitMQ for orderId: 7
+PaymentCompletedEvent published to RabbitMQ for orderId: 9
+PaymentCompletedEvent published to RabbitMQ for orderId: 0
+PaymentCompletedEvent published to RabbitMQ for orderId: 3
+PaymentCompletedEvent published to RabbitMQ for orderId: 5
+PaymentCompletedEvent published to RabbitMQ for orderId: 4
+PaymentCompletedEvent published to RabbitMQ for orderId: 2
+PaymentCompletedEvent published to RabbitMQ for orderId: 17
+PaymentCompletedEvent published to RabbitMQ for orderId: 18
+PaymentCompletedEvent published to RabbitMQ for orderId: 15
+PaymentCompletedEvent published to RabbitMQ for orderId: 14
+PaymentCompletedEvent published to RabbitMQ for orderId: 12
+PaymentCompletedEvent published to RabbitMQ for orderId: 13
+PaymentCompletedEvent published to RabbitMQ for orderId: 16
+PaymentCompletedEvent published to RabbitMQ for orderId: 11
+PaymentCompletedEvent published to RabbitMQ for orderId: 10
+PaymentCompletedEvent published to RabbitMQ for orderId: 20
+PaymentCompletedEvent published to RabbitMQ for orderId: 23
+PaymentCompletedEvent published to RabbitMQ for orderId: 25
+PaymentCompletedEvent published to RabbitMQ for orderId: 28
+PaymentCompletedEvent published to RabbitMQ for orderId: 21
+PaymentCompletedEvent published to RabbitMQ for orderId: 19
+PaymentCompletedEvent published to RabbitMQ for orderId: 26
+PaymentCompletedEvent published to RabbitMQ for orderId: 22
+PaymentCompletedEvent published to RabbitMQ for orderId: 33
+PaymentCompletedEvent published to RabbitMQ for orderId: 29
+PaymentCompletedEvent published to RabbitMQ for orderId: 30
+PaymentCompletedEvent published to RabbitMQ for orderId: 27
+PaymentCompletedEvent published to RabbitMQ for orderId: 34
+PaymentCompletedEvent published to RabbitMQ for orderId: 35
+PaymentCompletedEvent published to RabbitMQ for orderId: 32
+PaymentCompletedEvent published to RabbitMQ for orderId: 24
+PaymentCompletedEvent published to RabbitMQ for orderId: 31
+PaymentCompletedEvent published to RabbitMQ for orderId: 36
+PaymentCompletedEvent published to RabbitMQ for orderId: 37
+PaymentCompletedEvent published to RabbitMQ for orderId: 38
+PaymentCompletedEvent published to RabbitMQ for orderId: 39
+PaymentCompletedEvent published to RabbitMQ for orderId: 40
+PaymentCompletedEvent published to RabbitMQ for orderId: 43
+PaymentCompletedEvent published to RabbitMQ for orderId: 41
+PaymentCompletedEvent published to RabbitMQ for orderId: 45
+PaymentCompletedEvent published to RabbitMQ for orderId: 44
+PaymentCompletedEvent published to RabbitMQ for orderId: 47
+PaymentCompletedEvent published to RabbitMQ for orderId: 46
+PaymentCompletedEvent published to RabbitMQ for orderId: 42
+PaymentCompletedEvent published to RabbitMQ for orderId: 48
+PaymentCompletedEvent published to RabbitMQ for orderId: 49
+
+  ???????????????????????????????????????????
+  ? CONCURRENT WEBHOOK PROCESSING RESULTS
+  ???????????????????????????????????????????
+  ? Concurrent events: 50
+  ? Successful:        50
+  ? Total time:        46ms
+  ? Avg response:      8.84ms
+  ? P95 response:      44ms
+  ? Throughput:        1087 events/sec
+  ???????????????????????????????????????????
+
+PaymentCompletedEvent published to RabbitMQ for orderId: 0
+PaymentCompletedEvent published to RabbitMQ for orderId: 1
+PaymentCompletedEvent published to RabbitMQ for orderId: 2
+PaymentCompletedEvent published to RabbitMQ for orderId: 3
+PaymentCompletedEvent published to RabbitMQ for orderId: 4
+PaymentCompletedEvent published to RabbitMQ for orderId: 5
+PaymentCompletedEvent published to RabbitMQ for orderId: 6
+PaymentCompletedEvent published to RabbitMQ for orderId: 7
+PaymentCompletedEvent published to RabbitMQ for orderId: 8
+PaymentCompletedEvent published to RabbitMQ for orderId: 9
+PaymentCompletedEvent published to RabbitMQ for orderId: 10
+PaymentCompletedEvent published to RabbitMQ for orderId: 11
+PaymentCompletedEvent published to RabbitMQ for orderId: 12
+PaymentCompletedEvent published to RabbitMQ for orderId: 13
+PaymentCompletedEvent published to RabbitMQ for orderId: 14
+PaymentCompletedEvent published to RabbitMQ for orderId: 15
+PaymentCompletedEvent published to RabbitMQ for orderId: 16
+PaymentCompletedEvent published to RabbitMQ for orderId: 17
+PaymentCompletedEvent published to RabbitMQ for orderId: 18
+PaymentCompletedEvent published to RabbitMQ for orderId: 19
+PaymentCompletedEvent published to RabbitMQ for orderId: 20
+PaymentCompletedEvent published to RabbitMQ for orderId: 21
+PaymentCompletedEvent published to RabbitMQ for orderId: 22
+PaymentCompletedEvent published to RabbitMQ for orderId: 23
+PaymentCompletedEvent published to RabbitMQ for orderId: 24
+PaymentCompletedEvent published to RabbitMQ for orderId: 25
+PaymentCompletedEvent published to RabbitMQ for orderId: 26
+PaymentCompletedEvent published to RabbitMQ for orderId: 27
+PaymentCompletedEvent published to RabbitMQ for orderId: 28
+PaymentCompletedEvent published to RabbitMQ for orderId: 29
+PaymentCompletedEvent published to RabbitMQ for orderId: 30
+PaymentCompletedEvent published to RabbitMQ for orderId: 31
+PaymentCompletedEvent published to RabbitMQ for orderId: 32
+PaymentCompletedEvent published to RabbitMQ for orderId: 33
+PaymentCompletedEvent published to RabbitMQ for orderId: 34
+PaymentCompletedEvent published to RabbitMQ for orderId: 35
+PaymentCompletedEvent published to RabbitMQ for orderId: 36
+PaymentCompletedEvent published to RabbitMQ for orderId: 37
+PaymentCompletedEvent published to RabbitMQ for orderId: 38
+PaymentCompletedEvent published to RabbitMQ for orderId: 39
+PaymentCompletedEvent published to RabbitMQ for orderId: 40
+PaymentCompletedEvent published to RabbitMQ for orderId: 41
+PaymentCompletedEvent published to RabbitMQ for orderId: 42
+PaymentCompletedEvent published to RabbitMQ for orderId: 43
+PaymentCompletedEvent published to RabbitMQ for orderId: 44
+PaymentCompletedEvent published to RabbitMQ for orderId: 45
+PaymentCompletedEvent published to RabbitMQ for orderId: 46
+PaymentCompletedEvent published to RabbitMQ for orderId: 47
+PaymentCompletedEvent published to RabbitMQ for orderId: 48
+PaymentCompletedEvent published to RabbitMQ for orderId: 49
+PaymentCompletedEvent published to RabbitMQ for orderId: 50
+PaymentCompletedEvent published to RabbitMQ for orderId: 51
+PaymentCompletedEvent published to RabbitMQ for orderId: 52
+PaymentCompletedEvent published to RabbitMQ for orderId: 53
+PaymentCompletedEvent published to RabbitMQ for orderId: 54
+PaymentCompletedEvent published to RabbitMQ for orderId: 55
+PaymentCompletedEvent published to RabbitMQ for orderId: 56
+PaymentCompletedEvent published to RabbitMQ for orderId: 57
+PaymentCompletedEvent published to RabbitMQ for orderId: 58
+PaymentCompletedEvent published to RabbitMQ for orderId: 59
+PaymentCompletedEvent published to RabbitMQ for orderId: 60
+PaymentCompletedEvent published to RabbitMQ for orderId: 61
+PaymentCompletedEvent published to RabbitMQ for orderId: 62
+PaymentCompletedEvent published to RabbitMQ for orderId: 63
+PaymentCompletedEvent published to RabbitMQ for orderId: 64
+PaymentCompletedEvent published to RabbitMQ for orderId: 65
+PaymentCompletedEvent published to RabbitMQ for orderId: 66
+PaymentCompletedEvent published to RabbitMQ for orderId: 67
+PaymentCompletedEvent published to RabbitMQ for orderId: 68
+PaymentCompletedEvent published to RabbitMQ for orderId: 69
+PaymentCompletedEvent published to RabbitMQ for orderId: 70
+PaymentCompletedEvent published to RabbitMQ for orderId: 71
+PaymentCompletedEvent published to RabbitMQ for orderId: 72
+PaymentCompletedEvent published to RabbitMQ for orderId: 73
+PaymentCompletedEvent published to RabbitMQ for orderId: 74
+PaymentCompletedEvent published to RabbitMQ for orderId: 75
+PaymentCompletedEvent published to RabbitMQ for orderId: 76
+PaymentCompletedEvent published to RabbitMQ for orderId: 77
+PaymentCompletedEvent published to RabbitMQ for orderId: 78
+PaymentCompletedEvent published to RabbitMQ for orderId: 79
+PaymentCompletedEvent published to RabbitMQ for orderId: 80
+PaymentCompletedEvent published to RabbitMQ for orderId: 81
+PaymentCompletedEvent published to RabbitMQ for orderId: 82
+PaymentCompletedEvent published to RabbitMQ for orderId: 83
+PaymentCompletedEvent published to RabbitMQ for orderId: 84
+PaymentCompletedEvent published to RabbitMQ for orderId: 85
+PaymentCompletedEvent published to RabbitMQ for orderId: 86
+PaymentCompletedEvent published to RabbitMQ for orderId: 87
+PaymentCompletedEvent published to RabbitMQ for orderId: 88
+PaymentCompletedEvent published to RabbitMQ for orderId: 89
+PaymentCompletedEvent published to RabbitMQ for orderId: 90
+PaymentCompletedEvent published to RabbitMQ for orderId: 91
+PaymentCompletedEvent published to RabbitMQ for orderId: 92
+PaymentCompletedEvent published to RabbitMQ for orderId: 93
+PaymentCompletedEvent published to RabbitMQ for orderId: 94
+PaymentCompletedEvent published to RabbitMQ for orderId: 95
+PaymentCompletedEvent published to RabbitMQ for orderId: 96
+PaymentCompletedEvent published to RabbitMQ for orderId: 97
+PaymentCompletedEvent published to RabbitMQ for orderId: 98
+PaymentCompletedEvent published to RabbitMQ for orderId: 99
+  ? 100 webhook events processed in 33ms
+  ? Throughput: 3030 webhooks/sec
+PaymentCompletedEvent published to RabbitMQ for orderId: 1
+  ? 100 duplicate webhook calls in 3ms
+  ? Idempotency verified: only 1 save + 1 publish out of 100 calls
+  ? Throughput: 33333 calls/sec
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.022 s -- in PaymentService - Performance Tests
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  5.368 s
+[INFO] Finished at: 2026-04-06T12:12:15+05:30
+[INFO] ------------------------------------------------------------------------

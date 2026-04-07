@@ -1,0 +1,1372 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -------------------< com.urbanvogue:product-service >-------------------
+[INFO] Building product-service 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ product-service ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.14.1:compile (default-compile) @ product-service ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ product-service ---
+[INFO] skip non existing resourceDirectory C:\Users\mithu\Desktop\urbanvogue\product-service\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.14.1:testCompile (default-testCompile) @ product-service ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- surefire:3.5.4:test (default-test) @ product-service ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running ProductService - Performance Tests
+Mockito is currently self-attaching to enable the inline-mock-maker. This will no longer work in future releases of the JDK. Please add Mockito as an agent to your build as described in Mockito's documentation: https://javadoc.io/doc/org.mockito/mockito-core/latest/org.mockito/org/mockito/Mockito.html#0.3
+WARNING: A Java agent has been loaded dynamically (C:\Users\mithu\.m2\repository\net\bytebuddy\byte-buddy-agent\1.17.8\byte-buddy-agent-1.17.8.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+Java HotSpot(TM) 64-Bit Server VM warning: Sharing is only supported for boot loader classes because bootstrap classpath has been appended
+12:12:08.714 [pool-2-thread-5] INFO com.urbanvogue.product_service.service.ProductService -- Fetching product with id: 1
+12:12:08.714 [pool-2-thread-2] INFO com.urbanvogue.product_service.service.ProductService -- Fetching product with id: 1
+12:12:08.714 [pool-2-thread-1] INFO com.urbanvogue.product_service.service.ProductService -- Fetching product with id: 1
+12:12:08.714 [pool-2-thread-9] INFO com.urbanvogue.product_service.service.ProductService -- Fetching product with id: 1
+12:12:08.714 [pool-2-thread-10] INFO com.urbanvogue.product_service.service.ProductService -- Fetching product with id: 1
+12:12:08.714 [pool-2-thread-6] INFO com.urbanvogue.product_service.service.ProductService -- Fetching product with id: 1
+12:12:08.714 [pool-2-thread-4] INFO com.urbanvogue.product_service.service.ProductService -- Fetching product with id: 1
+12:12:08.714 [pool-2-thread-3] INFO com.urbanvogue.product_service.service.ProductService -- Fetching product with id: 1
+12:12:08.714 [pool-2-thread-7] INFO com.urbanvogue.product_service.service.ProductService -- Fetching product with id: 1
+12:12:08.714 [pool-2-thread-8] INFO com.urbanvogue.product_service.service.ProductService -- Fetching product with id: 1
+12:12:08.727 [pool-2-thread-9] INFO com.urbanvogue.product_service.service.ProductService -- Product found: Sneaker
+12:12:08.727 [pool-2-thread-8] INFO com.urbanvogue.product_service.service.ProductService -- Product found: Sneaker
+12:12:08.728 [pool-2-thread-2] INFO com.urbanvogue.product_service.service.ProductService -- Product found: Sneaker
+12:12:08.727 [pool-2-thread-1] INFO com.urbanvogue.product_service.service.ProductService -- Product found: Sneaker
+12:12:08.727 [pool-2-thread-3] INFO com.urbanvogue.product_service.service.ProductService -- Product found: Sneaker
+12:12:08.727 [pool-2-thread-6] INFO com.urbanvogue.product_service.service.ProductService -- Product found: Sneaker
+12:12:08.727 [pool-2-thread-10] INFO com.urbanvogue.product_service.service.ProductService -- Product found: Sneaker
+12:12:08.727 [pool-2-thread-4] INFO com.urbanvogue.product_service.service.ProductService -- Product found: Sneaker
+12:12:08.727 [pool-2-thread-5] INFO com.urbanvogue.product_service.service.ProductService -- Product found: Sneaker
+12:12:08.727 [pool-2-thread-7] INFO com.urbanvogue.product_service.service.ProductService -- Product found: Sneaker
+12:12:08.734 [pool-2-thread-1] INFO com.urbanvogue.product_service.service.ProductService -- Fetching product with id: 1
+12:12:08.734 [pool-2-thread-6] INFO com.urbanvogue.product_service.service.ProductService -- Fetching product with id: 1
+12:12:08.734 [pool-2-thread-2] INFO com.urbanvogue.product_service.service.ProductService -- Fetching product with id: 1
+12:12:08.734 [pool-2-thread-3] INFO com.urbanvogue.product_service.service.ProductService -- Fetching product with id: 1
+12:12:08.734 [pool-2-thread-7] INFO com.urbanvogue.product_service.service.ProductService -- Fetching product with id: 1
+12:12:08.734 [pool-2-thread-8] INFO com.urbanvogue.product_service.service.ProductService -- Fetching product with id: 1
+12:12:08.734 [pool-2-thread-2] INFO com.urbanvogue.product_service.service.ProductService -- Product found: Sneaker
+12:12:08.734 [pool-2-thread-5] INFO com.urbanvogue.product_service.service.ProductService -- Fetching product with id: 1
+12:12:08.734 [pool-2-thread-9] INFO com.urbanvogue.product_service.service.ProductService -- Fetching product with id: 1
+12:12:08.734 [pool-2-thread-10] INFO com.urbanvogue.product_service.service.ProductService -- Fetching product with id: 1
+12:12:08.734 [pool-2-thread-4] INFO com.urbanvogue.product_service.service.ProductService -- Fetching product with id: 1
+12:12:08.734 [pool-2-thread-1] INFO com.urbanvogue.product_service.service.ProductService -- Product found: Sneaker
+12:12:08.735 [pool-2-thread-10] INFO com.urbanvogue.product_service.service.ProductService -- Product found: Sneaker
+12:12:08.735 [pool-2-thread-3] INFO com.urbanvogue.product_service.service.ProductService -- Product found: Sneaker
+12:12:08.735 [pool-2-thread-6] INFO com.urbanvogue.product_service.service.ProductService -- Product found: Sneaker
+12:12:08.735 [pool-2-thread-8] INFO com.urbanvogue.product_service.service.ProductService -- Product found: Sneaker
+12:12:08.735 [pool-2-thread-2] INFO com.urbanvogue.product_service.service.ProductService -- Fetching product with id: 1
+12:12:08.735 [pool-2-thread-7] INFO com.urbanvogue.product_service.service.ProductService -- Product found: Sneaker
+12:12:08.735 [pool-2-thread-5] INFO com.urbanvogue.product_service.service.ProductService -- Product found: Sneaker
+12:12:08.735 [pool-2-thread-9] INFO com.urbanvogue.product_service.service.ProductService -- Product found: Sneaker
+12:12:08.735 [pool-2-thread-1] INFO com.urbanvogue.product_service.service.ProductService -- Fetching product with id: 1
+12:12:08.735 [pool-2-thread-4] INFO com.urbanvogue.product_service.service.ProductService -- Product found: Sneaker
+12:12:08.735 [pool-2-thread-10] INFO com.urbanvogue.product_service.service.ProductService -- Fetching product with id: 1
+12:12:08.735 [pool-2-thread-3] INFO com.urbanvogue.product_service.service.ProductService -- Fetching product with id: 1
+12:12:08.735 [pool-2-thread-6] INFO com.urbanvogue.product_service.service.ProductService -- Fetching product with id: 1
+12:12:08.735 [pool-2-thread-8] INFO com.urbanvogue.product_service.service.ProductService -- Fetching product with id: 1
+12:12:08.735 [pool-2-thread-7] INFO com.urbanvogue.product_service.service.ProductService -- Fetching product with id: 1
+12:12:08.735 [pool-2-thread-2] INFO com.urbanvogue.product_service.service.ProductService -- Product found: Sneaker
+12:12:08.735 [pool-2-thread-5] INFO com.urbanvogue.product_service.service.ProductService -- Fetching product with id: 1
+12:12:08.735 [pool-2-thread-9] INFO com.urbanvogue.product_service.service.ProductService -- Fetching product with id: 1
+12:12:08.735 [pool-2-thread-4] INFO com.urbanvogue.product_service.service.ProductService -- Fetching product with id: 1
+12:12:08.735 [pool-2-thread-5] INFO com.urbanvogue.product_service.service.ProductService -- Product found: Sneaker
+12:12:08.735 [pool-2-thread-1] INFO com.urbanvogue.product_service.service.ProductService -- Product found: Sneaker
+12:12:08.735 [pool-2-thread-10] INFO com.urbanvogue.product_service.service.ProductService -- Product found: Sneaker
+12:12:08.735 [pool-2-thread-3] INFO com.urbanvogue.product_service.service.ProductService -- Product found: Sneaker
+12:12:08.737 [pool-2-thread-3] INFO com.urbanvogue.product_service.service.ProductService -- Fetching product with id: 1
+12:12:08.735 [pool-2-thread-6] INFO com.urbanvogue.product_service.service.ProductService -- Product found: Sneaker
+12:12:08.735 [pool-2-thread-8] INFO com.urbanvogue.product_service.service.ProductService -- Product found: Sneaker
+12:12:08.735 [pool-2-thread-2] INFO com.urbanvogue.product_service.service.ProductService -- Fetching product with id: 1
+12:12:08.735 [pool-2-thread-7] INFO com.urbanvogue.product_service.service.ProductService -- Product found: Sneaker
+12:12:08.735 [pool-2-thread-9] INFO com.urbanvogue.product_service.service.ProductService -- Product found: Sneaker
+12:12:08.737 [pool-2-thread-5] INFO com.urbanvogue.product_service.service.ProductService -- Fetching product with id: 1
+12:12:08.737 [pool-2-thread-10] INFO com.urbanvogue.product_service.service.ProductService -- Fetching product with id: 1
+12:12:08.737 [pool-2-thread-1] INFO com.urbanvogue.product_service.service.ProductService -- Fetching product with id: 1
+12:12:08.737 [pool-2-thread-5] INFO com.urbanvogue.product_service.service.ProductService -- Product found: Sneaker
+12:12:08.737 [pool-2-thread-4] INFO com.urbanvogue.product_service.service.ProductService -- Product found: Sneaker
+12:12:08.737 [pool-2-thread-3] INFO com.urbanvogue.product_service.service.ProductService -- Product found: Sneaker
+12:12:08.737 [pool-2-thread-6] INFO com.urbanvogue.product_service.service.ProductService -- Fetching product with id: 1
+12:12:08.737 [pool-2-thread-8] INFO com.urbanvogue.product_service.service.ProductService -- Fetching product with id: 1
+12:12:08.737 [pool-2-thread-2] INFO com.urbanvogue.product_service.service.ProductService -- Product found: Sneaker
+12:12:08.737 [pool-2-thread-6] INFO com.urbanvogue.product_service.service.ProductService -- Product found: Sneaker
+12:12:08.737 [pool-2-thread-7] INFO com.urbanvogue.product_service.service.ProductService -- Fetching product with id: 1
+12:12:08.737 [pool-2-thread-9] INFO com.urbanvogue.product_service.service.ProductService -- Fetching product with id: 1
+12:12:08.737 [pool-2-thread-10] INFO com.urbanvogue.product_service.service.ProductService -- Product found: Sneaker
+12:12:08.737 [pool-2-thread-7] INFO com.urbanvogue.product_service.service.ProductService -- Product found: Sneaker
+12:12:08.737 [pool-2-thread-10] INFO com.urbanvogue.product_service.service.ProductService -- Fetching product with id: 1
+12:12:08.737 [pool-2-thread-7] INFO com.urbanvogue.product_service.service.ProductService -- Fetching product with id: 1
+12:12:08.737 [pool-2-thread-5] INFO com.urbanvogue.product_service.service.ProductService -- Fetching product with id: 1
+12:12:08.737 [pool-2-thread-4] INFO com.urbanvogue.product_service.service.ProductService -- Fetching product with id: 1
+12:12:08.737 [pool-2-thread-1] INFO com.urbanvogue.product_service.service.ProductService -- Product found: Sneaker
+12:12:08.737 [pool-2-thread-3] INFO com.urbanvogue.product_service.service.ProductService -- Fetching product with id: 1
+12:12:08.737 [pool-2-thread-2] INFO com.urbanvogue.product_service.service.ProductService -- Fetching product with id: 1
+12:12:08.737 [pool-2-thread-8] INFO com.urbanvogue.product_service.service.ProductService -- Product found: Sneaker
+12:12:08.737 [pool-2-thread-6] INFO com.urbanvogue.product_service.service.ProductService -- Fetching product with id: 1
+12:12:08.737 [pool-2-thread-9] INFO com.urbanvogue.product_service.service.ProductService -- Product found: Sneaker
+12:12:08.738 [pool-2-thread-10] INFO com.urbanvogue.product_service.service.ProductService -- Product found: Sneaker
+12:12:08.738 [pool-2-thread-7] INFO com.urbanvogue.product_service.service.ProductService -- Product found: Sneaker
+12:12:08.738 [pool-2-thread-5] INFO com.urbanvogue.product_service.service.ProductService -- Product found: Sneaker
+12:12:08.738 [pool-2-thread-1] INFO com.urbanvogue.product_service.service.ProductService -- Fetching product with id: 1
+12:12:08.738 [pool-2-thread-4] INFO com.urbanvogue.product_service.service.ProductService -- Product found: Sneaker
+12:12:08.738 [pool-2-thread-3] INFO com.urbanvogue.product_service.service.ProductService -- Product found: Sneaker
+12:12:08.738 [pool-2-thread-8] INFO com.urbanvogue.product_service.service.ProductService -- Fetching product with id: 1
+12:12:08.738 [pool-2-thread-2] INFO com.urbanvogue.product_service.service.ProductService -- Product found: Sneaker
+12:12:08.738 [pool-2-thread-9] INFO com.urbanvogue.product_service.service.ProductService -- Fetching product with id: 1
+12:12:08.738 [pool-2-thread-8] INFO com.urbanvogue.product_service.service.ProductService -- Product found: Sneaker
+12:12:08.738 [pool-2-thread-6] INFO com.urbanvogue.product_service.service.ProductService -- Product found: Sneaker
+12:12:08.738 [pool-2-thread-10] INFO com.urbanvogue.product_service.service.ProductService -- Fetching product with id: 1
+12:12:08.738 [pool-2-thread-1] INFO com.urbanvogue.product_service.service.ProductService -- Product found: Sneaker
+12:12:08.738 [pool-2-thread-9] INFO com.urbanvogue.product_service.service.ProductService -- Product found: Sneaker
+12:12:08.738 [pool-2-thread-10] INFO com.urbanvogue.product_service.service.ProductService -- Product found: Sneaker
+
+  ???????????????????????????????????????????
+  ? CONCURRENT PRODUCT READ RESULTS
+  ???????????????????????????????????????????
+  ? Concurrent users:  50
+  ? Successful:        50
+  ? Total time:        30ms
+  ? Avg response:      5.52ms
+  ? P95 response:      25ms
+  ? Throughput:        1667 reads/sec
+  ???????????????????????????????????????????
+
+12:12:08.842 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: P-0
+12:12:08.843 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 1
+12:12:08.843 [main] INFO com.urbanvogue.product_service.service.ProductService -- Fetching product with id: 1
+12:12:08.843 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product found: Test
+12:12:08.843 [main] INFO com.urbanvogue.product_service.service.ProductService -- Updating product with id: 1
+12:12:08.844 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product updated successfully with id: 1
+12:12:08.844 [main] INFO com.urbanvogue.product_service.service.ProductService -- Deleting product with id: 1
+12:12:08.844 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product deleted successfully with id: 1
+12:12:08.844 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: P-1
+12:12:08.844 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 1
+12:12:08.844 [main] INFO com.urbanvogue.product_service.service.ProductService -- Fetching product with id: 1
+12:12:08.844 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product found: P-0
+12:12:08.844 [main] INFO com.urbanvogue.product_service.service.ProductService -- Updating product with id: 1
+12:12:08.846 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product updated successfully with id: 1
+12:12:08.846 [main] INFO com.urbanvogue.product_service.service.ProductService -- Deleting product with id: 1
+12:12:08.846 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product deleted successfully with id: 1
+12:12:08.846 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: P-2
+12:12:08.846 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 1
+12:12:08.846 [main] INFO com.urbanvogue.product_service.service.ProductService -- Fetching product with id: 1
+12:12:08.846 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product found: P-1
+12:12:08.846 [main] INFO com.urbanvogue.product_service.service.ProductService -- Updating product with id: 1
+12:12:08.847 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product updated successfully with id: 1
+12:12:08.847 [main] INFO com.urbanvogue.product_service.service.ProductService -- Deleting product with id: 1
+12:12:08.847 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product deleted successfully with id: 1
+12:12:08.848 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: P-3
+12:12:08.848 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 1
+12:12:08.848 [main] INFO com.urbanvogue.product_service.service.ProductService -- Fetching product with id: 1
+12:12:08.848 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product found: P-2
+12:12:08.848 [main] INFO com.urbanvogue.product_service.service.ProductService -- Updating product with id: 1
+12:12:08.849 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product updated successfully with id: 1
+12:12:08.849 [main] INFO com.urbanvogue.product_service.service.ProductService -- Deleting product with id: 1
+12:12:08.849 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product deleted successfully with id: 1
+12:12:08.849 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: P-4
+12:12:08.849 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 1
+12:12:08.849 [main] INFO com.urbanvogue.product_service.service.ProductService -- Fetching product with id: 1
+12:12:08.849 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product found: P-3
+12:12:08.850 [main] INFO com.urbanvogue.product_service.service.ProductService -- Updating product with id: 1
+12:12:08.850 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product updated successfully with id: 1
+12:12:08.850 [main] INFO com.urbanvogue.product_service.service.ProductService -- Deleting product with id: 1
+12:12:08.850 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product deleted successfully with id: 1
+12:12:08.850 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: P-5
+12:12:08.850 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 1
+12:12:08.850 [main] INFO com.urbanvogue.product_service.service.ProductService -- Fetching product with id: 1
+12:12:08.850 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product found: P-4
+12:12:08.850 [main] INFO com.urbanvogue.product_service.service.ProductService -- Updating product with id: 1
+12:12:08.851 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product updated successfully with id: 1
+12:12:08.851 [main] INFO com.urbanvogue.product_service.service.ProductService -- Deleting product with id: 1
+12:12:08.851 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product deleted successfully with id: 1
+12:12:08.851 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: P-6
+12:12:08.851 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 1
+12:12:08.851 [main] INFO com.urbanvogue.product_service.service.ProductService -- Fetching product with id: 1
+12:12:08.851 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product found: P-5
+12:12:08.851 [main] INFO com.urbanvogue.product_service.service.ProductService -- Updating product with id: 1
+12:12:08.851 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product updated successfully with id: 1
+12:12:08.851 [main] INFO com.urbanvogue.product_service.service.ProductService -- Deleting product with id: 1
+12:12:08.851 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product deleted successfully with id: 1
+12:12:08.851 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: P-7
+12:12:08.852 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 1
+12:12:08.852 [main] INFO com.urbanvogue.product_service.service.ProductService -- Fetching product with id: 1
+12:12:08.852 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product found: P-6
+12:12:08.852 [main] INFO com.urbanvogue.product_service.service.ProductService -- Updating product with id: 1
+12:12:08.852 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product updated successfully with id: 1
+12:12:08.852 [main] INFO com.urbanvogue.product_service.service.ProductService -- Deleting product with id: 1
+12:12:08.852 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product deleted successfully with id: 1
+12:12:08.852 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: P-8
+12:12:08.853 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 1
+12:12:08.853 [main] INFO com.urbanvogue.product_service.service.ProductService -- Fetching product with id: 1
+12:12:08.853 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product found: P-7
+12:12:08.853 [main] INFO com.urbanvogue.product_service.service.ProductService -- Updating product with id: 1
+12:12:08.853 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product updated successfully with id: 1
+12:12:08.853 [main] INFO com.urbanvogue.product_service.service.ProductService -- Deleting product with id: 1
+12:12:08.853 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product deleted successfully with id: 1
+12:12:08.853 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: P-9
+12:12:08.853 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 1
+12:12:08.853 [main] INFO com.urbanvogue.product_service.service.ProductService -- Fetching product with id: 1
+12:12:08.854 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product found: P-8
+12:12:08.854 [main] INFO com.urbanvogue.product_service.service.ProductService -- Updating product with id: 1
+12:12:08.854 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product updated successfully with id: 1
+12:12:08.854 [main] INFO com.urbanvogue.product_service.service.ProductService -- Deleting product with id: 1
+12:12:08.854 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product deleted successfully with id: 1
+12:12:08.854 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: P-10
+12:12:08.855 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 1
+12:12:08.855 [main] INFO com.urbanvogue.product_service.service.ProductService -- Fetching product with id: 1
+12:12:08.855 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product found: P-9
+12:12:08.855 [main] INFO com.urbanvogue.product_service.service.ProductService -- Updating product with id: 1
+12:12:08.855 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product updated successfully with id: 1
+12:12:08.855 [main] INFO com.urbanvogue.product_service.service.ProductService -- Deleting product with id: 1
+12:12:08.855 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product deleted successfully with id: 1
+12:12:08.855 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: P-11
+12:12:08.856 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 1
+12:12:08.856 [main] INFO com.urbanvogue.product_service.service.ProductService -- Fetching product with id: 1
+12:12:08.856 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product found: P-10
+12:12:08.856 [main] INFO com.urbanvogue.product_service.service.ProductService -- Updating product with id: 1
+12:12:08.856 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product updated successfully with id: 1
+12:12:08.856 [main] INFO com.urbanvogue.product_service.service.ProductService -- Deleting product with id: 1
+12:12:08.857 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product deleted successfully with id: 1
+12:12:08.857 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: P-12
+12:12:08.857 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 1
+12:12:08.857 [main] INFO com.urbanvogue.product_service.service.ProductService -- Fetching product with id: 1
+12:12:08.857 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product found: P-11
+12:12:08.857 [main] INFO com.urbanvogue.product_service.service.ProductService -- Updating product with id: 1
+12:12:08.857 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product updated successfully with id: 1
+12:12:08.857 [main] INFO com.urbanvogue.product_service.service.ProductService -- Deleting product with id: 1
+12:12:08.858 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product deleted successfully with id: 1
+12:12:08.858 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: P-13
+12:12:08.858 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 1
+12:12:08.858 [main] INFO com.urbanvogue.product_service.service.ProductService -- Fetching product with id: 1
+12:12:08.858 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product found: P-12
+12:12:08.858 [main] INFO com.urbanvogue.product_service.service.ProductService -- Updating product with id: 1
+12:12:08.858 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product updated successfully with id: 1
+12:12:08.858 [main] INFO com.urbanvogue.product_service.service.ProductService -- Deleting product with id: 1
+12:12:08.858 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product deleted successfully with id: 1
+12:12:08.859 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: P-14
+12:12:08.859 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 1
+12:12:08.859 [main] INFO com.urbanvogue.product_service.service.ProductService -- Fetching product with id: 1
+12:12:08.859 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product found: P-13
+12:12:08.859 [main] INFO com.urbanvogue.product_service.service.ProductService -- Updating product with id: 1
+12:12:08.859 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product updated successfully with id: 1
+12:12:08.859 [main] INFO com.urbanvogue.product_service.service.ProductService -- Deleting product with id: 1
+12:12:08.860 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product deleted successfully with id: 1
+12:12:08.860 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: P-15
+12:12:08.860 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 1
+12:12:08.860 [main] INFO com.urbanvogue.product_service.service.ProductService -- Fetching product with id: 1
+12:12:08.860 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product found: P-14
+12:12:08.860 [main] INFO com.urbanvogue.product_service.service.ProductService -- Updating product with id: 1
+12:12:08.860 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product updated successfully with id: 1
+12:12:08.860 [main] INFO com.urbanvogue.product_service.service.ProductService -- Deleting product with id: 1
+12:12:08.861 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product deleted successfully with id: 1
+12:12:08.861 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: P-16
+12:12:08.861 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 1
+12:12:08.861 [main] INFO com.urbanvogue.product_service.service.ProductService -- Fetching product with id: 1
+12:12:08.861 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product found: P-15
+12:12:08.861 [main] INFO com.urbanvogue.product_service.service.ProductService -- Updating product with id: 1
+12:12:08.861 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product updated successfully with id: 1
+12:12:08.861 [main] INFO com.urbanvogue.product_service.service.ProductService -- Deleting product with id: 1
+12:12:08.861 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product deleted successfully with id: 1
+12:12:08.861 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: P-17
+12:12:08.861 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 1
+12:12:08.861 [main] INFO com.urbanvogue.product_service.service.ProductService -- Fetching product with id: 1
+12:12:08.861 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product found: P-16
+12:12:08.862 [main] INFO com.urbanvogue.product_service.service.ProductService -- Updating product with id: 1
+12:12:08.863 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product updated successfully with id: 1
+12:12:08.863 [main] INFO com.urbanvogue.product_service.service.ProductService -- Deleting product with id: 1
+12:12:08.863 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product deleted successfully with id: 1
+12:12:08.864 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: P-18
+12:12:08.864 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 1
+12:12:08.865 [main] INFO com.urbanvogue.product_service.service.ProductService -- Fetching product with id: 1
+12:12:08.865 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product found: P-17
+12:12:08.865 [main] INFO com.urbanvogue.product_service.service.ProductService -- Updating product with id: 1
+12:12:08.865 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product updated successfully with id: 1
+12:12:08.865 [main] INFO com.urbanvogue.product_service.service.ProductService -- Deleting product with id: 1
+12:12:08.865 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product deleted successfully with id: 1
+12:12:08.865 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: P-19
+12:12:08.865 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 1
+12:12:08.865 [main] INFO com.urbanvogue.product_service.service.ProductService -- Fetching product with id: 1
+12:12:08.866 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product found: P-18
+12:12:08.866 [main] INFO com.urbanvogue.product_service.service.ProductService -- Updating product with id: 1
+12:12:08.866 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product updated successfully with id: 1
+12:12:08.866 [main] INFO com.urbanvogue.product_service.service.ProductService -- Deleting product with id: 1
+12:12:08.867 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product deleted successfully with id: 1
+12:12:08.867 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: P-20
+12:12:08.867 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 1
+12:12:08.867 [main] INFO com.urbanvogue.product_service.service.ProductService -- Fetching product with id: 1
+12:12:08.867 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product found: P-19
+12:12:08.867 [main] INFO com.urbanvogue.product_service.service.ProductService -- Updating product with id: 1
+12:12:08.867 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product updated successfully with id: 1
+12:12:08.867 [main] INFO com.urbanvogue.product_service.service.ProductService -- Deleting product with id: 1
+12:12:08.867 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product deleted successfully with id: 1
+12:12:08.867 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: P-21
+12:12:08.868 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 1
+12:12:08.868 [main] INFO com.urbanvogue.product_service.service.ProductService -- Fetching product with id: 1
+12:12:08.868 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product found: P-20
+12:12:08.868 [main] INFO com.urbanvogue.product_service.service.ProductService -- Updating product with id: 1
+12:12:08.868 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product updated successfully with id: 1
+12:12:08.868 [main] INFO com.urbanvogue.product_service.service.ProductService -- Deleting product with id: 1
+12:12:08.868 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product deleted successfully with id: 1
+12:12:08.868 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: P-22
+12:12:08.868 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 1
+12:12:08.868 [main] INFO com.urbanvogue.product_service.service.ProductService -- Fetching product with id: 1
+12:12:08.868 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product found: P-21
+12:12:08.868 [main] INFO com.urbanvogue.product_service.service.ProductService -- Updating product with id: 1
+12:12:08.869 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product updated successfully with id: 1
+12:12:08.869 [main] INFO com.urbanvogue.product_service.service.ProductService -- Deleting product with id: 1
+12:12:08.870 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product deleted successfully with id: 1
+12:12:08.870 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: P-23
+12:12:08.870 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 1
+12:12:08.870 [main] INFO com.urbanvogue.product_service.service.ProductService -- Fetching product with id: 1
+12:12:08.870 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product found: P-22
+12:12:08.870 [main] INFO com.urbanvogue.product_service.service.ProductService -- Updating product with id: 1
+12:12:08.870 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product updated successfully with id: 1
+12:12:08.870 [main] INFO com.urbanvogue.product_service.service.ProductService -- Deleting product with id: 1
+12:12:08.870 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product deleted successfully with id: 1
+12:12:08.870 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: P-24
+12:12:08.871 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 1
+12:12:08.871 [main] INFO com.urbanvogue.product_service.service.ProductService -- Fetching product with id: 1
+12:12:08.871 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product found: P-23
+12:12:08.871 [main] INFO com.urbanvogue.product_service.service.ProductService -- Updating product with id: 1
+12:12:08.871 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product updated successfully with id: 1
+12:12:08.871 [main] INFO com.urbanvogue.product_service.service.ProductService -- Deleting product with id: 1
+12:12:08.871 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product deleted successfully with id: 1
+12:12:08.871 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: P-25
+12:12:08.871 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 1
+12:12:08.871 [main] INFO com.urbanvogue.product_service.service.ProductService -- Fetching product with id: 1
+12:12:08.872 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product found: P-24
+12:12:08.872 [main] INFO com.urbanvogue.product_service.service.ProductService -- Updating product with id: 1
+12:12:08.872 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product updated successfully with id: 1
+12:12:08.872 [main] INFO com.urbanvogue.product_service.service.ProductService -- Deleting product with id: 1
+12:12:08.872 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product deleted successfully with id: 1
+12:12:08.872 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: P-26
+12:12:08.872 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 1
+12:12:08.872 [main] INFO com.urbanvogue.product_service.service.ProductService -- Fetching product with id: 1
+12:12:08.872 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product found: P-25
+12:12:08.872 [main] INFO com.urbanvogue.product_service.service.ProductService -- Updating product with id: 1
+12:12:08.873 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product updated successfully with id: 1
+12:12:08.873 [main] INFO com.urbanvogue.product_service.service.ProductService -- Deleting product with id: 1
+12:12:08.873 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product deleted successfully with id: 1
+12:12:08.873 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: P-27
+12:12:08.873 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 1
+12:12:08.873 [main] INFO com.urbanvogue.product_service.service.ProductService -- Fetching product with id: 1
+12:12:08.873 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product found: P-26
+12:12:08.873 [main] INFO com.urbanvogue.product_service.service.ProductService -- Updating product with id: 1
+12:12:08.873 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product updated successfully with id: 1
+12:12:08.873 [main] INFO com.urbanvogue.product_service.service.ProductService -- Deleting product with id: 1
+12:12:08.874 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product deleted successfully with id: 1
+12:12:08.874 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: P-28
+12:12:08.874 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 1
+12:12:08.874 [main] INFO com.urbanvogue.product_service.service.ProductService -- Fetching product with id: 1
+12:12:08.874 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product found: P-27
+12:12:08.874 [main] INFO com.urbanvogue.product_service.service.ProductService -- Updating product with id: 1
+12:12:08.874 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product updated successfully with id: 1
+12:12:08.874 [main] INFO com.urbanvogue.product_service.service.ProductService -- Deleting product with id: 1
+12:12:08.874 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product deleted successfully with id: 1
+12:12:08.874 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: P-29
+12:12:08.874 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 1
+12:12:08.874 [main] INFO com.urbanvogue.product_service.service.ProductService -- Fetching product with id: 1
+12:12:08.874 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product found: P-28
+12:12:08.875 [main] INFO com.urbanvogue.product_service.service.ProductService -- Updating product with id: 1
+12:12:08.875 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product updated successfully with id: 1
+12:12:08.875 [main] INFO com.urbanvogue.product_service.service.ProductService -- Deleting product with id: 1
+12:12:08.875 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product deleted successfully with id: 1
+12:12:08.875 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: P-30
+12:12:08.876 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 1
+12:12:08.876 [main] INFO com.urbanvogue.product_service.service.ProductService -- Fetching product with id: 1
+12:12:08.876 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product found: P-29
+12:12:08.876 [main] INFO com.urbanvogue.product_service.service.ProductService -- Updating product with id: 1
+12:12:08.876 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product updated successfully with id: 1
+12:12:08.876 [main] INFO com.urbanvogue.product_service.service.ProductService -- Deleting product with id: 1
+12:12:08.876 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product deleted successfully with id: 1
+12:12:08.876 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: P-31
+12:12:08.876 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 1
+12:12:08.876 [main] INFO com.urbanvogue.product_service.service.ProductService -- Fetching product with id: 1
+12:12:08.876 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product found: P-30
+12:12:08.876 [main] INFO com.urbanvogue.product_service.service.ProductService -- Updating product with id: 1
+12:12:08.876 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product updated successfully with id: 1
+12:12:08.876 [main] INFO com.urbanvogue.product_service.service.ProductService -- Deleting product with id: 1
+12:12:08.876 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product deleted successfully with id: 1
+12:12:08.876 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: P-32
+12:12:08.876 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 1
+12:12:08.876 [main] INFO com.urbanvogue.product_service.service.ProductService -- Fetching product with id: 1
+12:12:08.876 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product found: P-31
+12:12:08.876 [main] INFO com.urbanvogue.product_service.service.ProductService -- Updating product with id: 1
+12:12:08.878 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product updated successfully with id: 1
+12:12:08.878 [main] INFO com.urbanvogue.product_service.service.ProductService -- Deleting product with id: 1
+12:12:08.879 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product deleted successfully with id: 1
+12:12:08.879 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: P-33
+12:12:08.879 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 1
+12:12:08.879 [main] INFO com.urbanvogue.product_service.service.ProductService -- Fetching product with id: 1
+12:12:08.879 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product found: P-32
+12:12:08.879 [main] INFO com.urbanvogue.product_service.service.ProductService -- Updating product with id: 1
+12:12:08.879 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product updated successfully with id: 1
+12:12:08.879 [main] INFO com.urbanvogue.product_service.service.ProductService -- Deleting product with id: 1
+12:12:08.879 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product deleted successfully with id: 1
+12:12:08.880 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: P-34
+12:12:08.880 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 1
+12:12:08.880 [main] INFO com.urbanvogue.product_service.service.ProductService -- Fetching product with id: 1
+12:12:08.880 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product found: P-33
+12:12:08.880 [main] INFO com.urbanvogue.product_service.service.ProductService -- Updating product with id: 1
+12:12:08.880 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product updated successfully with id: 1
+12:12:08.880 [main] INFO com.urbanvogue.product_service.service.ProductService -- Deleting product with id: 1
+12:12:08.880 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product deleted successfully with id: 1
+12:12:08.880 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: P-35
+12:12:08.880 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 1
+12:12:08.880 [main] INFO com.urbanvogue.product_service.service.ProductService -- Fetching product with id: 1
+12:12:08.880 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product found: P-34
+12:12:08.881 [main] INFO com.urbanvogue.product_service.service.ProductService -- Updating product with id: 1
+12:12:08.881 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product updated successfully with id: 1
+12:12:08.881 [main] INFO com.urbanvogue.product_service.service.ProductService -- Deleting product with id: 1
+12:12:08.881 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product deleted successfully with id: 1
+12:12:08.881 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: P-36
+12:12:08.881 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 1
+12:12:08.881 [main] INFO com.urbanvogue.product_service.service.ProductService -- Fetching product with id: 1
+12:12:08.881 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product found: P-35
+12:12:08.881 [main] INFO com.urbanvogue.product_service.service.ProductService -- Updating product with id: 1
+12:12:08.881 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product updated successfully with id: 1
+12:12:08.881 [main] INFO com.urbanvogue.product_service.service.ProductService -- Deleting product with id: 1
+12:12:08.881 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product deleted successfully with id: 1
+12:12:08.881 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: P-37
+12:12:08.881 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 1
+12:12:08.881 [main] INFO com.urbanvogue.product_service.service.ProductService -- Fetching product with id: 1
+12:12:08.881 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product found: P-36
+12:12:08.881 [main] INFO com.urbanvogue.product_service.service.ProductService -- Updating product with id: 1
+12:12:08.881 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product updated successfully with id: 1
+12:12:08.882 [main] INFO com.urbanvogue.product_service.service.ProductService -- Deleting product with id: 1
+12:12:08.882 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product deleted successfully with id: 1
+12:12:08.882 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: P-38
+12:12:08.882 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 1
+12:12:08.882 [main] INFO com.urbanvogue.product_service.service.ProductService -- Fetching product with id: 1
+12:12:08.882 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product found: P-37
+12:12:08.882 [main] INFO com.urbanvogue.product_service.service.ProductService -- Updating product with id: 1
+12:12:08.882 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product updated successfully with id: 1
+12:12:08.882 [main] INFO com.urbanvogue.product_service.service.ProductService -- Deleting product with id: 1
+12:12:08.882 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product deleted successfully with id: 1
+12:12:08.882 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: P-39
+12:12:08.882 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 1
+12:12:08.882 [main] INFO com.urbanvogue.product_service.service.ProductService -- Fetching product with id: 1
+12:12:08.882 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product found: P-38
+12:12:08.882 [main] INFO com.urbanvogue.product_service.service.ProductService -- Updating product with id: 1
+12:12:08.882 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product updated successfully with id: 1
+12:12:08.882 [main] INFO com.urbanvogue.product_service.service.ProductService -- Deleting product with id: 1
+12:12:08.883 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product deleted successfully with id: 1
+12:12:08.883 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: P-40
+12:12:08.883 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 1
+12:12:08.883 [main] INFO com.urbanvogue.product_service.service.ProductService -- Fetching product with id: 1
+12:12:08.883 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product found: P-39
+12:12:08.883 [main] INFO com.urbanvogue.product_service.service.ProductService -- Updating product with id: 1
+12:12:08.883 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product updated successfully with id: 1
+12:12:08.883 [main] INFO com.urbanvogue.product_service.service.ProductService -- Deleting product with id: 1
+12:12:08.883 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product deleted successfully with id: 1
+12:12:08.883 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: P-41
+12:12:08.883 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 1
+12:12:08.883 [main] INFO com.urbanvogue.product_service.service.ProductService -- Fetching product with id: 1
+12:12:08.883 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product found: P-40
+12:12:08.883 [main] INFO com.urbanvogue.product_service.service.ProductService -- Updating product with id: 1
+12:12:08.883 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product updated successfully with id: 1
+12:12:08.883 [main] INFO com.urbanvogue.product_service.service.ProductService -- Deleting product with id: 1
+12:12:08.883 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product deleted successfully with id: 1
+12:12:08.883 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: P-42
+12:12:08.883 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 1
+12:12:08.883 [main] INFO com.urbanvogue.product_service.service.ProductService -- Fetching product with id: 1
+12:12:08.883 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product found: P-41
+12:12:08.884 [main] INFO com.urbanvogue.product_service.service.ProductService -- Updating product with id: 1
+12:12:08.884 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product updated successfully with id: 1
+12:12:08.884 [main] INFO com.urbanvogue.product_service.service.ProductService -- Deleting product with id: 1
+12:12:08.884 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product deleted successfully with id: 1
+12:12:08.884 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: P-43
+12:12:08.884 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 1
+12:12:08.884 [main] INFO com.urbanvogue.product_service.service.ProductService -- Fetching product with id: 1
+12:12:08.884 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product found: P-42
+12:12:08.884 [main] INFO com.urbanvogue.product_service.service.ProductService -- Updating product with id: 1
+12:12:08.884 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product updated successfully with id: 1
+12:12:08.884 [main] INFO com.urbanvogue.product_service.service.ProductService -- Deleting product with id: 1
+12:12:08.884 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product deleted successfully with id: 1
+12:12:08.884 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: P-44
+12:12:08.885 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 1
+12:12:08.885 [main] INFO com.urbanvogue.product_service.service.ProductService -- Fetching product with id: 1
+12:12:08.885 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product found: P-43
+12:12:08.885 [main] INFO com.urbanvogue.product_service.service.ProductService -- Updating product with id: 1
+12:12:08.885 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product updated successfully with id: 1
+12:12:08.885 [main] INFO com.urbanvogue.product_service.service.ProductService -- Deleting product with id: 1
+12:12:08.885 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product deleted successfully with id: 1
+12:12:08.885 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: P-45
+12:12:08.885 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 1
+12:12:08.885 [main] INFO com.urbanvogue.product_service.service.ProductService -- Fetching product with id: 1
+12:12:08.885 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product found: P-44
+12:12:08.885 [main] INFO com.urbanvogue.product_service.service.ProductService -- Updating product with id: 1
+12:12:08.885 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product updated successfully with id: 1
+12:12:08.887 [main] INFO com.urbanvogue.product_service.service.ProductService -- Deleting product with id: 1
+12:12:08.887 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product deleted successfully with id: 1
+12:12:08.887 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: P-46
+12:12:08.887 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 1
+12:12:08.887 [main] INFO com.urbanvogue.product_service.service.ProductService -- Fetching product with id: 1
+12:12:08.887 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product found: P-45
+12:12:08.887 [main] INFO com.urbanvogue.product_service.service.ProductService -- Updating product with id: 1
+12:12:08.887 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product updated successfully with id: 1
+12:12:08.888 [main] INFO com.urbanvogue.product_service.service.ProductService -- Deleting product with id: 1
+12:12:08.888 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product deleted successfully with id: 1
+12:12:08.888 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: P-47
+12:12:08.888 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 1
+12:12:08.888 [main] INFO com.urbanvogue.product_service.service.ProductService -- Fetching product with id: 1
+12:12:08.888 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product found: P-46
+12:12:08.889 [main] INFO com.urbanvogue.product_service.service.ProductService -- Updating product with id: 1
+12:12:08.889 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product updated successfully with id: 1
+12:12:08.889 [main] INFO com.urbanvogue.product_service.service.ProductService -- Deleting product with id: 1
+12:12:08.890 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product deleted successfully with id: 1
+12:12:08.890 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: P-48
+12:12:08.890 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 1
+12:12:08.890 [main] INFO com.urbanvogue.product_service.service.ProductService -- Fetching product with id: 1
+12:12:08.890 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product found: P-47
+12:12:08.890 [main] INFO com.urbanvogue.product_service.service.ProductService -- Updating product with id: 1
+12:12:08.890 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product updated successfully with id: 1
+12:12:08.890 [main] INFO com.urbanvogue.product_service.service.ProductService -- Deleting product with id: 1
+12:12:08.890 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product deleted successfully with id: 1
+12:12:08.890 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: P-49
+12:12:08.890 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 1
+12:12:08.890 [main] INFO com.urbanvogue.product_service.service.ProductService -- Fetching product with id: 1
+12:12:08.890 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product found: P-48
+12:12:08.890 [main] INFO com.urbanvogue.product_service.service.ProductService -- Updating product with id: 1
+12:12:08.890 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product updated successfully with id: 1
+12:12:08.890 [main] INFO com.urbanvogue.product_service.service.ProductService -- Deleting product with id: 1
+12:12:08.890 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product deleted successfully with id: 1
+12:12:08.890 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: P-50
+12:12:08.890 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 1
+12:12:08.891 [main] INFO com.urbanvogue.product_service.service.ProductService -- Fetching product with id: 1
+12:12:08.891 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product found: P-49
+12:12:08.891 [main] INFO com.urbanvogue.product_service.service.ProductService -- Updating product with id: 1
+12:12:08.891 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product updated successfully with id: 1
+12:12:08.892 [main] INFO com.urbanvogue.product_service.service.ProductService -- Deleting product with id: 1
+12:12:08.892 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product deleted successfully with id: 1
+12:12:08.892 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: P-51
+12:12:08.892 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 1
+12:12:08.892 [main] INFO com.urbanvogue.product_service.service.ProductService -- Fetching product with id: 1
+12:12:08.892 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product found: P-50
+12:12:08.892 [main] INFO com.urbanvogue.product_service.service.ProductService -- Updating product with id: 1
+12:12:08.892 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product updated successfully with id: 1
+12:12:08.893 [main] INFO com.urbanvogue.product_service.service.ProductService -- Deleting product with id: 1
+12:12:08.893 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product deleted successfully with id: 1
+12:12:08.893 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: P-52
+12:12:08.893 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 1
+12:12:08.893 [main] INFO com.urbanvogue.product_service.service.ProductService -- Fetching product with id: 1
+12:12:08.893 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product found: P-51
+12:12:08.894 [main] INFO com.urbanvogue.product_service.service.ProductService -- Updating product with id: 1
+12:12:08.894 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product updated successfully with id: 1
+12:12:08.894 [main] INFO com.urbanvogue.product_service.service.ProductService -- Deleting product with id: 1
+12:12:08.894 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product deleted successfully with id: 1
+12:12:08.894 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: P-53
+12:12:08.894 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 1
+12:12:08.894 [main] INFO com.urbanvogue.product_service.service.ProductService -- Fetching product with id: 1
+12:12:08.894 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product found: P-52
+12:12:08.894 [main] INFO com.urbanvogue.product_service.service.ProductService -- Updating product with id: 1
+12:12:08.894 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product updated successfully with id: 1
+12:12:08.894 [main] INFO com.urbanvogue.product_service.service.ProductService -- Deleting product with id: 1
+12:12:08.894 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product deleted successfully with id: 1
+12:12:08.894 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: P-54
+12:12:08.895 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 1
+12:12:08.895 [main] INFO com.urbanvogue.product_service.service.ProductService -- Fetching product with id: 1
+12:12:08.896 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product found: P-53
+12:12:08.896 [main] INFO com.urbanvogue.product_service.service.ProductService -- Updating product with id: 1
+12:12:08.896 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product updated successfully with id: 1
+12:12:08.896 [main] INFO com.urbanvogue.product_service.service.ProductService -- Deleting product with id: 1
+12:12:08.897 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product deleted successfully with id: 1
+12:12:08.897 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: P-55
+12:12:08.897 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 1
+12:12:08.897 [main] INFO com.urbanvogue.product_service.service.ProductService -- Fetching product with id: 1
+12:12:08.897 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product found: P-54
+12:12:08.897 [main] INFO com.urbanvogue.product_service.service.ProductService -- Updating product with id: 1
+12:12:08.898 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product updated successfully with id: 1
+12:12:08.898 [main] INFO com.urbanvogue.product_service.service.ProductService -- Deleting product with id: 1
+12:12:08.898 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product deleted successfully with id: 1
+12:12:08.898 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: P-56
+12:12:08.898 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 1
+12:12:08.898 [main] INFO com.urbanvogue.product_service.service.ProductService -- Fetching product with id: 1
+12:12:08.898 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product found: P-55
+12:12:08.898 [main] INFO com.urbanvogue.product_service.service.ProductService -- Updating product with id: 1
+12:12:08.898 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product updated successfully with id: 1
+12:12:08.898 [main] INFO com.urbanvogue.product_service.service.ProductService -- Deleting product with id: 1
+12:12:08.898 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product deleted successfully with id: 1
+12:12:08.898 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: P-57
+12:12:08.898 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 1
+12:12:08.898 [main] INFO com.urbanvogue.product_service.service.ProductService -- Fetching product with id: 1
+12:12:08.898 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product found: P-56
+12:12:08.898 [main] INFO com.urbanvogue.product_service.service.ProductService -- Updating product with id: 1
+12:12:08.899 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product updated successfully with id: 1
+12:12:08.899 [main] INFO com.urbanvogue.product_service.service.ProductService -- Deleting product with id: 1
+12:12:08.899 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product deleted successfully with id: 1
+12:12:08.899 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: P-58
+12:12:08.899 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 1
+12:12:08.899 [main] INFO com.urbanvogue.product_service.service.ProductService -- Fetching product with id: 1
+12:12:08.899 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product found: P-57
+12:12:08.899 [main] INFO com.urbanvogue.product_service.service.ProductService -- Updating product with id: 1
+12:12:08.899 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product updated successfully with id: 1
+12:12:08.899 [main] INFO com.urbanvogue.product_service.service.ProductService -- Deleting product with id: 1
+12:12:08.900 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product deleted successfully with id: 1
+12:12:08.900 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: P-59
+12:12:08.900 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 1
+12:12:08.900 [main] INFO com.urbanvogue.product_service.service.ProductService -- Fetching product with id: 1
+12:12:08.900 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product found: P-58
+12:12:08.900 [main] INFO com.urbanvogue.product_service.service.ProductService -- Updating product with id: 1
+12:12:08.900 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product updated successfully with id: 1
+12:12:08.900 [main] INFO com.urbanvogue.product_service.service.ProductService -- Deleting product with id: 1
+12:12:08.900 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product deleted successfully with id: 1
+12:12:08.900 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: P-60
+12:12:08.900 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 1
+12:12:08.900 [main] INFO com.urbanvogue.product_service.service.ProductService -- Fetching product with id: 1
+12:12:08.900 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product found: P-59
+12:12:08.900 [main] INFO com.urbanvogue.product_service.service.ProductService -- Updating product with id: 1
+12:12:08.900 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product updated successfully with id: 1
+12:12:08.900 [main] INFO com.urbanvogue.product_service.service.ProductService -- Deleting product with id: 1
+12:12:08.900 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product deleted successfully with id: 1
+12:12:08.900 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: P-61
+12:12:08.900 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 1
+12:12:08.901 [main] INFO com.urbanvogue.product_service.service.ProductService -- Fetching product with id: 1
+12:12:08.901 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product found: P-60
+12:12:08.901 [main] INFO com.urbanvogue.product_service.service.ProductService -- Updating product with id: 1
+12:12:08.901 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product updated successfully with id: 1
+12:12:08.901 [main] INFO com.urbanvogue.product_service.service.ProductService -- Deleting product with id: 1
+12:12:08.901 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product deleted successfully with id: 1
+12:12:08.901 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: P-62
+12:12:08.901 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 1
+12:12:08.901 [main] INFO com.urbanvogue.product_service.service.ProductService -- Fetching product with id: 1
+12:12:08.901 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product found: P-61
+12:12:08.901 [main] INFO com.urbanvogue.product_service.service.ProductService -- Updating product with id: 1
+12:12:08.901 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product updated successfully with id: 1
+12:12:08.901 [main] INFO com.urbanvogue.product_service.service.ProductService -- Deleting product with id: 1
+12:12:08.901 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product deleted successfully with id: 1
+12:12:08.901 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: P-63
+12:12:08.901 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 1
+12:12:08.901 [main] INFO com.urbanvogue.product_service.service.ProductService -- Fetching product with id: 1
+12:12:08.901 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product found: P-62
+12:12:08.901 [main] INFO com.urbanvogue.product_service.service.ProductService -- Updating product with id: 1
+12:12:08.901 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product updated successfully with id: 1
+12:12:08.901 [main] INFO com.urbanvogue.product_service.service.ProductService -- Deleting product with id: 1
+12:12:08.901 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product deleted successfully with id: 1
+12:12:08.901 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: P-64
+12:12:08.901 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 1
+12:12:08.901 [main] INFO com.urbanvogue.product_service.service.ProductService -- Fetching product with id: 1
+12:12:08.902 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product found: P-63
+12:12:08.902 [main] INFO com.urbanvogue.product_service.service.ProductService -- Updating product with id: 1
+12:12:08.902 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product updated successfully with id: 1
+12:12:08.902 [main] INFO com.urbanvogue.product_service.service.ProductService -- Deleting product with id: 1
+12:12:08.902 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product deleted successfully with id: 1
+12:12:08.902 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: P-65
+12:12:08.902 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 1
+12:12:08.902 [main] INFO com.urbanvogue.product_service.service.ProductService -- Fetching product with id: 1
+12:12:08.902 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product found: P-64
+12:12:08.902 [main] INFO com.urbanvogue.product_service.service.ProductService -- Updating product with id: 1
+12:12:08.902 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product updated successfully with id: 1
+12:12:08.902 [main] INFO com.urbanvogue.product_service.service.ProductService -- Deleting product with id: 1
+12:12:08.902 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product deleted successfully with id: 1
+12:12:08.902 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: P-66
+12:12:08.902 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 1
+12:12:08.902 [main] INFO com.urbanvogue.product_service.service.ProductService -- Fetching product with id: 1
+12:12:08.902 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product found: P-65
+12:12:08.902 [main] INFO com.urbanvogue.product_service.service.ProductService -- Updating product with id: 1
+12:12:08.902 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product updated successfully with id: 1
+12:12:08.902 [main] INFO com.urbanvogue.product_service.service.ProductService -- Deleting product with id: 1
+12:12:08.902 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product deleted successfully with id: 1
+12:12:08.902 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: P-67
+12:12:08.902 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 1
+12:12:08.902 [main] INFO com.urbanvogue.product_service.service.ProductService -- Fetching product with id: 1
+12:12:08.902 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product found: P-66
+12:12:08.902 [main] INFO com.urbanvogue.product_service.service.ProductService -- Updating product with id: 1
+12:12:08.902 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product updated successfully with id: 1
+12:12:08.903 [main] INFO com.urbanvogue.product_service.service.ProductService -- Deleting product with id: 1
+12:12:08.903 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product deleted successfully with id: 1
+12:12:08.903 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: P-68
+12:12:08.903 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 1
+12:12:08.903 [main] INFO com.urbanvogue.product_service.service.ProductService -- Fetching product with id: 1
+12:12:08.903 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product found: P-67
+12:12:08.903 [main] INFO com.urbanvogue.product_service.service.ProductService -- Updating product with id: 1
+12:12:08.903 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product updated successfully with id: 1
+12:12:08.903 [main] INFO com.urbanvogue.product_service.service.ProductService -- Deleting product with id: 1
+12:12:08.903 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product deleted successfully with id: 1
+12:12:08.903 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: P-69
+12:12:08.903 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 1
+12:12:08.903 [main] INFO com.urbanvogue.product_service.service.ProductService -- Fetching product with id: 1
+12:12:08.903 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product found: P-68
+12:12:08.903 [main] INFO com.urbanvogue.product_service.service.ProductService -- Updating product with id: 1
+12:12:08.903 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product updated successfully with id: 1
+12:12:08.903 [main] INFO com.urbanvogue.product_service.service.ProductService -- Deleting product with id: 1
+12:12:08.903 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product deleted successfully with id: 1
+12:12:08.903 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: P-70
+12:12:08.903 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 1
+12:12:08.903 [main] INFO com.urbanvogue.product_service.service.ProductService -- Fetching product with id: 1
+12:12:08.903 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product found: P-69
+12:12:08.903 [main] INFO com.urbanvogue.product_service.service.ProductService -- Updating product with id: 1
+12:12:08.904 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product updated successfully with id: 1
+12:12:08.904 [main] INFO com.urbanvogue.product_service.service.ProductService -- Deleting product with id: 1
+12:12:08.904 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product deleted successfully with id: 1
+12:12:08.904 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: P-71
+12:12:08.904 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 1
+12:12:08.904 [main] INFO com.urbanvogue.product_service.service.ProductService -- Fetching product with id: 1
+12:12:08.904 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product found: P-70
+12:12:08.904 [main] INFO com.urbanvogue.product_service.service.ProductService -- Updating product with id: 1
+12:12:08.904 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product updated successfully with id: 1
+12:12:08.904 [main] INFO com.urbanvogue.product_service.service.ProductService -- Deleting product with id: 1
+12:12:08.904 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product deleted successfully with id: 1
+12:12:08.904 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: P-72
+12:12:08.904 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 1
+12:12:08.904 [main] INFO com.urbanvogue.product_service.service.ProductService -- Fetching product with id: 1
+12:12:08.904 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product found: P-71
+12:12:08.904 [main] INFO com.urbanvogue.product_service.service.ProductService -- Updating product with id: 1
+12:12:08.904 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product updated successfully with id: 1
+12:12:08.904 [main] INFO com.urbanvogue.product_service.service.ProductService -- Deleting product with id: 1
+12:12:08.904 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product deleted successfully with id: 1
+12:12:08.904 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: P-73
+12:12:08.904 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 1
+12:12:08.904 [main] INFO com.urbanvogue.product_service.service.ProductService -- Fetching product with id: 1
+12:12:08.904 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product found: P-72
+12:12:08.904 [main] INFO com.urbanvogue.product_service.service.ProductService -- Updating product with id: 1
+12:12:08.904 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product updated successfully with id: 1
+12:12:08.904 [main] INFO com.urbanvogue.product_service.service.ProductService -- Deleting product with id: 1
+12:12:08.904 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product deleted successfully with id: 1
+12:12:08.904 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: P-74
+12:12:08.904 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 1
+12:12:08.904 [main] INFO com.urbanvogue.product_service.service.ProductService -- Fetching product with id: 1
+12:12:08.905 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product found: P-73
+12:12:08.905 [main] INFO com.urbanvogue.product_service.service.ProductService -- Updating product with id: 1
+12:12:08.905 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product updated successfully with id: 1
+12:12:08.905 [main] INFO com.urbanvogue.product_service.service.ProductService -- Deleting product with id: 1
+12:12:08.905 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product deleted successfully with id: 1
+12:12:08.905 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: P-75
+12:12:08.905 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 1
+12:12:08.905 [main] INFO com.urbanvogue.product_service.service.ProductService -- Fetching product with id: 1
+12:12:08.905 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product found: P-74
+12:12:08.905 [main] INFO com.urbanvogue.product_service.service.ProductService -- Updating product with id: 1
+12:12:08.905 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product updated successfully with id: 1
+12:12:08.905 [main] INFO com.urbanvogue.product_service.service.ProductService -- Deleting product with id: 1
+12:12:08.905 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product deleted successfully with id: 1
+12:12:08.905 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: P-76
+12:12:08.905 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 1
+12:12:08.905 [main] INFO com.urbanvogue.product_service.service.ProductService -- Fetching product with id: 1
+12:12:08.905 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product found: P-75
+12:12:08.905 [main] INFO com.urbanvogue.product_service.service.ProductService -- Updating product with id: 1
+12:12:08.905 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product updated successfully with id: 1
+12:12:08.905 [main] INFO com.urbanvogue.product_service.service.ProductService -- Deleting product with id: 1
+12:12:08.905 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product deleted successfully with id: 1
+12:12:08.905 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: P-77
+12:12:08.905 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 1
+12:12:08.905 [main] INFO com.urbanvogue.product_service.service.ProductService -- Fetching product with id: 1
+12:12:08.905 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product found: P-76
+12:12:08.905 [main] INFO com.urbanvogue.product_service.service.ProductService -- Updating product with id: 1
+12:12:08.905 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product updated successfully with id: 1
+12:12:08.905 [main] INFO com.urbanvogue.product_service.service.ProductService -- Deleting product with id: 1
+12:12:08.905 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product deleted successfully with id: 1
+12:12:08.905 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: P-78
+12:12:08.905 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 1
+12:12:08.905 [main] INFO com.urbanvogue.product_service.service.ProductService -- Fetching product with id: 1
+12:12:08.905 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product found: P-77
+12:12:08.905 [main] INFO com.urbanvogue.product_service.service.ProductService -- Updating product with id: 1
+12:12:08.905 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product updated successfully with id: 1
+12:12:08.905 [main] INFO com.urbanvogue.product_service.service.ProductService -- Deleting product with id: 1
+12:12:08.905 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product deleted successfully with id: 1
+12:12:08.905 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: P-79
+12:12:08.905 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 1
+12:12:08.905 [main] INFO com.urbanvogue.product_service.service.ProductService -- Fetching product with id: 1
+12:12:08.905 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product found: P-78
+12:12:08.905 [main] INFO com.urbanvogue.product_service.service.ProductService -- Updating product with id: 1
+12:12:08.905 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product updated successfully with id: 1
+12:12:08.905 [main] INFO com.urbanvogue.product_service.service.ProductService -- Deleting product with id: 1
+12:12:08.906 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product deleted successfully with id: 1
+12:12:08.906 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: P-80
+12:12:08.906 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 1
+12:12:08.906 [main] INFO com.urbanvogue.product_service.service.ProductService -- Fetching product with id: 1
+12:12:08.906 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product found: P-79
+12:12:08.906 [main] INFO com.urbanvogue.product_service.service.ProductService -- Updating product with id: 1
+12:12:08.906 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product updated successfully with id: 1
+12:12:08.906 [main] INFO com.urbanvogue.product_service.service.ProductService -- Deleting product with id: 1
+12:12:08.906 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product deleted successfully with id: 1
+12:12:08.906 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: P-81
+12:12:08.906 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 1
+12:12:08.906 [main] INFO com.urbanvogue.product_service.service.ProductService -- Fetching product with id: 1
+12:12:08.906 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product found: P-80
+12:12:08.906 [main] INFO com.urbanvogue.product_service.service.ProductService -- Updating product with id: 1
+12:12:08.906 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product updated successfully with id: 1
+12:12:08.906 [main] INFO com.urbanvogue.product_service.service.ProductService -- Deleting product with id: 1
+12:12:08.906 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product deleted successfully with id: 1
+12:12:08.906 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: P-82
+12:12:08.906 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 1
+12:12:08.906 [main] INFO com.urbanvogue.product_service.service.ProductService -- Fetching product with id: 1
+12:12:08.906 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product found: P-81
+12:12:08.906 [main] INFO com.urbanvogue.product_service.service.ProductService -- Updating product with id: 1
+12:12:08.906 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product updated successfully with id: 1
+12:12:08.906 [main] INFO com.urbanvogue.product_service.service.ProductService -- Deleting product with id: 1
+12:12:08.906 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product deleted successfully with id: 1
+12:12:08.906 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: P-83
+12:12:08.906 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 1
+12:12:08.906 [main] INFO com.urbanvogue.product_service.service.ProductService -- Fetching product with id: 1
+12:12:08.906 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product found: P-82
+12:12:08.906 [main] INFO com.urbanvogue.product_service.service.ProductService -- Updating product with id: 1
+12:12:08.906 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product updated successfully with id: 1
+12:12:08.906 [main] INFO com.urbanvogue.product_service.service.ProductService -- Deleting product with id: 1
+12:12:08.906 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product deleted successfully with id: 1
+12:12:08.906 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: P-84
+12:12:08.906 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 1
+12:12:08.906 [main] INFO com.urbanvogue.product_service.service.ProductService -- Fetching product with id: 1
+12:12:08.906 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product found: P-83
+12:12:08.907 [main] INFO com.urbanvogue.product_service.service.ProductService -- Updating product with id: 1
+12:12:08.907 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product updated successfully with id: 1
+12:12:08.907 [main] INFO com.urbanvogue.product_service.service.ProductService -- Deleting product with id: 1
+12:12:08.907 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product deleted successfully with id: 1
+12:12:08.907 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: P-85
+12:12:08.907 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 1
+12:12:08.907 [main] INFO com.urbanvogue.product_service.service.ProductService -- Fetching product with id: 1
+12:12:08.907 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product found: P-84
+12:12:08.907 [main] INFO com.urbanvogue.product_service.service.ProductService -- Updating product with id: 1
+12:12:08.907 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product updated successfully with id: 1
+12:12:08.907 [main] INFO com.urbanvogue.product_service.service.ProductService -- Deleting product with id: 1
+12:12:08.907 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product deleted successfully with id: 1
+12:12:08.907 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: P-86
+12:12:08.907 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 1
+12:12:08.907 [main] INFO com.urbanvogue.product_service.service.ProductService -- Fetching product with id: 1
+12:12:08.907 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product found: P-85
+12:12:08.907 [main] INFO com.urbanvogue.product_service.service.ProductService -- Updating product with id: 1
+12:12:08.907 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product updated successfully with id: 1
+12:12:08.907 [main] INFO com.urbanvogue.product_service.service.ProductService -- Deleting product with id: 1
+12:12:08.907 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product deleted successfully with id: 1
+12:12:08.907 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: P-87
+12:12:08.907 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 1
+12:12:08.907 [main] INFO com.urbanvogue.product_service.service.ProductService -- Fetching product with id: 1
+12:12:08.907 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product found: P-86
+12:12:08.907 [main] INFO com.urbanvogue.product_service.service.ProductService -- Updating product with id: 1
+12:12:08.909 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product updated successfully with id: 1
+12:12:08.909 [main] INFO com.urbanvogue.product_service.service.ProductService -- Deleting product with id: 1
+12:12:08.909 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product deleted successfully with id: 1
+12:12:08.909 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: P-88
+12:12:08.910 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 1
+12:12:08.910 [main] INFO com.urbanvogue.product_service.service.ProductService -- Fetching product with id: 1
+12:12:08.910 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product found: P-87
+12:12:08.910 [main] INFO com.urbanvogue.product_service.service.ProductService -- Updating product with id: 1
+12:12:08.910 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product updated successfully with id: 1
+12:12:08.910 [main] INFO com.urbanvogue.product_service.service.ProductService -- Deleting product with id: 1
+12:12:08.910 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product deleted successfully with id: 1
+12:12:08.910 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: P-89
+12:12:08.910 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 1
+12:12:08.910 [main] INFO com.urbanvogue.product_service.service.ProductService -- Fetching product with id: 1
+12:12:08.910 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product found: P-88
+12:12:08.910 [main] INFO com.urbanvogue.product_service.service.ProductService -- Updating product with id: 1
+12:12:08.910 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product updated successfully with id: 1
+12:12:08.910 [main] INFO com.urbanvogue.product_service.service.ProductService -- Deleting product with id: 1
+12:12:08.911 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product deleted successfully with id: 1
+12:12:08.911 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: P-90
+12:12:08.911 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 1
+12:12:08.911 [main] INFO com.urbanvogue.product_service.service.ProductService -- Fetching product with id: 1
+12:12:08.911 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product found: P-89
+12:12:08.911 [main] INFO com.urbanvogue.product_service.service.ProductService -- Updating product with id: 1
+12:12:08.911 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product updated successfully with id: 1
+12:12:08.911 [main] INFO com.urbanvogue.product_service.service.ProductService -- Deleting product with id: 1
+12:12:08.911 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product deleted successfully with id: 1
+12:12:08.911 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: P-91
+12:12:08.911 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 1
+12:12:08.911 [main] INFO com.urbanvogue.product_service.service.ProductService -- Fetching product with id: 1
+12:12:08.911 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product found: P-90
+12:12:08.911 [main] INFO com.urbanvogue.product_service.service.ProductService -- Updating product with id: 1
+12:12:08.911 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product updated successfully with id: 1
+12:12:08.911 [main] INFO com.urbanvogue.product_service.service.ProductService -- Deleting product with id: 1
+12:12:08.911 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product deleted successfully with id: 1
+12:12:08.911 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: P-92
+12:12:08.911 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 1
+12:12:08.911 [main] INFO com.urbanvogue.product_service.service.ProductService -- Fetching product with id: 1
+12:12:08.911 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product found: P-91
+12:12:08.911 [main] INFO com.urbanvogue.product_service.service.ProductService -- Updating product with id: 1
+12:12:08.911 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product updated successfully with id: 1
+12:12:08.911 [main] INFO com.urbanvogue.product_service.service.ProductService -- Deleting product with id: 1
+12:12:08.911 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product deleted successfully with id: 1
+12:12:08.911 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: P-93
+12:12:08.911 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 1
+12:12:08.911 [main] INFO com.urbanvogue.product_service.service.ProductService -- Fetching product with id: 1
+12:12:08.911 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product found: P-92
+12:12:08.911 [main] INFO com.urbanvogue.product_service.service.ProductService -- Updating product with id: 1
+12:12:08.911 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product updated successfully with id: 1
+12:12:08.911 [main] INFO com.urbanvogue.product_service.service.ProductService -- Deleting product with id: 1
+12:12:08.912 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product deleted successfully with id: 1
+12:12:08.912 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: P-94
+12:12:08.912 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 1
+12:12:08.912 [main] INFO com.urbanvogue.product_service.service.ProductService -- Fetching product with id: 1
+12:12:08.913 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product found: P-93
+12:12:08.913 [main] INFO com.urbanvogue.product_service.service.ProductService -- Updating product with id: 1
+12:12:08.913 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product updated successfully with id: 1
+12:12:08.913 [main] INFO com.urbanvogue.product_service.service.ProductService -- Deleting product with id: 1
+12:12:08.913 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product deleted successfully with id: 1
+12:12:08.913 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: P-95
+12:12:08.913 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 1
+12:12:08.913 [main] INFO com.urbanvogue.product_service.service.ProductService -- Fetching product with id: 1
+12:12:08.913 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product found: P-94
+12:12:08.913 [main] INFO com.urbanvogue.product_service.service.ProductService -- Updating product with id: 1
+12:12:08.913 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product updated successfully with id: 1
+12:12:08.913 [main] INFO com.urbanvogue.product_service.service.ProductService -- Deleting product with id: 1
+12:12:08.913 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product deleted successfully with id: 1
+12:12:08.913 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: P-96
+12:12:08.913 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 1
+12:12:08.913 [main] INFO com.urbanvogue.product_service.service.ProductService -- Fetching product with id: 1
+12:12:08.913 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product found: P-95
+12:12:08.913 [main] INFO com.urbanvogue.product_service.service.ProductService -- Updating product with id: 1
+12:12:08.914 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product updated successfully with id: 1
+12:12:08.914 [main] INFO com.urbanvogue.product_service.service.ProductService -- Deleting product with id: 1
+12:12:08.914 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product deleted successfully with id: 1
+12:12:08.914 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: P-97
+12:12:08.914 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 1
+12:12:08.914 [main] INFO com.urbanvogue.product_service.service.ProductService -- Fetching product with id: 1
+12:12:08.914 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product found: P-96
+12:12:08.914 [main] INFO com.urbanvogue.product_service.service.ProductService -- Updating product with id: 1
+12:12:08.914 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product updated successfully with id: 1
+12:12:08.914 [main] INFO com.urbanvogue.product_service.service.ProductService -- Deleting product with id: 1
+12:12:08.914 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product deleted successfully with id: 1
+12:12:08.914 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: P-98
+12:12:08.914 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 1
+12:12:08.914 [main] INFO com.urbanvogue.product_service.service.ProductService -- Fetching product with id: 1
+12:12:08.914 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product found: P-97
+12:12:08.914 [main] INFO com.urbanvogue.product_service.service.ProductService -- Updating product with id: 1
+12:12:08.914 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product updated successfully with id: 1
+12:12:08.914 [main] INFO com.urbanvogue.product_service.service.ProductService -- Deleting product with id: 1
+12:12:08.914 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product deleted successfully with id: 1
+12:12:08.914 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: P-99
+12:12:08.914 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 1
+12:12:08.914 [main] INFO com.urbanvogue.product_service.service.ProductService -- Fetching product with id: 1
+12:12:08.914 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product found: P-98
+12:12:08.914 [main] INFO com.urbanvogue.product_service.service.ProductService -- Updating product with id: 1
+12:12:08.914 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product updated successfully with id: 1
+12:12:08.914 [main] INFO com.urbanvogue.product_service.service.ProductService -- Deleting product with id: 1
+12:12:08.914 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product deleted successfully with id: 1
+
+  ???????????????????????????????????????????
+  ? CRUD CYCLE BENCHMARK
+  ???????????????????????????????????????????
+  ? Cycles:            100
+  ? Total operations:  400 (C+R+U+D per cycle)
+  ? Total time:        73ms
+  ? Operations/sec:    5479
+  ???????????????????????????????????????????
+
+12:12:08.926 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-0
+12:12:08.928 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 67048
+12:12:08.928 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-1
+12:12:08.928 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 37832
+12:12:08.928 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-2
+12:12:08.928 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 26619
+12:12:08.928 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-3
+12:12:08.928 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 9972
+12:12:08.928 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-4
+12:12:08.928 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 74547
+12:12:08.928 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-5
+12:12:08.928 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 56350
+12:12:08.928 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-6
+12:12:08.928 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 74487
+12:12:08.928 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-7
+12:12:08.928 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 97039
+12:12:08.928 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-8
+12:12:08.928 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 22742
+12:12:08.928 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-9
+12:12:08.928 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 17783
+12:12:08.928 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-10
+12:12:08.928 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 82220
+12:12:08.928 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-11
+12:12:08.928 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 35925
+12:12:08.928 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-12
+12:12:08.928 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 8272
+12:12:08.928 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-13
+12:12:08.928 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 97026
+12:12:08.928 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-14
+12:12:08.928 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 45825
+12:12:08.928 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-15
+12:12:08.928 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 5514
+12:12:08.928 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-16
+12:12:08.928 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 25997
+12:12:08.928 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-17
+12:12:08.929 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 99445
+12:12:08.929 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-18
+12:12:08.929 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 1925
+12:12:08.929 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-19
+12:12:08.929 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 41746
+12:12:08.929 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-20
+12:12:08.929 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 56355
+12:12:08.929 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-21
+12:12:08.929 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 41245
+12:12:08.929 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-22
+12:12:08.929 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 57853
+12:12:08.929 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-23
+12:12:08.929 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 62625
+12:12:08.929 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-24
+12:12:08.929 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 70067
+12:12:08.929 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-25
+12:12:08.929 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 52292
+12:12:08.929 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-26
+12:12:08.930 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 69157
+12:12:08.930 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-27
+12:12:08.930 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 97575
+12:12:08.930 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-28
+12:12:08.930 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 83657
+12:12:08.930 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-29
+12:12:08.930 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 18578
+12:12:08.930 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-30
+12:12:08.930 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 77205
+12:12:08.930 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-31
+12:12:08.930 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 37295
+12:12:08.930 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-32
+12:12:08.930 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 92774
+12:12:08.930 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-33
+12:12:08.930 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 76756
+12:12:08.930 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-34
+12:12:08.930 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 85807
+12:12:08.930 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-35
+12:12:08.930 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 38733
+12:12:08.930 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-36
+12:12:08.930 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 29924
+12:12:08.930 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-37
+12:12:08.930 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 32552
+12:12:08.930 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-38
+12:12:08.930 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 23713
+12:12:08.930 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-39
+12:12:08.930 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 8499
+12:12:08.930 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-40
+12:12:08.930 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 32525
+12:12:08.930 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-41
+12:12:08.930 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 21973
+12:12:08.930 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-42
+12:12:08.930 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 59441
+12:12:08.930 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-43
+12:12:08.930 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 85897
+12:12:08.930 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-44
+12:12:08.930 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 22577
+12:12:08.930 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-45
+12:12:08.930 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 88158
+12:12:08.930 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-46
+12:12:08.930 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 68961
+12:12:08.930 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-47
+12:12:08.930 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 38082
+12:12:08.930 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-48
+12:12:08.930 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 11136
+12:12:08.930 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-49
+12:12:08.930 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 41557
+12:12:08.931 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-50
+12:12:08.931 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 96440
+12:12:08.931 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-51
+12:12:08.931 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 10955
+12:12:08.931 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-52
+12:12:08.931 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 92164
+12:12:08.931 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-53
+12:12:08.931 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 37864
+12:12:08.931 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-54
+12:12:08.931 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 91319
+12:12:08.931 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-55
+12:12:08.931 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 59395
+12:12:08.931 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-56
+12:12:08.931 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 6962
+12:12:08.931 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-57
+12:12:08.931 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 40577
+12:12:08.931 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-58
+12:12:08.931 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 6880
+12:12:08.931 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-59
+12:12:08.932 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 50239
+12:12:08.932 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-60
+12:12:08.932 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 55948
+12:12:08.932 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-61
+12:12:08.932 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 7882
+12:12:08.932 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-62
+12:12:08.932 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 80669
+12:12:08.932 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-63
+12:12:08.932 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 51834
+12:12:08.932 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-64
+12:12:08.932 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 12504
+12:12:08.932 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-65
+12:12:08.932 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 15752
+12:12:08.932 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-66
+12:12:08.932 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 35061
+12:12:08.932 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-67
+12:12:08.932 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 69261
+12:12:08.932 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-68
+12:12:08.932 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 23086
+12:12:08.932 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-69
+12:12:08.932 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 85088
+12:12:08.932 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-70
+12:12:08.932 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 11934
+12:12:08.932 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-71
+12:12:08.932 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 44194
+12:12:08.932 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-72
+12:12:08.932 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 35264
+12:12:08.932 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-73
+12:12:08.932 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 31443
+12:12:08.932 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-74
+12:12:08.932 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 85160
+12:12:08.932 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-75
+12:12:08.932 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 66352
+12:12:08.932 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-76
+12:12:08.932 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 74514
+12:12:08.932 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-77
+12:12:08.932 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 49432
+12:12:08.932 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-78
+12:12:08.932 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 34737
+12:12:08.932 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-79
+12:12:08.932 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 95383
+12:12:08.932 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-80
+12:12:08.932 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 26947
+12:12:08.932 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-81
+12:12:08.932 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 13959
+12:12:08.932 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-82
+12:12:08.932 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 63299
+12:12:08.932 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-83
+12:12:08.932 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 34425
+12:12:08.932 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-84
+12:12:08.932 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 21251
+12:12:08.932 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-85
+12:12:08.932 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 24138
+12:12:08.932 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-86
+12:12:08.932 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 65408
+12:12:08.933 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-87
+12:12:08.933 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 91464
+12:12:08.933 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-88
+12:12:08.933 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 37059
+12:12:08.933 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-89
+12:12:08.933 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 7771
+12:12:08.933 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-90
+12:12:08.933 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 57653
+12:12:08.933 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-91
+12:12:08.933 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 2419
+12:12:08.933 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-92
+12:12:08.933 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 79551
+12:12:08.933 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-93
+12:12:08.933 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 70690
+12:12:08.933 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-94
+12:12:08.933 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 19190
+12:12:08.933 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-95
+12:12:08.933 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 23759
+12:12:08.933 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-96
+12:12:08.933 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 52767
+12:12:08.933 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-97
+12:12:08.933 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 80019
+12:12:08.933 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-98
+12:12:08.933 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 92099
+12:12:08.933 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-99
+12:12:08.933 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 5456
+12:12:08.933 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-100
+12:12:08.933 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 38013
+12:12:08.933 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-101
+12:12:08.933 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 34537
+12:12:08.933 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-102
+12:12:08.933 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 81941
+12:12:08.933 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-103
+12:12:08.933 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 43556
+12:12:08.933 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-104
+12:12:08.933 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 95383
+12:12:08.933 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-105
+12:12:08.933 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 97867
+12:12:08.933 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-106
+12:12:08.933 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 70438
+12:12:08.933 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-107
+12:12:08.933 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 77967
+12:12:08.933 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-108
+12:12:08.933 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 4929
+12:12:08.933 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-109
+12:12:08.933 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 83557
+12:12:08.933 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-110
+12:12:08.933 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 66175
+12:12:08.933 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-111
+12:12:08.934 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 16392
+12:12:08.934 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-112
+12:12:08.934 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 71865
+12:12:08.934 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-113
+12:12:08.934 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 54666
+12:12:08.934 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-114
+12:12:08.934 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 94812
+12:12:08.934 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-115
+12:12:08.934 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 5338
+12:12:08.934 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-116
+12:12:08.934 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 20668
+12:12:08.934 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-117
+12:12:08.934 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 96377
+12:12:08.934 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-118
+12:12:08.934 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 71667
+12:12:08.934 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-119
+12:12:08.934 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 66632
+12:12:08.934 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-120
+12:12:08.934 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 75158
+12:12:08.934 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-121
+12:12:08.934 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 5613
+12:12:08.935 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-122
+12:12:08.935 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 15148
+12:12:08.935 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-123
+12:12:08.935 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 29216
+12:12:08.935 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-124
+12:12:08.935 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 19049
+12:12:08.935 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-125
+12:12:08.935 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 92919
+12:12:08.935 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-126
+12:12:08.935 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 82195
+12:12:08.935 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-127
+12:12:08.935 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 93583
+12:12:08.935 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-128
+12:12:08.935 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 86404
+12:12:08.935 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-129
+12:12:08.935 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 16083
+12:12:08.935 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-130
+12:12:08.935 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 121
+12:12:08.935 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-131
+12:12:08.935 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 79941
+12:12:08.935 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-132
+12:12:08.935 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 67728
+12:12:08.935 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-133
+12:12:08.935 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 52234
+12:12:08.935 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-134
+12:12:08.935 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 16367
+12:12:08.935 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-135
+12:12:08.935 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 14940
+12:12:08.935 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-136
+12:12:08.935 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 49246
+12:12:08.935 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-137
+12:12:08.935 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 73827
+12:12:08.935 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-138
+12:12:08.935 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 98881
+12:12:08.935 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-139
+12:12:08.935 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 52605
+12:12:08.935 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-140
+12:12:08.935 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 41668
+12:12:08.935 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-141
+12:12:08.935 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 93444
+12:12:08.935 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-142
+12:12:08.935 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 65610
+12:12:08.935 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-143
+12:12:08.935 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 30655
+12:12:08.935 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-144
+12:12:08.935 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 28805
+12:12:08.935 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-145
+12:12:08.935 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 98018
+12:12:08.935 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-146
+12:12:08.935 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 82248
+12:12:08.935 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-147
+12:12:08.935 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 36374
+12:12:08.935 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-148
+12:12:08.935 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 58077
+12:12:08.935 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-149
+12:12:08.935 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 82472
+12:12:08.935 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-150
+12:12:08.935 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 79345
+12:12:08.935 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-151
+12:12:08.935 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 40440
+12:12:08.935 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-152
+12:12:08.937 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 76455
+12:12:08.937 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-153
+12:12:08.937 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 79749
+12:12:08.937 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-154
+12:12:08.937 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 22254
+12:12:08.937 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-155
+12:12:08.937 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 76681
+12:12:08.937 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-156
+12:12:08.937 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 90762
+12:12:08.937 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-157
+12:12:08.937 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 89247
+12:12:08.937 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-158
+12:12:08.937 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 79306
+12:12:08.937 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-159
+12:12:08.937 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 14530
+12:12:08.937 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-160
+12:12:08.937 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 80662
+12:12:08.937 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-161
+12:12:08.937 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 92746
+12:12:08.937 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-162
+12:12:08.937 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 24518
+12:12:08.937 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-163
+12:12:08.937 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 59290
+12:12:08.937 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-164
+12:12:08.937 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 53142
+12:12:08.937 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-165
+12:12:08.937 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 77234
+12:12:08.937 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-166
+12:12:08.937 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 49461
+12:12:08.938 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-167
+12:12:08.938 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 42519
+12:12:08.938 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-168
+12:12:08.938 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 79659
+12:12:08.938 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-169
+12:12:08.938 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 27090
+12:12:08.938 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-170
+12:12:08.938 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 74155
+12:12:08.938 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-171
+12:12:08.938 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 98002
+12:12:08.938 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-172
+12:12:08.938 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 27721
+12:12:08.938 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-173
+12:12:08.938 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 29391
+12:12:08.938 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-174
+12:12:08.938 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 16811
+12:12:08.938 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-175
+12:12:08.938 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 93215
+12:12:08.938 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-176
+12:12:08.938 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 25372
+12:12:08.938 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-177
+12:12:08.939 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 74983
+12:12:08.939 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-178
+12:12:08.939 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 18740
+12:12:08.939 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-179
+12:12:08.939 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 48700
+12:12:08.939 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-180
+12:12:08.939 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 15735
+12:12:08.939 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-181
+12:12:08.939 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 76123
+12:12:08.939 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-182
+12:12:08.939 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 59390
+12:12:08.939 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-183
+12:12:08.939 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 80544
+12:12:08.939 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-184
+12:12:08.939 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 93243
+12:12:08.939 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-185
+12:12:08.940 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 91068
+12:12:08.940 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-186
+12:12:08.940 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 96325
+12:12:08.940 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-187
+12:12:08.940 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 87679
+12:12:08.940 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-188
+12:12:08.940 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 70063
+12:12:08.940 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-189
+12:12:08.940 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 88830
+12:12:08.940 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-190
+12:12:08.940 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 73215
+12:12:08.940 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-191
+12:12:08.940 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 38158
+12:12:08.940 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-192
+12:12:08.940 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 25624
+12:12:08.940 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-193
+12:12:08.940 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 46471
+12:12:08.940 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-194
+12:12:08.940 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 22449
+12:12:08.940 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-195
+12:12:08.940 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 9057
+12:12:08.940 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-196
+12:12:08.940 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 69627
+12:12:08.940 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-197
+12:12:08.940 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 38355
+12:12:08.940 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-198
+12:12:08.940 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 69171
+12:12:08.940 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Product-199
+12:12:08.940 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 22423
+  ? 200 product creations in 13ms
+  ? Throughput: 15385 creates/sec
+12:12:08.946 [main] INFO com.urbanvogue.product_service.service.ProductService -- Fetching all products
+12:12:08.947 [main] INFO com.urbanvogue.product_service.service.ProductService -- Total products fetched: 500
+  ? Fetched 500-product catalog in 4ms
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.570 s -- in ProductService - Performance Tests
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  4.485 s
+[INFO] Finished at: 2026-04-06T12:12:09+05:30
+[INFO] ------------------------------------------------------------------------

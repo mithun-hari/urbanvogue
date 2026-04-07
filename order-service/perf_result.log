@@ -1,0 +1,1281 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] --------------------< com.urbanvogue:order-service >--------------------
+[INFO] Building order-service 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ order-service ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.14.1:compile (default-compile) @ order-service ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ order-service ---
+[INFO] skip non existing resourceDirectory C:\Users\mithu\Desktop\urbanvogue\order-service\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.14.1:testCompile (default-testCompile) @ order-service ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- surefire:3.5.4:test (default-test) @ order-service ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running OrderService - Performance Tests
+Mockito is currently self-attaching to enable the inline-mock-maker. This will no longer work in future releases of the JDK. Please add Mockito as an agent to your build as described in Mockito's documentation: https://javadoc.io/doc/org.mockito/mockito-core/latest/org.mockito/org/mockito/Mockito.html#0.3
+WARNING: A Java agent has been loaded dynamically (C:\Users\mithu\.m2\repository\net\bytebuddy\byte-buddy-agent\1.17.8\byte-buddy-agent-1.17.8.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+Java HotSpot(TM) 64-Bit Server VM warning: Sharing is only supported for boot loader classes because bootstrap classpath has been appended
+12:11:58.972 [main] INFO com.urbanvogue.order_service.service.OrderService -- Creating order for userId: 0
+12:11:58.991 [main] INFO com.urbanvogue.order_service.service.OrderService -- Fetching product details for productId: 1
+12:11:59.005 [main] INFO com.urbanvogue.order_service.service.OrderService -- Checking inventory for productId: 1
+12:11:59.006 [main] INFO com.urbanvogue.order_service.service.OrderService -- Deducting inventory for productId: 1, quantity: 1
+12:11:59.013 [main] INFO com.urbanvogue.order_service.service.OrderService -- Total order amount calculated: 99.99
+12:11:59.014 [main] INFO com.urbanvogue.order_service.service.OrderService -- Processing payment for orderId: 9397
+12:11:59.234 [main] INFO com.urbanvogue.order_service.service.OrderService -- Payment link generated successfully. Order is PENDING for orderId: 9397
+12:11:59.234 [main] INFO com.urbanvogue.order_service.service.OrderService -- Order completed with status: PENDING
+12:11:59.235 [main] INFO com.urbanvogue.order_service.service.OrderService -- Creating order for userId: 1
+12:11:59.235 [main] INFO com.urbanvogue.order_service.service.OrderService -- Fetching product details for productId: 1
+12:11:59.235 [main] INFO com.urbanvogue.order_service.service.OrderService -- Checking inventory for productId: 1
+12:11:59.235 [main] INFO com.urbanvogue.order_service.service.OrderService -- Deducting inventory for productId: 1, quantity: 1
+12:11:59.235 [main] INFO com.urbanvogue.order_service.service.OrderService -- Total order amount calculated: 99.99
+12:11:59.235 [main] INFO com.urbanvogue.order_service.service.OrderService -- Processing payment for orderId: 99090
+12:11:59.237 [main] INFO com.urbanvogue.order_service.service.OrderService -- Payment link generated successfully. Order is PENDING for orderId: 99090
+12:11:59.238 [main] INFO com.urbanvogue.order_service.service.OrderService -- Order completed with status: PENDING
+  ? Single order creation (post-warmup): 2ms
+12:11:59.313 [main] INFO com.urbanvogue.order_service.service.OrderService -- Creating order for userId: 0
+12:11:59.313 [main] INFO com.urbanvogue.order_service.service.OrderService -- Fetching product details for productId: 1
+12:11:59.313 [main] INFO com.urbanvogue.order_service.service.OrderService -- Checking inventory for productId: 1
+12:11:59.313 [main] INFO com.urbanvogue.order_service.service.OrderService -- Deducting inventory for productId: 1, quantity: 1
+12:11:59.314 [main] INFO com.urbanvogue.order_service.service.OrderService -- Total order amount calculated: 99.99
+12:11:59.314 [main] INFO com.urbanvogue.order_service.service.OrderService -- Processing payment for orderId: 23600
+12:11:59.314 [main] INFO com.urbanvogue.order_service.service.OrderService -- Payment link generated successfully. Order is PENDING for orderId: 23600
+12:11:59.314 [main] INFO com.urbanvogue.order_service.service.OrderService -- Order completed with status: PENDING
+12:11:59.314 [main] INFO com.urbanvogue.order_service.service.OrderService -- Creating order for userId: 1
+12:11:59.315 [main] INFO com.urbanvogue.order_service.service.OrderService -- Fetching product details for productId: 1
+12:11:59.315 [main] INFO com.urbanvogue.order_service.service.OrderService -- Checking inventory for productId: 1
+12:11:59.315 [main] INFO com.urbanvogue.order_service.service.OrderService -- Deducting inventory for productId: 1, quantity: 1
+12:11:59.315 [main] INFO com.urbanvogue.order_service.service.OrderService -- Total order amount calculated: 99.99
+12:11:59.315 [main] INFO com.urbanvogue.order_service.service.OrderService -- Processing payment for orderId: 63453
+12:11:59.316 [main] INFO com.urbanvogue.order_service.service.OrderService -- Payment link generated successfully. Order is PENDING for orderId: 63453
+12:11:59.316 [main] INFO com.urbanvogue.order_service.service.OrderService -- Order completed with status: PENDING
+12:11:59.316 [main] INFO com.urbanvogue.order_service.service.OrderService -- Creating order for userId: 2
+12:11:59.316 [main] INFO com.urbanvogue.order_service.service.OrderService -- Fetching product details for productId: 1
+12:11:59.316 [main] INFO com.urbanvogue.order_service.service.OrderService -- Checking inventory for productId: 1
+12:11:59.316 [main] INFO com.urbanvogue.order_service.service.OrderService -- Deducting inventory for productId: 1, quantity: 1
+12:11:59.316 [main] INFO com.urbanvogue.order_service.service.OrderService -- Total order amount calculated: 99.99
+12:11:59.317 [main] INFO com.urbanvogue.order_service.service.OrderService -- Processing payment for orderId: 18618
+12:11:59.317 [main] INFO com.urbanvogue.order_service.service.OrderService -- Payment link generated successfully. Order is PENDING for orderId: 18618
+12:11:59.317 [main] INFO com.urbanvogue.order_service.service.OrderService -- Order completed with status: PENDING
+12:11:59.317 [main] INFO com.urbanvogue.order_service.service.OrderService -- Creating order for userId: 3
+12:11:59.317 [main] INFO com.urbanvogue.order_service.service.OrderService -- Fetching product details for productId: 1
+12:11:59.318 [main] INFO com.urbanvogue.order_service.service.OrderService -- Checking inventory for productId: 1
+12:11:59.318 [main] INFO com.urbanvogue.order_service.service.OrderService -- Deducting inventory for productId: 1, quantity: 1
+12:11:59.318 [main] INFO com.urbanvogue.order_service.service.OrderService -- Total order amount calculated: 99.99
+12:11:59.318 [main] INFO com.urbanvogue.order_service.service.OrderService -- Processing payment for orderId: 43994
+12:11:59.318 [main] INFO com.urbanvogue.order_service.service.OrderService -- Payment link generated successfully. Order is PENDING for orderId: 43994
+12:11:59.319 [main] INFO com.urbanvogue.order_service.service.OrderService -- Order completed with status: PENDING
+12:11:59.319 [main] INFO com.urbanvogue.order_service.service.OrderService -- Creating order for userId: 4
+12:11:59.319 [main] INFO com.urbanvogue.order_service.service.OrderService -- Fetching product details for productId: 1
+12:11:59.319 [main] INFO com.urbanvogue.order_service.service.OrderService -- Checking inventory for productId: 1
+12:11:59.319 [main] INFO com.urbanvogue.order_service.service.OrderService -- Deducting inventory for productId: 1, quantity: 1
+12:11:59.319 [main] INFO com.urbanvogue.order_service.service.OrderService -- Total order amount calculated: 99.99
+12:11:59.319 [main] INFO com.urbanvogue.order_service.service.OrderService -- Processing payment for orderId: 23612
+12:11:59.320 [main] INFO com.urbanvogue.order_service.service.OrderService -- Payment link generated successfully. Order is PENDING for orderId: 23612
+12:11:59.320 [main] INFO com.urbanvogue.order_service.service.OrderService -- Order completed with status: PENDING
+12:11:59.320 [main] INFO com.urbanvogue.order_service.service.OrderService -- Creating order for userId: 5
+12:11:59.321 [main] INFO com.urbanvogue.order_service.service.OrderService -- Fetching product details for productId: 1
+12:11:59.321 [main] INFO com.urbanvogue.order_service.service.OrderService -- Checking inventory for productId: 1
+12:11:59.321 [main] INFO com.urbanvogue.order_service.service.OrderService -- Deducting inventory for productId: 1, quantity: 1
+12:11:59.321 [main] INFO com.urbanvogue.order_service.service.OrderService -- Total order amount calculated: 99.99
+12:11:59.321 [main] INFO com.urbanvogue.order_service.service.OrderService -- Processing payment for orderId: 21698
+12:11:59.321 [main] INFO com.urbanvogue.order_service.service.OrderService -- Payment link generated successfully. Order is PENDING for orderId: 21698
+12:11:59.321 [main] INFO com.urbanvogue.order_service.service.OrderService -- Order completed with status: PENDING
+12:11:59.322 [main] INFO com.urbanvogue.order_service.service.OrderService -- Creating order for userId: 6
+12:11:59.322 [main] INFO com.urbanvogue.order_service.service.OrderService -- Fetching product details for productId: 1
+12:11:59.322 [main] INFO com.urbanvogue.order_service.service.OrderService -- Checking inventory for productId: 1
+12:11:59.322 [main] INFO com.urbanvogue.order_service.service.OrderService -- Deducting inventory for productId: 1, quantity: 1
+12:11:59.322 [main] INFO com.urbanvogue.order_service.service.OrderService -- Total order amount calculated: 99.99
+12:11:59.322 [main] INFO com.urbanvogue.order_service.service.OrderService -- Processing payment for orderId: 61711
+12:11:59.322 [main] INFO com.urbanvogue.order_service.service.OrderService -- Payment link generated successfully. Order is PENDING for orderId: 61711
+12:11:59.322 [main] INFO com.urbanvogue.order_service.service.OrderService -- Order completed with status: PENDING
+12:11:59.322 [main] INFO com.urbanvogue.order_service.service.OrderService -- Creating order for userId: 7
+12:11:59.322 [main] INFO com.urbanvogue.order_service.service.OrderService -- Fetching product details for productId: 1
+12:11:59.322 [main] INFO com.urbanvogue.order_service.service.OrderService -- Checking inventory for productId: 1
+12:11:59.322 [main] INFO com.urbanvogue.order_service.service.OrderService -- Deducting inventory for productId: 1, quantity: 1
+12:11:59.323 [main] INFO com.urbanvogue.order_service.service.OrderService -- Total order amount calculated: 99.99
+12:11:59.323 [main] INFO com.urbanvogue.order_service.service.OrderService -- Processing payment for orderId: 62139
+12:11:59.323 [main] INFO com.urbanvogue.order_service.service.OrderService -- Payment link generated successfully. Order is PENDING for orderId: 62139
+12:11:59.323 [main] INFO com.urbanvogue.order_service.service.OrderService -- Order completed with status: PENDING
+12:11:59.323 [main] INFO com.urbanvogue.order_service.service.OrderService -- Creating order for userId: 8
+12:11:59.323 [main] INFO com.urbanvogue.order_service.service.OrderService -- Fetching product details for productId: 1
+12:11:59.324 [main] INFO com.urbanvogue.order_service.service.OrderService -- Checking inventory for productId: 1
+12:11:59.324 [main] INFO com.urbanvogue.order_service.service.OrderService -- Deducting inventory for productId: 1, quantity: 1
+12:11:59.324 [main] INFO com.urbanvogue.order_service.service.OrderService -- Total order amount calculated: 99.99
+12:11:59.324 [main] INFO com.urbanvogue.order_service.service.OrderService -- Processing payment for orderId: 69708
+12:11:59.324 [main] INFO com.urbanvogue.order_service.service.OrderService -- Payment link generated successfully. Order is PENDING for orderId: 69708
+12:11:59.324 [main] INFO com.urbanvogue.order_service.service.OrderService -- Order completed with status: PENDING
+12:11:59.326 [main] INFO com.urbanvogue.order_service.service.OrderService -- Creating order for userId: 9
+12:11:59.326 [main] INFO com.urbanvogue.order_service.service.OrderService -- Fetching product details for productId: 1
+12:11:59.326 [main] INFO com.urbanvogue.order_service.service.OrderService -- Checking inventory for productId: 1
+12:11:59.326 [main] INFO com.urbanvogue.order_service.service.OrderService -- Deducting inventory for productId: 1, quantity: 1
+12:11:59.326 [main] INFO com.urbanvogue.order_service.service.OrderService -- Total order amount calculated: 99.99
+12:11:59.327 [main] INFO com.urbanvogue.order_service.service.OrderService -- Processing payment for orderId: 91939
+12:11:59.327 [main] INFO com.urbanvogue.order_service.service.OrderService -- Payment link generated successfully. Order is PENDING for orderId: 91939
+12:11:59.327 [main] INFO com.urbanvogue.order_service.service.OrderService -- Order completed with status: PENDING
+12:11:59.327 [main] INFO com.urbanvogue.order_service.service.OrderService -- Creating order for userId: 10
+12:11:59.327 [main] INFO com.urbanvogue.order_service.service.OrderService -- Fetching product details for productId: 1
+12:11:59.327 [main] INFO com.urbanvogue.order_service.service.OrderService -- Checking inventory for productId: 1
+12:11:59.328 [main] INFO com.urbanvogue.order_service.service.OrderService -- Deducting inventory for productId: 1, quantity: 1
+12:11:59.328 [main] INFO com.urbanvogue.order_service.service.OrderService -- Total order amount calculated: 99.99
+12:11:59.328 [main] INFO com.urbanvogue.order_service.service.OrderService -- Processing payment for orderId: 56450
+12:11:59.328 [main] INFO com.urbanvogue.order_service.service.OrderService -- Payment link generated successfully. Order is PENDING for orderId: 56450
+12:11:59.328 [main] INFO com.urbanvogue.order_service.service.OrderService -- Order completed with status: PENDING
+12:11:59.328 [main] INFO com.urbanvogue.order_service.service.OrderService -- Creating order for userId: 11
+12:11:59.328 [main] INFO com.urbanvogue.order_service.service.OrderService -- Fetching product details for productId: 1
+12:11:59.329 [main] INFO com.urbanvogue.order_service.service.OrderService -- Checking inventory for productId: 1
+12:11:59.329 [main] INFO com.urbanvogue.order_service.service.OrderService -- Deducting inventory for productId: 1, quantity: 1
+12:11:59.329 [main] INFO com.urbanvogue.order_service.service.OrderService -- Total order amount calculated: 99.99
+12:11:59.329 [main] INFO com.urbanvogue.order_service.service.OrderService -- Processing payment for orderId: 84493
+12:11:59.329 [main] INFO com.urbanvogue.order_service.service.OrderService -- Payment link generated successfully. Order is PENDING for orderId: 84493
+12:11:59.329 [main] INFO com.urbanvogue.order_service.service.OrderService -- Order completed with status: PENDING
+12:11:59.330 [main] INFO com.urbanvogue.order_service.service.OrderService -- Creating order for userId: 12
+12:11:59.330 [main] INFO com.urbanvogue.order_service.service.OrderService -- Fetching product details for productId: 1
+12:11:59.330 [main] INFO com.urbanvogue.order_service.service.OrderService -- Checking inventory for productId: 1
+12:11:59.330 [main] INFO com.urbanvogue.order_service.service.OrderService -- Deducting inventory for productId: 1, quantity: 1
+12:11:59.330 [main] INFO com.urbanvogue.order_service.service.OrderService -- Total order amount calculated: 99.99
+12:11:59.330 [main] INFO com.urbanvogue.order_service.service.OrderService -- Processing payment for orderId: 74235
+12:11:59.330 [main] INFO com.urbanvogue.order_service.service.OrderService -- Payment link generated successfully. Order is PENDING for orderId: 74235
+12:11:59.331 [main] INFO com.urbanvogue.order_service.service.OrderService -- Order completed with status: PENDING
+12:11:59.331 [main] INFO com.urbanvogue.order_service.service.OrderService -- Creating order for userId: 13
+12:11:59.331 [main] INFO com.urbanvogue.order_service.service.OrderService -- Fetching product details for productId: 1
+12:11:59.331 [main] INFO com.urbanvogue.order_service.service.OrderService -- Checking inventory for productId: 1
+12:11:59.331 [main] INFO com.urbanvogue.order_service.service.OrderService -- Deducting inventory for productId: 1, quantity: 1
+12:11:59.331 [main] INFO com.urbanvogue.order_service.service.OrderService -- Total order amount calculated: 99.99
+12:11:59.332 [main] INFO com.urbanvogue.order_service.service.OrderService -- Processing payment for orderId: 49432
+12:11:59.332 [main] INFO com.urbanvogue.order_service.service.OrderService -- Payment link generated successfully. Order is PENDING for orderId: 49432
+12:11:59.332 [main] INFO com.urbanvogue.order_service.service.OrderService -- Order completed with status: PENDING
+12:11:59.333 [main] INFO com.urbanvogue.order_service.service.OrderService -- Creating order for userId: 14
+12:11:59.333 [main] INFO com.urbanvogue.order_service.service.OrderService -- Fetching product details for productId: 1
+12:11:59.333 [main] INFO com.urbanvogue.order_service.service.OrderService -- Checking inventory for productId: 1
+12:11:59.333 [main] INFO com.urbanvogue.order_service.service.OrderService -- Deducting inventory for productId: 1, quantity: 1
+12:11:59.333 [main] INFO com.urbanvogue.order_service.service.OrderService -- Total order amount calculated: 99.99
+12:11:59.333 [main] INFO com.urbanvogue.order_service.service.OrderService -- Processing payment for orderId: 67803
+12:11:59.334 [main] INFO com.urbanvogue.order_service.service.OrderService -- Payment link generated successfully. Order is PENDING for orderId: 67803
+12:11:59.334 [main] INFO com.urbanvogue.order_service.service.OrderService -- Order completed with status: PENDING
+12:11:59.334 [main] INFO com.urbanvogue.order_service.service.OrderService -- Creating order for userId: 15
+12:11:59.334 [main] INFO com.urbanvogue.order_service.service.OrderService -- Fetching product details for productId: 1
+12:11:59.334 [main] INFO com.urbanvogue.order_service.service.OrderService -- Checking inventory for productId: 1
+12:11:59.334 [main] INFO com.urbanvogue.order_service.service.OrderService -- Deducting inventory for productId: 1, quantity: 1
+12:11:59.334 [main] INFO com.urbanvogue.order_service.service.OrderService -- Total order amount calculated: 99.99
+12:11:59.336 [main] INFO com.urbanvogue.order_service.service.OrderService -- Processing payment for orderId: 69921
+12:11:59.336 [main] INFO com.urbanvogue.order_service.service.OrderService -- Payment link generated successfully. Order is PENDING for orderId: 69921
+12:11:59.336 [main] INFO com.urbanvogue.order_service.service.OrderService -- Order completed with status: PENDING
+12:11:59.336 [main] INFO com.urbanvogue.order_service.service.OrderService -- Creating order for userId: 16
+12:11:59.336 [main] INFO com.urbanvogue.order_service.service.OrderService -- Fetching product details for productId: 1
+12:11:59.336 [main] INFO com.urbanvogue.order_service.service.OrderService -- Checking inventory for productId: 1
+12:11:59.337 [main] INFO com.urbanvogue.order_service.service.OrderService -- Deducting inventory for productId: 1, quantity: 1
+12:11:59.337 [main] INFO com.urbanvogue.order_service.service.OrderService -- Total order amount calculated: 99.99
+12:11:59.337 [main] INFO com.urbanvogue.order_service.service.OrderService -- Processing payment for orderId: 82337
+12:11:59.337 [main] INFO com.urbanvogue.order_service.service.OrderService -- Payment link generated successfully. Order is PENDING for orderId: 82337
+12:11:59.337 [main] INFO com.urbanvogue.order_service.service.OrderService -- Order completed with status: PENDING
+12:11:59.337 [main] INFO com.urbanvogue.order_service.service.OrderService -- Creating order for userId: 17
+12:11:59.337 [main] INFO com.urbanvogue.order_service.service.OrderService -- Fetching product details for productId: 1
+12:11:59.337 [main] INFO com.urbanvogue.order_service.service.OrderService -- Checking inventory for productId: 1
+12:11:59.337 [main] INFO com.urbanvogue.order_service.service.OrderService -- Deducting inventory for productId: 1, quantity: 1
+12:11:59.338 [main] INFO com.urbanvogue.order_service.service.OrderService -- Total order amount calculated: 99.99
+12:11:59.338 [main] INFO com.urbanvogue.order_service.service.OrderService -- Processing payment for orderId: 5930
+12:11:59.338 [main] INFO com.urbanvogue.order_service.service.OrderService -- Payment link generated successfully. Order is PENDING for orderId: 5930
+12:11:59.338 [main] INFO com.urbanvogue.order_service.service.OrderService -- Order completed with status: PENDING
+12:11:59.338 [main] INFO com.urbanvogue.order_service.service.OrderService -- Creating order for userId: 18
+12:11:59.338 [main] INFO com.urbanvogue.order_service.service.OrderService -- Fetching product details for productId: 1
+12:11:59.339 [main] INFO com.urbanvogue.order_service.service.OrderService -- Checking inventory for productId: 1
+12:11:59.339 [main] INFO com.urbanvogue.order_service.service.OrderService -- Deducting inventory for productId: 1, quantity: 1
+12:11:59.339 [main] INFO com.urbanvogue.order_service.service.OrderService -- Total order amount calculated: 99.99
+12:11:59.339 [main] INFO com.urbanvogue.order_service.service.OrderService -- Processing payment for orderId: 32032
+12:11:59.339 [main] INFO com.urbanvogue.order_service.service.OrderService -- Payment link generated successfully. Order is PENDING for orderId: 32032
+12:11:59.340 [main] INFO com.urbanvogue.order_service.service.OrderService -- Order completed with status: PENDING
+12:11:59.340 [main] INFO com.urbanvogue.order_service.service.OrderService -- Creating order for userId: 19
+12:11:59.340 [main] INFO com.urbanvogue.order_service.service.OrderService -- Fetching product details for productId: 1
+12:11:59.340 [main] INFO com.urbanvogue.order_service.service.OrderService -- Checking inventory for productId: 1
+12:11:59.340 [main] INFO com.urbanvogue.order_service.service.OrderService -- Deducting inventory for productId: 1, quantity: 1
+12:11:59.340 [main] INFO com.urbanvogue.order_service.service.OrderService -- Total order amount calculated: 99.99
+12:11:59.340 [main] INFO com.urbanvogue.order_service.service.OrderService -- Processing payment for orderId: 6535
+12:11:59.340 [main] INFO com.urbanvogue.order_service.service.OrderService -- Payment link generated successfully. Order is PENDING for orderId: 6535
+12:11:59.341 [main] INFO com.urbanvogue.order_service.service.OrderService -- Order completed with status: PENDING
+12:11:59.341 [main] INFO com.urbanvogue.order_service.service.OrderService -- Creating order for userId: 20
+12:11:59.341 [main] INFO com.urbanvogue.order_service.service.OrderService -- Fetching product details for productId: 1
+12:11:59.341 [main] INFO com.urbanvogue.order_service.service.OrderService -- Checking inventory for productId: 1
+12:11:59.341 [main] INFO com.urbanvogue.order_service.service.OrderService -- Deducting inventory for productId: 1, quantity: 1
+12:11:59.341 [main] INFO com.urbanvogue.order_service.service.OrderService -- Total order amount calculated: 99.99
+12:11:59.341 [main] INFO com.urbanvogue.order_service.service.OrderService -- Processing payment for orderId: 53874
+12:11:59.342 [main] INFO com.urbanvogue.order_service.service.OrderService -- Payment link generated successfully. Order is PENDING for orderId: 53874
+12:11:59.342 [main] INFO com.urbanvogue.order_service.service.OrderService -- Order completed with status: PENDING
+12:11:59.342 [main] INFO com.urbanvogue.order_service.service.OrderService -- Creating order for userId: 21
+12:11:59.342 [main] INFO com.urbanvogue.order_service.service.OrderService -- Fetching product details for productId: 1
+12:11:59.342 [main] INFO com.urbanvogue.order_service.service.OrderService -- Checking inventory for productId: 1
+12:11:59.342 [main] INFO com.urbanvogue.order_service.service.OrderService -- Deducting inventory for productId: 1, quantity: 1
+12:11:59.342 [main] INFO com.urbanvogue.order_service.service.OrderService -- Total order amount calculated: 99.99
+12:11:59.342 [main] INFO com.urbanvogue.order_service.service.OrderService -- Processing payment for orderId: 26681
+12:11:59.343 [main] INFO com.urbanvogue.order_service.service.OrderService -- Payment link generated successfully. Order is PENDING for orderId: 26681
+12:11:59.343 [main] INFO com.urbanvogue.order_service.service.OrderService -- Order completed with status: PENDING
+12:11:59.343 [main] INFO com.urbanvogue.order_service.service.OrderService -- Creating order for userId: 22
+12:11:59.343 [main] INFO com.urbanvogue.order_service.service.OrderService -- Fetching product details for productId: 1
+12:11:59.343 [main] INFO com.urbanvogue.order_service.service.OrderService -- Checking inventory for productId: 1
+12:11:59.343 [main] INFO com.urbanvogue.order_service.service.OrderService -- Deducting inventory for productId: 1, quantity: 1
+12:11:59.343 [main] INFO com.urbanvogue.order_service.service.OrderService -- Total order amount calculated: 99.99
+12:11:59.343 [main] INFO com.urbanvogue.order_service.service.OrderService -- Processing payment for orderId: 91985
+12:11:59.344 [main] INFO com.urbanvogue.order_service.service.OrderService -- Payment link generated successfully. Order is PENDING for orderId: 91985
+12:11:59.344 [main] INFO com.urbanvogue.order_service.service.OrderService -- Order completed with status: PENDING
+12:11:59.344 [main] INFO com.urbanvogue.order_service.service.OrderService -- Creating order for userId: 23
+12:11:59.344 [main] INFO com.urbanvogue.order_service.service.OrderService -- Fetching product details for productId: 1
+12:11:59.344 [main] INFO com.urbanvogue.order_service.service.OrderService -- Checking inventory for productId: 1
+12:11:59.344 [main] INFO com.urbanvogue.order_service.service.OrderService -- Deducting inventory for productId: 1, quantity: 1
+12:11:59.344 [main] INFO com.urbanvogue.order_service.service.OrderService -- Total order amount calculated: 99.99
+12:11:59.344 [main] INFO com.urbanvogue.order_service.service.OrderService -- Processing payment for orderId: 37473
+12:11:59.344 [main] INFO com.urbanvogue.order_service.service.OrderService -- Payment link generated successfully. Order is PENDING for orderId: 37473
+12:11:59.346 [main] INFO com.urbanvogue.order_service.service.OrderService -- Order completed with status: PENDING
+12:11:59.346 [main] INFO com.urbanvogue.order_service.service.OrderService -- Creating order for userId: 24
+12:11:59.346 [main] INFO com.urbanvogue.order_service.service.OrderService -- Fetching product details for productId: 1
+12:11:59.346 [main] INFO com.urbanvogue.order_service.service.OrderService -- Checking inventory for productId: 1
+12:11:59.346 [main] INFO com.urbanvogue.order_service.service.OrderService -- Deducting inventory for productId: 1, quantity: 1
+12:11:59.346 [main] INFO com.urbanvogue.order_service.service.OrderService -- Total order amount calculated: 99.99
+12:11:59.346 [main] INFO com.urbanvogue.order_service.service.OrderService -- Processing payment for orderId: 61527
+12:11:59.347 [main] INFO com.urbanvogue.order_service.service.OrderService -- Payment link generated successfully. Order is PENDING for orderId: 61527
+12:11:59.347 [main] INFO com.urbanvogue.order_service.service.OrderService -- Order completed with status: PENDING
+12:11:59.347 [main] INFO com.urbanvogue.order_service.service.OrderService -- Creating order for userId: 25
+12:11:59.347 [main] INFO com.urbanvogue.order_service.service.OrderService -- Fetching product details for productId: 1
+12:11:59.347 [main] INFO com.urbanvogue.order_service.service.OrderService -- Checking inventory for productId: 1
+12:11:59.347 [main] INFO com.urbanvogue.order_service.service.OrderService -- Deducting inventory for productId: 1, quantity: 1
+12:11:59.348 [main] INFO com.urbanvogue.order_service.service.OrderService -- Total order amount calculated: 99.99
+12:11:59.348 [main] INFO com.urbanvogue.order_service.service.OrderService -- Processing payment for orderId: 29038
+12:11:59.348 [main] INFO com.urbanvogue.order_service.service.OrderService -- Payment link generated successfully. Order is PENDING for orderId: 29038
+12:11:59.348 [main] INFO com.urbanvogue.order_service.service.OrderService -- Order completed with status: PENDING
+12:11:59.348 [main] INFO com.urbanvogue.order_service.service.OrderService -- Creating order for userId: 26
+12:11:59.348 [main] INFO com.urbanvogue.order_service.service.OrderService -- Fetching product details for productId: 1
+12:11:59.348 [main] INFO com.urbanvogue.order_service.service.OrderService -- Checking inventory for productId: 1
+12:11:59.348 [main] INFO com.urbanvogue.order_service.service.OrderService -- Deducting inventory for productId: 1, quantity: 1
+12:11:59.349 [main] INFO com.urbanvogue.order_service.service.OrderService -- Total order amount calculated: 99.99
+12:11:59.349 [main] INFO com.urbanvogue.order_service.service.OrderService -- Processing payment for orderId: 18538
+12:11:59.349 [main] INFO com.urbanvogue.order_service.service.OrderService -- Payment link generated successfully. Order is PENDING for orderId: 18538
+12:11:59.349 [main] INFO com.urbanvogue.order_service.service.OrderService -- Order completed with status: PENDING
+12:11:59.349 [main] INFO com.urbanvogue.order_service.service.OrderService -- Creating order for userId: 27
+12:11:59.349 [main] INFO com.urbanvogue.order_service.service.OrderService -- Fetching product details for productId: 1
+12:11:59.349 [main] INFO com.urbanvogue.order_service.service.OrderService -- Checking inventory for productId: 1
+12:11:59.350 [main] INFO com.urbanvogue.order_service.service.OrderService -- Deducting inventory for productId: 1, quantity: 1
+12:11:59.350 [main] INFO com.urbanvogue.order_service.service.OrderService -- Total order amount calculated: 99.99
+12:11:59.350 [main] INFO com.urbanvogue.order_service.service.OrderService -- Processing payment for orderId: 94665
+12:11:59.350 [main] INFO com.urbanvogue.order_service.service.OrderService -- Payment link generated successfully. Order is PENDING for orderId: 94665
+12:11:59.350 [main] INFO com.urbanvogue.order_service.service.OrderService -- Order completed with status: PENDING
+12:11:59.351 [main] INFO com.urbanvogue.order_service.service.OrderService -- Creating order for userId: 28
+12:11:59.351 [main] INFO com.urbanvogue.order_service.service.OrderService -- Fetching product details for productId: 1
+12:11:59.351 [main] INFO com.urbanvogue.order_service.service.OrderService -- Checking inventory for productId: 1
+12:11:59.351 [main] INFO com.urbanvogue.order_service.service.OrderService -- Deducting inventory for productId: 1, quantity: 1
+12:11:59.351 [main] INFO com.urbanvogue.order_service.service.OrderService -- Total order amount calculated: 99.99
+12:11:59.351 [main] INFO com.urbanvogue.order_service.service.OrderService -- Processing payment for orderId: 91652
+12:11:59.351 [main] INFO com.urbanvogue.order_service.service.OrderService -- Payment link generated successfully. Order is PENDING for orderId: 91652
+12:11:59.352 [main] INFO com.urbanvogue.order_service.service.OrderService -- Order completed with status: PENDING
+12:11:59.352 [main] INFO com.urbanvogue.order_service.service.OrderService -- Creating order for userId: 29
+12:11:59.352 [main] INFO com.urbanvogue.order_service.service.OrderService -- Fetching product details for productId: 1
+12:11:59.352 [main] INFO com.urbanvogue.order_service.service.OrderService -- Checking inventory for productId: 1
+12:11:59.352 [main] INFO com.urbanvogue.order_service.service.OrderService -- Deducting inventory for productId: 1, quantity: 1
+12:11:59.352 [main] INFO com.urbanvogue.order_service.service.OrderService -- Total order amount calculated: 99.99
+12:11:59.352 [main] INFO com.urbanvogue.order_service.service.OrderService -- Processing payment for orderId: 99289
+12:11:59.353 [main] INFO com.urbanvogue.order_service.service.OrderService -- Payment link generated successfully. Order is PENDING for orderId: 99289
+12:11:59.353 [main] INFO com.urbanvogue.order_service.service.OrderService -- Order completed with status: PENDING
+12:11:59.353 [main] INFO com.urbanvogue.order_service.service.OrderService -- Creating order for userId: 30
+12:11:59.353 [main] INFO com.urbanvogue.order_service.service.OrderService -- Fetching product details for productId: 1
+12:11:59.354 [main] INFO com.urbanvogue.order_service.service.OrderService -- Checking inventory for productId: 1
+12:11:59.354 [main] INFO com.urbanvogue.order_service.service.OrderService -- Deducting inventory for productId: 1, quantity: 1
+12:11:59.354 [main] INFO com.urbanvogue.order_service.service.OrderService -- Total order amount calculated: 99.99
+12:11:59.354 [main] INFO com.urbanvogue.order_service.service.OrderService -- Processing payment for orderId: 71625
+12:11:59.354 [main] INFO com.urbanvogue.order_service.service.OrderService -- Payment link generated successfully. Order is PENDING for orderId: 71625
+12:11:59.355 [main] INFO com.urbanvogue.order_service.service.OrderService -- Order completed with status: PENDING
+12:11:59.355 [main] INFO com.urbanvogue.order_service.service.OrderService -- Creating order for userId: 31
+12:11:59.355 [main] INFO com.urbanvogue.order_service.service.OrderService -- Fetching product details for productId: 1
+12:11:59.355 [main] INFO com.urbanvogue.order_service.service.OrderService -- Checking inventory for productId: 1
+12:11:59.355 [main] INFO com.urbanvogue.order_service.service.OrderService -- Deducting inventory for productId: 1, quantity: 1
+12:11:59.355 [main] INFO com.urbanvogue.order_service.service.OrderService -- Total order amount calculated: 99.99
+12:11:59.355 [main] INFO com.urbanvogue.order_service.service.OrderService -- Processing payment for orderId: 59310
+12:11:59.356 [main] INFO com.urbanvogue.order_service.service.OrderService -- Payment link generated successfully. Order is PENDING for orderId: 59310
+12:11:59.356 [main] INFO com.urbanvogue.order_service.service.OrderService -- Order completed with status: PENDING
+12:11:59.356 [main] INFO com.urbanvogue.order_service.service.OrderService -- Creating order for userId: 32
+12:11:59.356 [main] INFO com.urbanvogue.order_service.service.OrderService -- Fetching product details for productId: 1
+12:11:59.356 [main] INFO com.urbanvogue.order_service.service.OrderService -- Checking inventory for productId: 1
+12:11:59.356 [main] INFO com.urbanvogue.order_service.service.OrderService -- Deducting inventory for productId: 1, quantity: 1
+12:11:59.356 [main] INFO com.urbanvogue.order_service.service.OrderService -- Total order amount calculated: 99.99
+12:11:59.356 [main] INFO com.urbanvogue.order_service.service.OrderService -- Processing payment for orderId: 34234
+12:11:59.357 [main] INFO com.urbanvogue.order_service.service.OrderService -- Payment link generated successfully. Order is PENDING for orderId: 34234
+12:11:59.358 [main] INFO com.urbanvogue.order_service.service.OrderService -- Order completed with status: PENDING
+12:11:59.358 [main] INFO com.urbanvogue.order_service.service.OrderService -- Creating order for userId: 33
+12:11:59.358 [main] INFO com.urbanvogue.order_service.service.OrderService -- Fetching product details for productId: 1
+12:11:59.358 [main] INFO com.urbanvogue.order_service.service.OrderService -- Checking inventory for productId: 1
+12:11:59.358 [main] INFO com.urbanvogue.order_service.service.OrderService -- Deducting inventory for productId: 1, quantity: 1
+12:11:59.358 [main] INFO com.urbanvogue.order_service.service.OrderService -- Total order amount calculated: 99.99
+12:11:59.358 [main] INFO com.urbanvogue.order_service.service.OrderService -- Processing payment for orderId: 30808
+12:11:59.359 [main] INFO com.urbanvogue.order_service.service.OrderService -- Payment link generated successfully. Order is PENDING for orderId: 30808
+12:11:59.359 [main] INFO com.urbanvogue.order_service.service.OrderService -- Order completed with status: PENDING
+12:11:59.359 [main] INFO com.urbanvogue.order_service.service.OrderService -- Creating order for userId: 34
+12:11:59.359 [main] INFO com.urbanvogue.order_service.service.OrderService -- Fetching product details for productId: 1
+12:11:59.359 [main] INFO com.urbanvogue.order_service.service.OrderService -- Checking inventory for productId: 1
+12:11:59.359 [main] INFO com.urbanvogue.order_service.service.OrderService -- Deducting inventory for productId: 1, quantity: 1
+12:11:59.360 [main] INFO com.urbanvogue.order_service.service.OrderService -- Total order amount calculated: 99.99
+12:11:59.360 [main] INFO com.urbanvogue.order_service.service.OrderService -- Processing payment for orderId: 25419
+12:11:59.360 [main] INFO com.urbanvogue.order_service.service.OrderService -- Payment link generated successfully. Order is PENDING for orderId: 25419
+12:11:59.360 [main] INFO com.urbanvogue.order_service.service.OrderService -- Order completed with status: PENDING
+12:11:59.360 [main] INFO com.urbanvogue.order_service.service.OrderService -- Creating order for userId: 35
+12:11:59.361 [main] INFO com.urbanvogue.order_service.service.OrderService -- Fetching product details for productId: 1
+12:11:59.361 [main] INFO com.urbanvogue.order_service.service.OrderService -- Checking inventory for productId: 1
+12:11:59.361 [main] INFO com.urbanvogue.order_service.service.OrderService -- Deducting inventory for productId: 1, quantity: 1
+12:11:59.361 [main] INFO com.urbanvogue.order_service.service.OrderService -- Total order amount calculated: 99.99
+12:11:59.361 [main] INFO com.urbanvogue.order_service.service.OrderService -- Processing payment for orderId: 79149
+12:11:59.361 [main] INFO com.urbanvogue.order_service.service.OrderService -- Payment link generated successfully. Order is PENDING for orderId: 79149
+12:11:59.361 [main] INFO com.urbanvogue.order_service.service.OrderService -- Order completed with status: PENDING
+12:11:59.361 [main] INFO com.urbanvogue.order_service.service.OrderService -- Creating order for userId: 36
+12:11:59.361 [main] INFO com.urbanvogue.order_service.service.OrderService -- Fetching product details for productId: 1
+12:11:59.362 [main] INFO com.urbanvogue.order_service.service.OrderService -- Checking inventory for productId: 1
+12:11:59.362 [main] INFO com.urbanvogue.order_service.service.OrderService -- Deducting inventory for productId: 1, quantity: 1
+12:11:59.362 [main] INFO com.urbanvogue.order_service.service.OrderService -- Total order amount calculated: 99.99
+12:11:59.362 [main] INFO com.urbanvogue.order_service.service.OrderService -- Processing payment for orderId: 62569
+12:11:59.362 [main] INFO com.urbanvogue.order_service.service.OrderService -- Payment link generated successfully. Order is PENDING for orderId: 62569
+12:11:59.362 [main] INFO com.urbanvogue.order_service.service.OrderService -- Order completed with status: PENDING
+12:11:59.362 [main] INFO com.urbanvogue.order_service.service.OrderService -- Creating order for userId: 37
+12:11:59.362 [main] INFO com.urbanvogue.order_service.service.OrderService -- Fetching product details for productId: 1
+12:11:59.364 [main] INFO com.urbanvogue.order_service.service.OrderService -- Checking inventory for productId: 1
+12:11:59.364 [main] INFO com.urbanvogue.order_service.service.OrderService -- Deducting inventory for productId: 1, quantity: 1
+12:11:59.364 [main] INFO com.urbanvogue.order_service.service.OrderService -- Total order amount calculated: 99.99
+12:11:59.364 [main] INFO com.urbanvogue.order_service.service.OrderService -- Processing payment for orderId: 27694
+12:11:59.364 [main] INFO com.urbanvogue.order_service.service.OrderService -- Payment link generated successfully. Order is PENDING for orderId: 27694
+12:11:59.364 [main] INFO com.urbanvogue.order_service.service.OrderService -- Order completed with status: PENDING
+12:11:59.364 [main] INFO com.urbanvogue.order_service.service.OrderService -- Creating order for userId: 38
+12:11:59.365 [main] INFO com.urbanvogue.order_service.service.OrderService -- Fetching product details for productId: 1
+12:11:59.365 [main] INFO com.urbanvogue.order_service.service.OrderService -- Checking inventory for productId: 1
+12:11:59.365 [main] INFO com.urbanvogue.order_service.service.OrderService -- Deducting inventory for productId: 1, quantity: 1
+12:11:59.365 [main] INFO com.urbanvogue.order_service.service.OrderService -- Total order amount calculated: 99.99
+12:11:59.365 [main] INFO com.urbanvogue.order_service.service.OrderService -- Processing payment for orderId: 5950
+12:11:59.365 [main] INFO com.urbanvogue.order_service.service.OrderService -- Payment link generated successfully. Order is PENDING for orderId: 5950
+12:11:59.365 [main] INFO com.urbanvogue.order_service.service.OrderService -- Order completed with status: PENDING
+12:11:59.365 [main] INFO com.urbanvogue.order_service.service.OrderService -- Creating order for userId: 39
+12:11:59.365 [main] INFO com.urbanvogue.order_service.service.OrderService -- Fetching product details for productId: 1
+12:11:59.365 [main] INFO com.urbanvogue.order_service.service.OrderService -- Checking inventory for productId: 1
+12:11:59.365 [main] INFO com.urbanvogue.order_service.service.OrderService -- Deducting inventory for productId: 1, quantity: 1
+12:11:59.365 [main] INFO com.urbanvogue.order_service.service.OrderService -- Total order amount calculated: 99.99
+12:11:59.365 [main] INFO com.urbanvogue.order_service.service.OrderService -- Processing payment for orderId: 32895
+12:11:59.366 [main] INFO com.urbanvogue.order_service.service.OrderService -- Payment link generated successfully. Order is PENDING for orderId: 32895
+12:11:59.366 [main] INFO com.urbanvogue.order_service.service.OrderService -- Order completed with status: PENDING
+12:11:59.366 [main] INFO com.urbanvogue.order_service.service.OrderService -- Creating order for userId: 40
+12:11:59.366 [main] INFO com.urbanvogue.order_service.service.OrderService -- Fetching product details for productId: 1
+12:11:59.366 [main] INFO com.urbanvogue.order_service.service.OrderService -- Checking inventory for productId: 1
+12:11:59.366 [main] INFO com.urbanvogue.order_service.service.OrderService -- Deducting inventory for productId: 1, quantity: 1
+12:11:59.367 [main] INFO com.urbanvogue.order_service.service.OrderService -- Total order amount calculated: 99.99
+12:11:59.367 [main] INFO com.urbanvogue.order_service.service.OrderService -- Processing payment for orderId: 57707
+12:11:59.367 [main] INFO com.urbanvogue.order_service.service.OrderService -- Payment link generated successfully. Order is PENDING for orderId: 57707
+12:11:59.367 [main] INFO com.urbanvogue.order_service.service.OrderService -- Order completed with status: PENDING
+12:11:59.367 [main] INFO com.urbanvogue.order_service.service.OrderService -- Creating order for userId: 41
+12:11:59.367 [main] INFO com.urbanvogue.order_service.service.OrderService -- Fetching product details for productId: 1
+12:11:59.368 [main] INFO com.urbanvogue.order_service.service.OrderService -- Checking inventory for productId: 1
+12:11:59.368 [main] INFO com.urbanvogue.order_service.service.OrderService -- Deducting inventory for productId: 1, quantity: 1
+12:11:59.368 [main] INFO com.urbanvogue.order_service.service.OrderService -- Total order amount calculated: 99.99
+12:11:59.368 [main] INFO com.urbanvogue.order_service.service.OrderService -- Processing payment for orderId: 53327
+12:11:59.369 [main] INFO com.urbanvogue.order_service.service.OrderService -- Payment link generated successfully. Order is PENDING for orderId: 53327
+12:11:59.369 [main] INFO com.urbanvogue.order_service.service.OrderService -- Order completed with status: PENDING
+12:11:59.369 [main] INFO com.urbanvogue.order_service.service.OrderService -- Creating order for userId: 42
+12:11:59.369 [main] INFO com.urbanvogue.order_service.service.OrderService -- Fetching product details for productId: 1
+12:11:59.369 [main] INFO com.urbanvogue.order_service.service.OrderService -- Checking inventory for productId: 1
+12:11:59.369 [main] INFO com.urbanvogue.order_service.service.OrderService -- Deducting inventory for productId: 1, quantity: 1
+12:11:59.370 [main] INFO com.urbanvogue.order_service.service.OrderService -- Total order amount calculated: 99.99
+12:11:59.370 [main] INFO com.urbanvogue.order_service.service.OrderService -- Processing payment for orderId: 22979
+12:11:59.371 [main] INFO com.urbanvogue.order_service.service.OrderService -- Payment link generated successfully. Order is PENDING for orderId: 22979
+12:11:59.372 [main] INFO com.urbanvogue.order_service.service.OrderService -- Order completed with status: PENDING
+12:11:59.373 [main] INFO com.urbanvogue.order_service.service.OrderService -- Creating order for userId: 43
+12:11:59.375 [main] INFO com.urbanvogue.order_service.service.OrderService -- Fetching product details for productId: 1
+12:11:59.375 [main] INFO com.urbanvogue.order_service.service.OrderService -- Checking inventory for productId: 1
+12:11:59.376 [main] INFO com.urbanvogue.order_service.service.OrderService -- Deducting inventory for productId: 1, quantity: 1
+12:11:59.376 [main] INFO com.urbanvogue.order_service.service.OrderService -- Total order amount calculated: 99.99
+12:11:59.378 [main] INFO com.urbanvogue.order_service.service.OrderService -- Processing payment for orderId: 67739
+12:11:59.378 [main] INFO com.urbanvogue.order_service.service.OrderService -- Payment link generated successfully. Order is PENDING for orderId: 67739
+12:11:59.379 [main] INFO com.urbanvogue.order_service.service.OrderService -- Order completed with status: PENDING
+12:11:59.379 [main] INFO com.urbanvogue.order_service.service.OrderService -- Creating order for userId: 44
+12:11:59.379 [main] INFO com.urbanvogue.order_service.service.OrderService -- Fetching product details for productId: 1
+12:11:59.379 [main] INFO com.urbanvogue.order_service.service.OrderService -- Checking inventory for productId: 1
+12:11:59.379 [main] INFO com.urbanvogue.order_service.service.OrderService -- Deducting inventory for productId: 1, quantity: 1
+12:11:59.379 [main] INFO com.urbanvogue.order_service.service.OrderService -- Total order amount calculated: 99.99
+12:11:59.380 [main] INFO com.urbanvogue.order_service.service.OrderService -- Processing payment for orderId: 94622
+12:11:59.382 [main] INFO com.urbanvogue.order_service.service.OrderService -- Payment link generated successfully. Order is PENDING for orderId: 94622
+12:11:59.383 [main] INFO com.urbanvogue.order_service.service.OrderService -- Order completed with status: PENDING
+12:11:59.383 [main] INFO com.urbanvogue.order_service.service.OrderService -- Creating order for userId: 45
+12:11:59.383 [main] INFO com.urbanvogue.order_service.service.OrderService -- Fetching product details for productId: 1
+12:11:59.383 [main] INFO com.urbanvogue.order_service.service.OrderService -- Checking inventory for productId: 1
+12:11:59.383 [main] INFO com.urbanvogue.order_service.service.OrderService -- Deducting inventory for productId: 1, quantity: 1
+12:11:59.383 [main] INFO com.urbanvogue.order_service.service.OrderService -- Total order amount calculated: 99.99
+12:11:59.384 [main] INFO com.urbanvogue.order_service.service.OrderService -- Processing payment for orderId: 59752
+12:11:59.384 [main] INFO com.urbanvogue.order_service.service.OrderService -- Payment link generated successfully. Order is PENDING for orderId: 59752
+12:11:59.384 [main] INFO com.urbanvogue.order_service.service.OrderService -- Order completed with status: PENDING
+12:11:59.384 [main] INFO com.urbanvogue.order_service.service.OrderService -- Creating order for userId: 46
+12:11:59.384 [main] INFO com.urbanvogue.order_service.service.OrderService -- Fetching product details for productId: 1
+12:11:59.385 [main] INFO com.urbanvogue.order_service.service.OrderService -- Checking inventory for productId: 1
+12:11:59.385 [main] INFO com.urbanvogue.order_service.service.OrderService -- Deducting inventory for productId: 1, quantity: 1
+12:11:59.385 [main] INFO com.urbanvogue.order_service.service.OrderService -- Total order amount calculated: 99.99
+12:11:59.385 [main] INFO com.urbanvogue.order_service.service.OrderService -- Processing payment for orderId: 36064
+12:11:59.385 [main] INFO com.urbanvogue.order_service.service.OrderService -- Payment link generated successfully. Order is PENDING for orderId: 36064
+12:11:59.385 [main] INFO com.urbanvogue.order_service.service.OrderService -- Order completed with status: PENDING
+12:11:59.385 [main] INFO com.urbanvogue.order_service.service.OrderService -- Creating order for userId: 47
+12:11:59.387 [main] INFO com.urbanvogue.order_service.service.OrderService -- Fetching product details for productId: 1
+12:11:59.387 [main] INFO com.urbanvogue.order_service.service.OrderService -- Checking inventory for productId: 1
+12:11:59.387 [main] INFO com.urbanvogue.order_service.service.OrderService -- Deducting inventory for productId: 1, quantity: 1
+12:11:59.387 [main] INFO com.urbanvogue.order_service.service.OrderService -- Total order amount calculated: 99.99
+12:11:59.387 [main] INFO com.urbanvogue.order_service.service.OrderService -- Processing payment for orderId: 88561
+12:11:59.388 [main] INFO com.urbanvogue.order_service.service.OrderService -- Payment link generated successfully. Order is PENDING for orderId: 88561
+12:11:59.389 [main] INFO com.urbanvogue.order_service.service.OrderService -- Order completed with status: PENDING
+12:11:59.389 [main] INFO com.urbanvogue.order_service.service.OrderService -- Creating order for userId: 48
+12:11:59.389 [main] INFO com.urbanvogue.order_service.service.OrderService -- Fetching product details for productId: 1
+12:11:59.390 [main] INFO com.urbanvogue.order_service.service.OrderService -- Checking inventory for productId: 1
+12:11:59.390 [main] INFO com.urbanvogue.order_service.service.OrderService -- Deducting inventory for productId: 1, quantity: 1
+12:11:59.390 [main] INFO com.urbanvogue.order_service.service.OrderService -- Total order amount calculated: 99.99
+12:11:59.390 [main] INFO com.urbanvogue.order_service.service.OrderService -- Processing payment for orderId: 75111
+12:11:59.391 [main] INFO com.urbanvogue.order_service.service.OrderService -- Payment link generated successfully. Order is PENDING for orderId: 75111
+12:11:59.391 [main] INFO com.urbanvogue.order_service.service.OrderService -- Order completed with status: PENDING
+12:11:59.391 [main] INFO com.urbanvogue.order_service.service.OrderService -- Creating order for userId: 49
+12:11:59.391 [main] INFO com.urbanvogue.order_service.service.OrderService -- Fetching product details for productId: 1
+12:11:59.391 [main] INFO com.urbanvogue.order_service.service.OrderService -- Checking inventory for productId: 1
+12:11:59.391 [main] INFO com.urbanvogue.order_service.service.OrderService -- Deducting inventory for productId: 1, quantity: 1
+12:11:59.391 [main] INFO com.urbanvogue.order_service.service.OrderService -- Total order amount calculated: 99.99
+12:11:59.392 [main] INFO com.urbanvogue.order_service.service.OrderService -- Processing payment for orderId: 82021
+12:11:59.392 [main] INFO com.urbanvogue.order_service.service.OrderService -- Payment link generated successfully. Order is PENDING for orderId: 82021
+12:11:59.392 [main] INFO com.urbanvogue.order_service.service.OrderService -- Order completed with status: PENDING
+12:11:59.392 [main] INFO com.urbanvogue.order_service.service.OrderService -- Creating order for userId: 50
+12:11:59.392 [main] INFO com.urbanvogue.order_service.service.OrderService -- Fetching product details for productId: 1
+12:11:59.392 [main] INFO com.urbanvogue.order_service.service.OrderService -- Checking inventory for productId: 1
+12:11:59.393 [main] INFO com.urbanvogue.order_service.service.OrderService -- Deducting inventory for productId: 1, quantity: 1
+12:11:59.393 [main] INFO com.urbanvogue.order_service.service.OrderService -- Total order amount calculated: 99.99
+12:11:59.393 [main] INFO com.urbanvogue.order_service.service.OrderService -- Processing payment for orderId: 13838
+12:11:59.393 [main] INFO com.urbanvogue.order_service.service.OrderService -- Payment link generated successfully. Order is PENDING for orderId: 13838
+12:11:59.393 [main] INFO com.urbanvogue.order_service.service.OrderService -- Order completed with status: PENDING
+12:11:59.394 [main] INFO com.urbanvogue.order_service.service.OrderService -- Creating order for userId: 51
+12:11:59.394 [main] INFO com.urbanvogue.order_service.service.OrderService -- Fetching product details for productId: 1
+12:11:59.394 [main] INFO com.urbanvogue.order_service.service.OrderService -- Checking inventory for productId: 1
+12:11:59.394 [main] INFO com.urbanvogue.order_service.service.OrderService -- Deducting inventory for productId: 1, quantity: 1
+12:11:59.394 [main] INFO com.urbanvogue.order_service.service.OrderService -- Total order amount calculated: 99.99
+12:11:59.394 [main] INFO com.urbanvogue.order_service.service.OrderService -- Processing payment for orderId: 73662
+12:11:59.394 [main] INFO com.urbanvogue.order_service.service.OrderService -- Payment link generated successfully. Order is PENDING for orderId: 73662
+12:11:59.394 [main] INFO com.urbanvogue.order_service.service.OrderService -- Order completed with status: PENDING
+12:11:59.394 [main] INFO com.urbanvogue.order_service.service.OrderService -- Creating order for userId: 52
+12:11:59.395 [main] INFO com.urbanvogue.order_service.service.OrderService -- Fetching product details for productId: 1
+12:11:59.395 [main] INFO com.urbanvogue.order_service.service.OrderService -- Checking inventory for productId: 1
+12:11:59.395 [main] INFO com.urbanvogue.order_service.service.OrderService -- Deducting inventory for productId: 1, quantity: 1
+12:11:59.395 [main] INFO com.urbanvogue.order_service.service.OrderService -- Total order amount calculated: 99.99
+12:11:59.395 [main] INFO com.urbanvogue.order_service.service.OrderService -- Processing payment for orderId: 46072
+12:11:59.396 [main] INFO com.urbanvogue.order_service.service.OrderService -- Payment link generated successfully. Order is PENDING for orderId: 46072
+12:11:59.396 [main] INFO com.urbanvogue.order_service.service.OrderService -- Order completed with status: PENDING
+12:11:59.396 [main] INFO com.urbanvogue.order_service.service.OrderService -- Creating order for userId: 53
+12:11:59.396 [main] INFO com.urbanvogue.order_service.service.OrderService -- Fetching product details for productId: 1
+12:11:59.396 [main] INFO com.urbanvogue.order_service.service.OrderService -- Checking inventory for productId: 1
+12:11:59.396 [main] INFO com.urbanvogue.order_service.service.OrderService -- Deducting inventory for productId: 1, quantity: 1
+12:11:59.396 [main] INFO com.urbanvogue.order_service.service.OrderService -- Total order amount calculated: 99.99
+12:11:59.396 [main] INFO com.urbanvogue.order_service.service.OrderService -- Processing payment for orderId: 73188
+12:11:59.397 [main] INFO com.urbanvogue.order_service.service.OrderService -- Payment link generated successfully. Order is PENDING for orderId: 73188
+12:11:59.397 [main] INFO com.urbanvogue.order_service.service.OrderService -- Order completed with status: PENDING
+12:11:59.397 [main] INFO com.urbanvogue.order_service.service.OrderService -- Creating order for userId: 54
+12:11:59.397 [main] INFO com.urbanvogue.order_service.service.OrderService -- Fetching product details for productId: 1
+12:11:59.397 [main] INFO com.urbanvogue.order_service.service.OrderService -- Checking inventory for productId: 1
+12:11:59.397 [main] INFO com.urbanvogue.order_service.service.OrderService -- Deducting inventory for productId: 1, quantity: 1
+12:11:59.397 [main] INFO com.urbanvogue.order_service.service.OrderService -- Total order amount calculated: 99.99
+12:11:59.397 [main] INFO com.urbanvogue.order_service.service.OrderService -- Processing payment for orderId: 88755
+12:11:59.398 [main] INFO com.urbanvogue.order_service.service.OrderService -- Payment link generated successfully. Order is PENDING for orderId: 88755
+12:11:59.398 [main] INFO com.urbanvogue.order_service.service.OrderService -- Order completed with status: PENDING
+12:11:59.398 [main] INFO com.urbanvogue.order_service.service.OrderService -- Creating order for userId: 55
+12:11:59.398 [main] INFO com.urbanvogue.order_service.service.OrderService -- Fetching product details for productId: 1
+12:11:59.398 [main] INFO com.urbanvogue.order_service.service.OrderService -- Checking inventory for productId: 1
+12:11:59.398 [main] INFO com.urbanvogue.order_service.service.OrderService -- Deducting inventory for productId: 1, quantity: 1
+12:11:59.398 [main] INFO com.urbanvogue.order_service.service.OrderService -- Total order amount calculated: 99.99
+12:11:59.398 [main] INFO com.urbanvogue.order_service.service.OrderService -- Processing payment for orderId: 14212
+12:11:59.398 [main] INFO com.urbanvogue.order_service.service.OrderService -- Payment link generated successfully. Order is PENDING for orderId: 14212
+12:11:59.398 [main] INFO com.urbanvogue.order_service.service.OrderService -- Order completed with status: PENDING
+12:11:59.398 [main] INFO com.urbanvogue.order_service.service.OrderService -- Creating order for userId: 56
+12:11:59.398 [main] INFO com.urbanvogue.order_service.service.OrderService -- Fetching product details for productId: 1
+12:11:59.400 [main] INFO com.urbanvogue.order_service.service.OrderService -- Checking inventory for productId: 1
+12:11:59.400 [main] INFO com.urbanvogue.order_service.service.OrderService -- Deducting inventory for productId: 1, quantity: 1
+12:11:59.400 [main] INFO com.urbanvogue.order_service.service.OrderService -- Total order amount calculated: 99.99
+12:11:59.400 [main] INFO com.urbanvogue.order_service.service.OrderService -- Processing payment for orderId: 91172
+12:11:59.400 [main] INFO com.urbanvogue.order_service.service.OrderService -- Payment link generated successfully. Order is PENDING for orderId: 91172
+12:11:59.400 [main] INFO com.urbanvogue.order_service.service.OrderService -- Order completed with status: PENDING
+12:11:59.400 [main] INFO com.urbanvogue.order_service.service.OrderService -- Creating order for userId: 57
+12:11:59.401 [main] INFO com.urbanvogue.order_service.service.OrderService -- Fetching product details for productId: 1
+12:11:59.401 [main] INFO com.urbanvogue.order_service.service.OrderService -- Checking inventory for productId: 1
+12:11:59.401 [main] INFO com.urbanvogue.order_service.service.OrderService -- Deducting inventory for productId: 1, quantity: 1
+12:11:59.401 [main] INFO com.urbanvogue.order_service.service.OrderService -- Total order amount calculated: 99.99
+12:11:59.401 [main] INFO com.urbanvogue.order_service.service.OrderService -- Processing payment for orderId: 92607
+12:11:59.401 [main] INFO com.urbanvogue.order_service.service.OrderService -- Payment link generated successfully. Order is PENDING for orderId: 92607
+12:11:59.401 [main] INFO com.urbanvogue.order_service.service.OrderService -- Order completed with status: PENDING
+12:11:59.402 [main] INFO com.urbanvogue.order_service.service.OrderService -- Creating order for userId: 58
+12:11:59.402 [main] INFO com.urbanvogue.order_service.service.OrderService -- Fetching product details for productId: 1
+12:11:59.402 [main] INFO com.urbanvogue.order_service.service.OrderService -- Checking inventory for productId: 1
+12:11:59.402 [main] INFO com.urbanvogue.order_service.service.OrderService -- Deducting inventory for productId: 1, quantity: 1
+12:11:59.402 [main] INFO com.urbanvogue.order_service.service.OrderService -- Total order amount calculated: 99.99
+12:11:59.402 [main] INFO com.urbanvogue.order_service.service.OrderService -- Processing payment for orderId: 32775
+12:11:59.403 [main] INFO com.urbanvogue.order_service.service.OrderService -- Payment link generated successfully. Order is PENDING for orderId: 32775
+12:11:59.403 [main] INFO com.urbanvogue.order_service.service.OrderService -- Order completed with status: PENDING
+12:11:59.403 [main] INFO com.urbanvogue.order_service.service.OrderService -- Creating order for userId: 59
+12:11:59.403 [main] INFO com.urbanvogue.order_service.service.OrderService -- Fetching product details for productId: 1
+12:11:59.403 [main] INFO com.urbanvogue.order_service.service.OrderService -- Checking inventory for productId: 1
+12:11:59.404 [main] INFO com.urbanvogue.order_service.service.OrderService -- Deducting inventory for productId: 1, quantity: 1
+12:11:59.404 [main] INFO com.urbanvogue.order_service.service.OrderService -- Total order amount calculated: 99.99
+12:11:59.404 [main] INFO com.urbanvogue.order_service.service.OrderService -- Processing payment for orderId: 68812
+12:11:59.404 [main] INFO com.urbanvogue.order_service.service.OrderService -- Payment link generated successfully. Order is PENDING for orderId: 68812
+12:11:59.404 [main] INFO com.urbanvogue.order_service.service.OrderService -- Order completed with status: PENDING
+12:11:59.404 [main] INFO com.urbanvogue.order_service.service.OrderService -- Creating order for userId: 60
+12:11:59.404 [main] INFO com.urbanvogue.order_service.service.OrderService -- Fetching product details for productId: 1
+12:11:59.405 [main] INFO com.urbanvogue.order_service.service.OrderService -- Checking inventory for productId: 1
+12:11:59.405 [main] INFO com.urbanvogue.order_service.service.OrderService -- Deducting inventory for productId: 1, quantity: 1
+12:11:59.405 [main] INFO com.urbanvogue.order_service.service.OrderService -- Total order amount calculated: 99.99
+12:11:59.405 [main] INFO com.urbanvogue.order_service.service.OrderService -- Processing payment for orderId: 32148
+12:11:59.405 [main] INFO com.urbanvogue.order_service.service.OrderService -- Payment link generated successfully. Order is PENDING for orderId: 32148
+12:11:59.405 [main] INFO com.urbanvogue.order_service.service.OrderService -- Order completed with status: PENDING
+12:11:59.406 [main] INFO com.urbanvogue.order_service.service.OrderService -- Creating order for userId: 61
+12:11:59.406 [main] INFO com.urbanvogue.order_service.service.OrderService -- Fetching product details for productId: 1
+12:11:59.406 [main] INFO com.urbanvogue.order_service.service.OrderService -- Checking inventory for productId: 1
+12:11:59.406 [main] INFO com.urbanvogue.order_service.service.OrderService -- Deducting inventory for productId: 1, quantity: 1
+12:11:59.406 [main] INFO com.urbanvogue.order_service.service.OrderService -- Total order amount calculated: 99.99
+12:11:59.406 [main] INFO com.urbanvogue.order_service.service.OrderService -- Processing payment for orderId: 11584
+12:11:59.407 [main] INFO com.urbanvogue.order_service.service.OrderService -- Payment link generated successfully. Order is PENDING for orderId: 11584
+12:11:59.407 [main] INFO com.urbanvogue.order_service.service.OrderService -- Order completed with status: PENDING
+12:11:59.407 [main] INFO com.urbanvogue.order_service.service.OrderService -- Creating order for userId: 62
+12:11:59.407 [main] INFO com.urbanvogue.order_service.service.OrderService -- Fetching product details for productId: 1
+12:11:59.407 [main] INFO com.urbanvogue.order_service.service.OrderService -- Checking inventory for productId: 1
+12:11:59.407 [main] INFO com.urbanvogue.order_service.service.OrderService -- Deducting inventory for productId: 1, quantity: 1
+12:11:59.407 [main] INFO com.urbanvogue.order_service.service.OrderService -- Total order amount calculated: 99.99
+12:11:59.407 [main] INFO com.urbanvogue.order_service.service.OrderService -- Processing payment for orderId: 38169
+12:11:59.409 [main] INFO com.urbanvogue.order_service.service.OrderService -- Payment link generated successfully. Order is PENDING for orderId: 38169
+12:11:59.409 [main] INFO com.urbanvogue.order_service.service.OrderService -- Order completed with status: PENDING
+12:11:59.409 [main] INFO com.urbanvogue.order_service.service.OrderService -- Creating order for userId: 63
+12:11:59.409 [main] INFO com.urbanvogue.order_service.service.OrderService -- Fetching product details for productId: 1
+12:11:59.409 [main] INFO com.urbanvogue.order_service.service.OrderService -- Checking inventory for productId: 1
+12:11:59.409 [main] INFO com.urbanvogue.order_service.service.OrderService -- Deducting inventory for productId: 1, quantity: 1
+12:11:59.410 [main] INFO com.urbanvogue.order_service.service.OrderService -- Total order amount calculated: 99.99
+12:11:59.410 [main] INFO com.urbanvogue.order_service.service.OrderService -- Processing payment for orderId: 9381
+12:11:59.410 [main] INFO com.urbanvogue.order_service.service.OrderService -- Payment link generated successfully. Order is PENDING for orderId: 9381
+12:11:59.410 [main] INFO com.urbanvogue.order_service.service.OrderService -- Order completed with status: PENDING
+12:11:59.410 [main] INFO com.urbanvogue.order_service.service.OrderService -- Creating order for userId: 64
+12:11:59.410 [main] INFO com.urbanvogue.order_service.service.OrderService -- Fetching product details for productId: 1
+12:11:59.411 [main] INFO com.urbanvogue.order_service.service.OrderService -- Checking inventory for productId: 1
+12:11:59.411 [main] INFO com.urbanvogue.order_service.service.OrderService -- Deducting inventory for productId: 1, quantity: 1
+12:11:59.411 [main] INFO com.urbanvogue.order_service.service.OrderService -- Total order amount calculated: 99.99
+12:11:59.411 [main] INFO com.urbanvogue.order_service.service.OrderService -- Processing payment for orderId: 67804
+12:11:59.411 [main] INFO com.urbanvogue.order_service.service.OrderService -- Payment link generated successfully. Order is PENDING for orderId: 67804
+12:11:59.411 [main] INFO com.urbanvogue.order_service.service.OrderService -- Order completed with status: PENDING
+12:11:59.411 [main] INFO com.urbanvogue.order_service.service.OrderService -- Creating order for userId: 65
+12:11:59.411 [main] INFO com.urbanvogue.order_service.service.OrderService -- Fetching product details for productId: 1
+12:11:59.411 [main] INFO com.urbanvogue.order_service.service.OrderService -- Checking inventory for productId: 1
+12:11:59.411 [main] INFO com.urbanvogue.order_service.service.OrderService -- Deducting inventory for productId: 1, quantity: 1
+12:11:59.411 [main] INFO com.urbanvogue.order_service.service.OrderService -- Total order amount calculated: 99.99
+12:11:59.411 [main] INFO com.urbanvogue.order_service.service.OrderService -- Processing payment for orderId: 70305
+12:11:59.412 [main] INFO com.urbanvogue.order_service.service.OrderService -- Payment link generated successfully. Order is PENDING for orderId: 70305
+12:11:59.412 [main] INFO com.urbanvogue.order_service.service.OrderService -- Order completed with status: PENDING
+12:11:59.412 [main] INFO com.urbanvogue.order_service.service.OrderService -- Creating order for userId: 66
+12:11:59.412 [main] INFO com.urbanvogue.order_service.service.OrderService -- Fetching product details for productId: 1
+12:11:59.412 [main] INFO com.urbanvogue.order_service.service.OrderService -- Checking inventory for productId: 1
+12:11:59.412 [main] INFO com.urbanvogue.order_service.service.OrderService -- Deducting inventory for productId: 1, quantity: 1
+12:11:59.412 [main] INFO com.urbanvogue.order_service.service.OrderService -- Total order amount calculated: 99.99
+12:11:59.412 [main] INFO com.urbanvogue.order_service.service.OrderService -- Processing payment for orderId: 88434
+12:11:59.414 [main] INFO com.urbanvogue.order_service.service.OrderService -- Payment link generated successfully. Order is PENDING for orderId: 88434
+12:11:59.414 [main] INFO com.urbanvogue.order_service.service.OrderService -- Order completed with status: PENDING
+12:11:59.414 [main] INFO com.urbanvogue.order_service.service.OrderService -- Creating order for userId: 67
+12:11:59.414 [main] INFO com.urbanvogue.order_service.service.OrderService -- Fetching product details for productId: 1
+12:11:59.414 [main] INFO com.urbanvogue.order_service.service.OrderService -- Checking inventory for productId: 1
+12:11:59.414 [main] INFO com.urbanvogue.order_service.service.OrderService -- Deducting inventory for productId: 1, quantity: 1
+12:11:59.414 [main] INFO com.urbanvogue.order_service.service.OrderService -- Total order amount calculated: 99.99
+12:11:59.414 [main] INFO com.urbanvogue.order_service.service.OrderService -- Processing payment for orderId: 58670
+12:11:59.415 [main] INFO com.urbanvogue.order_service.service.OrderService -- Payment link generated successfully. Order is PENDING for orderId: 58670
+12:11:59.415 [main] INFO com.urbanvogue.order_service.service.OrderService -- Order completed with status: PENDING
+12:11:59.415 [main] INFO com.urbanvogue.order_service.service.OrderService -- Creating order for userId: 68
+12:11:59.415 [main] INFO com.urbanvogue.order_service.service.OrderService -- Fetching product details for productId: 1
+12:11:59.415 [main] INFO com.urbanvogue.order_service.service.OrderService -- Checking inventory for productId: 1
+12:11:59.415 [main] INFO com.urbanvogue.order_service.service.OrderService -- Deducting inventory for productId: 1, quantity: 1
+12:11:59.416 [main] INFO com.urbanvogue.order_service.service.OrderService -- Total order amount calculated: 99.99
+12:11:59.416 [main] INFO com.urbanvogue.order_service.service.OrderService -- Processing payment for orderId: 56132
+12:11:59.416 [main] INFO com.urbanvogue.order_service.service.OrderService -- Payment link generated successfully. Order is PENDING for orderId: 56132
+12:11:59.416 [main] INFO com.urbanvogue.order_service.service.OrderService -- Order completed with status: PENDING
+12:11:59.416 [main] INFO com.urbanvogue.order_service.service.OrderService -- Creating order for userId: 69
+12:11:59.416 [main] INFO com.urbanvogue.order_service.service.OrderService -- Fetching product details for productId: 1
+12:11:59.417 [main] INFO com.urbanvogue.order_service.service.OrderService -- Checking inventory for productId: 1
+12:11:59.417 [main] INFO com.urbanvogue.order_service.service.OrderService -- Deducting inventory for productId: 1, quantity: 1
+12:11:59.417 [main] INFO com.urbanvogue.order_service.service.OrderService -- Total order amount calculated: 99.99
+12:11:59.417 [main] INFO com.urbanvogue.order_service.service.OrderService -- Processing payment for orderId: 71408
+12:11:59.417 [main] INFO com.urbanvogue.order_service.service.OrderService -- Payment link generated successfully. Order is PENDING for orderId: 71408
+12:11:59.417 [main] INFO com.urbanvogue.order_service.service.OrderService -- Order completed with status: PENDING
+12:11:59.418 [main] INFO com.urbanvogue.order_service.service.OrderService -- Creating order for userId: 70
+12:11:59.418 [main] INFO com.urbanvogue.order_service.service.OrderService -- Fetching product details for productId: 1
+12:11:59.418 [main] INFO com.urbanvogue.order_service.service.OrderService -- Checking inventory for productId: 1
+12:11:59.418 [main] INFO com.urbanvogue.order_service.service.OrderService -- Deducting inventory for productId: 1, quantity: 1
+12:11:59.418 [main] INFO com.urbanvogue.order_service.service.OrderService -- Total order amount calculated: 99.99
+12:11:59.418 [main] INFO com.urbanvogue.order_service.service.OrderService -- Processing payment for orderId: 209
+12:11:59.418 [main] INFO com.urbanvogue.order_service.service.OrderService -- Payment link generated successfully. Order is PENDING for orderId: 209
+12:11:59.418 [main] INFO com.urbanvogue.order_service.service.OrderService -- Order completed with status: PENDING
+12:11:59.418 [main] INFO com.urbanvogue.order_service.service.OrderService -- Creating order for userId: 71
+12:11:59.419 [main] INFO com.urbanvogue.order_service.service.OrderService -- Fetching product details for productId: 1
+12:11:59.419 [main] INFO com.urbanvogue.order_service.service.OrderService -- Checking inventory for productId: 1
+12:11:59.419 [main] INFO com.urbanvogue.order_service.service.OrderService -- Deducting inventory for productId: 1, quantity: 1
+12:11:59.419 [main] INFO com.urbanvogue.order_service.service.OrderService -- Total order amount calculated: 99.99
+12:11:59.419 [main] INFO com.urbanvogue.order_service.service.OrderService -- Processing payment for orderId: 76114
+12:11:59.419 [main] INFO com.urbanvogue.order_service.service.OrderService -- Payment link generated successfully. Order is PENDING for orderId: 76114
+12:11:59.419 [main] INFO com.urbanvogue.order_service.service.OrderService -- Order completed with status: PENDING
+12:11:59.419 [main] INFO com.urbanvogue.order_service.service.OrderService -- Creating order for userId: 72
+12:11:59.419 [main] INFO com.urbanvogue.order_service.service.OrderService -- Fetching product details for productId: 1
+12:11:59.419 [main] INFO com.urbanvogue.order_service.service.OrderService -- Checking inventory for productId: 1
+12:11:59.419 [main] INFO com.urbanvogue.order_service.service.OrderService -- Deducting inventory for productId: 1, quantity: 1
+12:11:59.419 [main] INFO com.urbanvogue.order_service.service.OrderService -- Total order amount calculated: 99.99
+12:11:59.419 [main] INFO com.urbanvogue.order_service.service.OrderService -- Processing payment for orderId: 20621
+12:11:59.420 [main] INFO com.urbanvogue.order_service.service.OrderService -- Payment link generated successfully. Order is PENDING for orderId: 20621
+12:11:59.420 [main] INFO com.urbanvogue.order_service.service.OrderService -- Order completed with status: PENDING
+12:11:59.420 [main] INFO com.urbanvogue.order_service.service.OrderService -- Creating order for userId: 73
+12:11:59.420 [main] INFO com.urbanvogue.order_service.service.OrderService -- Fetching product details for productId: 1
+12:11:59.420 [main] INFO com.urbanvogue.order_service.service.OrderService -- Checking inventory for productId: 1
+12:11:59.420 [main] INFO com.urbanvogue.order_service.service.OrderService -- Deducting inventory for productId: 1, quantity: 1
+12:11:59.421 [main] INFO com.urbanvogue.order_service.service.OrderService -- Total order amount calculated: 99.99
+12:11:59.421 [main] INFO com.urbanvogue.order_service.service.OrderService -- Processing payment for orderId: 77650
+12:11:59.421 [main] INFO com.urbanvogue.order_service.service.OrderService -- Payment link generated successfully. Order is PENDING for orderId: 77650
+12:11:59.421 [main] INFO com.urbanvogue.order_service.service.OrderService -- Order completed with status: PENDING
+12:11:59.421 [main] INFO com.urbanvogue.order_service.service.OrderService -- Creating order for userId: 74
+12:11:59.421 [main] INFO com.urbanvogue.order_service.service.OrderService -- Fetching product details for productId: 1
+12:11:59.421 [main] INFO com.urbanvogue.order_service.service.OrderService -- Checking inventory for productId: 1
+12:11:59.421 [main] INFO com.urbanvogue.order_service.service.OrderService -- Deducting inventory for productId: 1, quantity: 1
+12:11:59.421 [main] INFO com.urbanvogue.order_service.service.OrderService -- Total order amount calculated: 99.99
+12:11:59.421 [main] INFO com.urbanvogue.order_service.service.OrderService -- Processing payment for orderId: 87361
+12:11:59.422 [main] INFO com.urbanvogue.order_service.service.OrderService -- Payment link generated successfully. Order is PENDING for orderId: 87361
+12:11:59.422 [main] INFO com.urbanvogue.order_service.service.OrderService -- Order completed with status: PENDING
+12:11:59.422 [main] INFO com.urbanvogue.order_service.service.OrderService -- Creating order for userId: 75
+12:11:59.422 [main] INFO com.urbanvogue.order_service.service.OrderService -- Fetching product details for productId: 1
+12:11:59.422 [main] INFO com.urbanvogue.order_service.service.OrderService -- Checking inventory for productId: 1
+12:11:59.422 [main] INFO com.urbanvogue.order_service.service.OrderService -- Deducting inventory for productId: 1, quantity: 1
+12:11:59.422 [main] INFO com.urbanvogue.order_service.service.OrderService -- Total order amount calculated: 99.99
+12:11:59.422 [main] INFO com.urbanvogue.order_service.service.OrderService -- Processing payment for orderId: 30194
+12:11:59.423 [main] INFO com.urbanvogue.order_service.service.OrderService -- Payment link generated successfully. Order is PENDING for orderId: 30194
+12:11:59.423 [main] INFO com.urbanvogue.order_service.service.OrderService -- Order completed with status: PENDING
+12:11:59.423 [main] INFO com.urbanvogue.order_service.service.OrderService -- Creating order for userId: 76
+12:11:59.423 [main] INFO com.urbanvogue.order_service.service.OrderService -- Fetching product details for productId: 1
+12:11:59.423 [main] INFO com.urbanvogue.order_service.service.OrderService -- Checking inventory for productId: 1
+12:11:59.423 [main] INFO com.urbanvogue.order_service.service.OrderService -- Deducting inventory for productId: 1, quantity: 1
+12:11:59.423 [main] INFO com.urbanvogue.order_service.service.OrderService -- Total order amount calculated: 99.99
+12:11:59.423 [main] INFO com.urbanvogue.order_service.service.OrderService -- Processing payment for orderId: 92027
+12:11:59.423 [main] INFO com.urbanvogue.order_service.service.OrderService -- Payment link generated successfully. Order is PENDING for orderId: 92027
+12:11:59.423 [main] INFO com.urbanvogue.order_service.service.OrderService -- Order completed with status: PENDING
+12:11:59.424 [main] INFO com.urbanvogue.order_service.service.OrderService -- Creating order for userId: 77
+12:11:59.424 [main] INFO com.urbanvogue.order_service.service.OrderService -- Fetching product details for productId: 1
+12:11:59.424 [main] INFO com.urbanvogue.order_service.service.OrderService -- Checking inventory for productId: 1
+12:11:59.424 [main] INFO com.urbanvogue.order_service.service.OrderService -- Deducting inventory for productId: 1, quantity: 1
+12:11:59.424 [main] INFO com.urbanvogue.order_service.service.OrderService -- Total order amount calculated: 99.99
+12:11:59.424 [main] INFO com.urbanvogue.order_service.service.OrderService -- Processing payment for orderId: 32848
+12:11:59.424 [main] INFO com.urbanvogue.order_service.service.OrderService -- Payment link generated successfully. Order is PENDING for orderId: 32848
+12:11:59.424 [main] INFO com.urbanvogue.order_service.service.OrderService -- Order completed with status: PENDING
+12:11:59.424 [main] INFO com.urbanvogue.order_service.service.OrderService -- Creating order for userId: 78
+12:11:59.424 [main] INFO com.urbanvogue.order_service.service.OrderService -- Fetching product details for productId: 1
+12:11:59.425 [main] INFO com.urbanvogue.order_service.service.OrderService -- Checking inventory for productId: 1
+12:11:59.425 [main] INFO com.urbanvogue.order_service.service.OrderService -- Deducting inventory for productId: 1, quantity: 1
+12:11:59.425 [main] INFO com.urbanvogue.order_service.service.OrderService -- Total order amount calculated: 99.99
+12:11:59.425 [main] INFO com.urbanvogue.order_service.service.OrderService -- Processing payment for orderId: 77040
+12:11:59.425 [main] INFO com.urbanvogue.order_service.service.OrderService -- Payment link generated successfully. Order is PENDING for orderId: 77040
+12:11:59.425 [main] INFO com.urbanvogue.order_service.service.OrderService -- Order completed with status: PENDING
+12:11:59.426 [main] INFO com.urbanvogue.order_service.service.OrderService -- Creating order for userId: 79
+12:11:59.426 [main] INFO com.urbanvogue.order_service.service.OrderService -- Fetching product details for productId: 1
+12:11:59.426 [main] INFO com.urbanvogue.order_service.service.OrderService -- Checking inventory for productId: 1
+12:11:59.426 [main] INFO com.urbanvogue.order_service.service.OrderService -- Deducting inventory for productId: 1, quantity: 1
+12:11:59.426 [main] INFO com.urbanvogue.order_service.service.OrderService -- Total order amount calculated: 99.99
+12:11:59.426 [main] INFO com.urbanvogue.order_service.service.OrderService -- Processing payment for orderId: 41198
+12:11:59.426 [main] INFO com.urbanvogue.order_service.service.OrderService -- Payment link generated successfully. Order is PENDING for orderId: 41198
+12:11:59.426 [main] INFO com.urbanvogue.order_service.service.OrderService -- Order completed with status: PENDING
+12:11:59.427 [main] INFO com.urbanvogue.order_service.service.OrderService -- Creating order for userId: 80
+12:11:59.427 [main] INFO com.urbanvogue.order_service.service.OrderService -- Fetching product details for productId: 1
+12:11:59.427 [main] INFO com.urbanvogue.order_service.service.OrderService -- Checking inventory for productId: 1
+12:11:59.427 [main] INFO com.urbanvogue.order_service.service.OrderService -- Deducting inventory for productId: 1, quantity: 1
+12:11:59.427 [main] INFO com.urbanvogue.order_service.service.OrderService -- Total order amount calculated: 99.99
+12:11:59.427 [main] INFO com.urbanvogue.order_service.service.OrderService -- Processing payment for orderId: 19444
+12:11:59.427 [main] INFO com.urbanvogue.order_service.service.OrderService -- Payment link generated successfully. Order is PENDING for orderId: 19444
+12:11:59.427 [main] INFO com.urbanvogue.order_service.service.OrderService -- Order completed with status: PENDING
+12:11:59.427 [main] INFO com.urbanvogue.order_service.service.OrderService -- Creating order for userId: 81
+12:11:59.428 [main] INFO com.urbanvogue.order_service.service.OrderService -- Fetching product details for productId: 1
+12:11:59.428 [main] INFO com.urbanvogue.order_service.service.OrderService -- Checking inventory for productId: 1
+12:11:59.428 [main] INFO com.urbanvogue.order_service.service.OrderService -- Deducting inventory for productId: 1, quantity: 1
+12:11:59.428 [main] INFO com.urbanvogue.order_service.service.OrderService -- Total order amount calculated: 99.99
+12:11:59.428 [main] INFO com.urbanvogue.order_service.service.OrderService -- Processing payment for orderId: 58476
+12:11:59.428 [main] INFO com.urbanvogue.order_service.service.OrderService -- Payment link generated successfully. Order is PENDING for orderId: 58476
+12:11:59.429 [main] INFO com.urbanvogue.order_service.service.OrderService -- Order completed with status: PENDING
+12:11:59.429 [main] INFO com.urbanvogue.order_service.service.OrderService -- Creating order for userId: 82
+12:11:59.429 [main] INFO com.urbanvogue.order_service.service.OrderService -- Fetching product details for productId: 1
+12:11:59.429 [main] INFO com.urbanvogue.order_service.service.OrderService -- Checking inventory for productId: 1
+12:11:59.429 [main] INFO com.urbanvogue.order_service.service.OrderService -- Deducting inventory for productId: 1, quantity: 1
+12:11:59.429 [main] INFO com.urbanvogue.order_service.service.OrderService -- Total order amount calculated: 99.99
+12:11:59.429 [main] INFO com.urbanvogue.order_service.service.OrderService -- Processing payment for orderId: 74592
+12:11:59.429 [main] INFO com.urbanvogue.order_service.service.OrderService -- Payment link generated successfully. Order is PENDING for orderId: 74592
+12:11:59.430 [main] INFO com.urbanvogue.order_service.service.OrderService -- Order completed with status: PENDING
+12:11:59.430 [main] INFO com.urbanvogue.order_service.service.OrderService -- Creating order for userId: 83
+12:11:59.430 [main] INFO com.urbanvogue.order_service.service.OrderService -- Fetching product details for productId: 1
+12:11:59.430 [main] INFO com.urbanvogue.order_service.service.OrderService -- Checking inventory for productId: 1
+12:11:59.430 [main] INFO com.urbanvogue.order_service.service.OrderService -- Deducting inventory for productId: 1, quantity: 1
+12:11:59.430 [main] INFO com.urbanvogue.order_service.service.OrderService -- Total order amount calculated: 99.99
+12:11:59.430 [main] INFO com.urbanvogue.order_service.service.OrderService -- Processing payment for orderId: 82813
+12:11:59.432 [main] INFO com.urbanvogue.order_service.service.OrderService -- Payment link generated successfully. Order is PENDING for orderId: 82813
+12:11:59.432 [main] INFO com.urbanvogue.order_service.service.OrderService -- Order completed with status: PENDING
+12:11:59.432 [main] INFO com.urbanvogue.order_service.service.OrderService -- Creating order for userId: 84
+12:11:59.432 [main] INFO com.urbanvogue.order_service.service.OrderService -- Fetching product details for productId: 1
+12:11:59.432 [main] INFO com.urbanvogue.order_service.service.OrderService -- Checking inventory for productId: 1
+12:11:59.433 [main] INFO com.urbanvogue.order_service.service.OrderService -- Deducting inventory for productId: 1, quantity: 1
+12:11:59.433 [main] INFO com.urbanvogue.order_service.service.OrderService -- Total order amount calculated: 99.99
+12:11:59.433 [main] INFO com.urbanvogue.order_service.service.OrderService -- Processing payment for orderId: 31068
+12:11:59.434 [main] INFO com.urbanvogue.order_service.service.OrderService -- Payment link generated successfully. Order is PENDING for orderId: 31068
+12:11:59.435 [main] INFO com.urbanvogue.order_service.service.OrderService -- Order completed with status: PENDING
+12:11:59.435 [main] INFO com.urbanvogue.order_service.service.OrderService -- Creating order for userId: 85
+12:11:59.435 [main] INFO com.urbanvogue.order_service.service.OrderService -- Fetching product details for productId: 1
+12:11:59.435 [main] INFO com.urbanvogue.order_service.service.OrderService -- Checking inventory for productId: 1
+12:11:59.435 [main] INFO com.urbanvogue.order_service.service.OrderService -- Deducting inventory for productId: 1, quantity: 1
+12:11:59.435 [main] INFO com.urbanvogue.order_service.service.OrderService -- Total order amount calculated: 99.99
+12:11:59.435 [main] INFO com.urbanvogue.order_service.service.OrderService -- Processing payment for orderId: 40109
+12:11:59.437 [main] INFO com.urbanvogue.order_service.service.OrderService -- Payment link generated successfully. Order is PENDING for orderId: 40109
+12:11:59.437 [main] INFO com.urbanvogue.order_service.service.OrderService -- Order completed with status: PENDING
+12:11:59.438 [main] INFO com.urbanvogue.order_service.service.OrderService -- Creating order for userId: 86
+12:11:59.438 [main] INFO com.urbanvogue.order_service.service.OrderService -- Fetching product details for productId: 1
+12:11:59.438 [main] INFO com.urbanvogue.order_service.service.OrderService -- Checking inventory for productId: 1
+12:11:59.438 [main] INFO com.urbanvogue.order_service.service.OrderService -- Deducting inventory for productId: 1, quantity: 1
+12:11:59.438 [main] INFO com.urbanvogue.order_service.service.OrderService -- Total order amount calculated: 99.99
+12:11:59.438 [main] INFO com.urbanvogue.order_service.service.OrderService -- Processing payment for orderId: 68972
+12:11:59.438 [main] INFO com.urbanvogue.order_service.service.OrderService -- Payment link generated successfully. Order is PENDING for orderId: 68972
+12:11:59.438 [main] INFO com.urbanvogue.order_service.service.OrderService -- Order completed with status: PENDING
+12:11:59.438 [main] INFO com.urbanvogue.order_service.service.OrderService -- Creating order for userId: 87
+12:11:59.439 [main] INFO com.urbanvogue.order_service.service.OrderService -- Fetching product details for productId: 1
+12:11:59.439 [main] INFO com.urbanvogue.order_service.service.OrderService -- Checking inventory for productId: 1
+12:11:59.439 [main] INFO com.urbanvogue.order_service.service.OrderService -- Deducting inventory for productId: 1, quantity: 1
+12:11:59.439 [main] INFO com.urbanvogue.order_service.service.OrderService -- Total order amount calculated: 99.99
+12:11:59.440 [main] INFO com.urbanvogue.order_service.service.OrderService -- Processing payment for orderId: 75122
+12:11:59.440 [main] INFO com.urbanvogue.order_service.service.OrderService -- Payment link generated successfully. Order is PENDING for orderId: 75122
+12:11:59.441 [main] INFO com.urbanvogue.order_service.service.OrderService -- Order completed with status: PENDING
+12:11:59.441 [main] INFO com.urbanvogue.order_service.service.OrderService -- Creating order for userId: 88
+12:11:59.441 [main] INFO com.urbanvogue.order_service.service.OrderService -- Fetching product details for productId: 1
+12:11:59.441 [main] INFO com.urbanvogue.order_service.service.OrderService -- Checking inventory for productId: 1
+12:11:59.441 [main] INFO com.urbanvogue.order_service.service.OrderService -- Deducting inventory for productId: 1, quantity: 1
+12:11:59.441 [main] INFO com.urbanvogue.order_service.service.OrderService -- Total order amount calculated: 99.99
+12:11:59.441 [main] INFO com.urbanvogue.order_service.service.OrderService -- Processing payment for orderId: 99617
+12:11:59.441 [main] INFO com.urbanvogue.order_service.service.OrderService -- Payment link generated successfully. Order is PENDING for orderId: 99617
+12:11:59.442 [main] INFO com.urbanvogue.order_service.service.OrderService -- Order completed with status: PENDING
+12:11:59.442 [main] INFO com.urbanvogue.order_service.service.OrderService -- Creating order for userId: 89
+12:11:59.442 [main] INFO com.urbanvogue.order_service.service.OrderService -- Fetching product details for productId: 1
+12:11:59.442 [main] INFO com.urbanvogue.order_service.service.OrderService -- Checking inventory for productId: 1
+12:11:59.442 [main] INFO com.urbanvogue.order_service.service.OrderService -- Deducting inventory for productId: 1, quantity: 1
+12:11:59.443 [main] INFO com.urbanvogue.order_service.service.OrderService -- Total order amount calculated: 99.99
+12:11:59.443 [main] INFO com.urbanvogue.order_service.service.OrderService -- Processing payment for orderId: 58782
+12:11:59.443 [main] INFO com.urbanvogue.order_service.service.OrderService -- Payment link generated successfully. Order is PENDING for orderId: 58782
+12:11:59.445 [main] INFO com.urbanvogue.order_service.service.OrderService -- Order completed with status: PENDING
+12:11:59.445 [main] INFO com.urbanvogue.order_service.service.OrderService -- Creating order for userId: 90
+12:11:59.445 [main] INFO com.urbanvogue.order_service.service.OrderService -- Fetching product details for productId: 1
+12:11:59.445 [main] INFO com.urbanvogue.order_service.service.OrderService -- Checking inventory for productId: 1
+12:11:59.445 [main] INFO com.urbanvogue.order_service.service.OrderService -- Deducting inventory for productId: 1, quantity: 1
+12:11:59.445 [main] INFO com.urbanvogue.order_service.service.OrderService -- Total order amount calculated: 99.99
+12:11:59.445 [main] INFO com.urbanvogue.order_service.service.OrderService -- Processing payment for orderId: 17492
+12:11:59.445 [main] INFO com.urbanvogue.order_service.service.OrderService -- Payment link generated successfully. Order is PENDING for orderId: 17492
+12:11:59.447 [main] INFO com.urbanvogue.order_service.service.OrderService -- Order completed with status: PENDING
+12:11:59.447 [main] INFO com.urbanvogue.order_service.service.OrderService -- Creating order for userId: 91
+12:11:59.447 [main] INFO com.urbanvogue.order_service.service.OrderService -- Fetching product details for productId: 1
+12:11:59.447 [main] INFO com.urbanvogue.order_service.service.OrderService -- Checking inventory for productId: 1
+12:11:59.447 [main] INFO com.urbanvogue.order_service.service.OrderService -- Deducting inventory for productId: 1, quantity: 1
+12:11:59.447 [main] INFO com.urbanvogue.order_service.service.OrderService -- Total order amount calculated: 99.99
+12:11:59.447 [main] INFO com.urbanvogue.order_service.service.OrderService -- Processing payment for orderId: 97849
+12:11:59.448 [main] INFO com.urbanvogue.order_service.service.OrderService -- Payment link generated successfully. Order is PENDING for orderId: 97849
+12:11:59.448 [main] INFO com.urbanvogue.order_service.service.OrderService -- Order completed with status: PENDING
+12:11:59.448 [main] INFO com.urbanvogue.order_service.service.OrderService -- Creating order for userId: 92
+12:11:59.448 [main] INFO com.urbanvogue.order_service.service.OrderService -- Fetching product details for productId: 1
+12:11:59.448 [main] INFO com.urbanvogue.order_service.service.OrderService -- Checking inventory for productId: 1
+12:11:59.448 [main] INFO com.urbanvogue.order_service.service.OrderService -- Deducting inventory for productId: 1, quantity: 1
+12:11:59.448 [main] INFO com.urbanvogue.order_service.service.OrderService -- Total order amount calculated: 99.99
+12:11:59.448 [main] INFO com.urbanvogue.order_service.service.OrderService -- Processing payment for orderId: 84542
+12:11:59.449 [main] INFO com.urbanvogue.order_service.service.OrderService -- Payment link generated successfully. Order is PENDING for orderId: 84542
+12:11:59.449 [main] INFO com.urbanvogue.order_service.service.OrderService -- Order completed with status: PENDING
+12:11:59.449 [main] INFO com.urbanvogue.order_service.service.OrderService -- Creating order for userId: 93
+12:11:59.449 [main] INFO com.urbanvogue.order_service.service.OrderService -- Fetching product details for productId: 1
+12:11:59.449 [main] INFO com.urbanvogue.order_service.service.OrderService -- Checking inventory for productId: 1
+12:11:59.449 [main] INFO com.urbanvogue.order_service.service.OrderService -- Deducting inventory for productId: 1, quantity: 1
+12:11:59.450 [main] INFO com.urbanvogue.order_service.service.OrderService -- Total order amount calculated: 99.99
+12:11:59.451 [main] INFO com.urbanvogue.order_service.service.OrderService -- Processing payment for orderId: 86040
+12:11:59.453 [main] INFO com.urbanvogue.order_service.service.OrderService -- Payment link generated successfully. Order is PENDING for orderId: 86040
+12:11:59.453 [main] INFO com.urbanvogue.order_service.service.OrderService -- Order completed with status: PENDING
+12:11:59.454 [main] INFO com.urbanvogue.order_service.service.OrderService -- Creating order for userId: 94
+12:11:59.454 [main] INFO com.urbanvogue.order_service.service.OrderService -- Fetching product details for productId: 1
+12:11:59.454 [main] INFO com.urbanvogue.order_service.service.OrderService -- Checking inventory for productId: 1
+12:11:59.455 [main] INFO com.urbanvogue.order_service.service.OrderService -- Deducting inventory for productId: 1, quantity: 1
+12:11:59.455 [main] INFO com.urbanvogue.order_service.service.OrderService -- Total order amount calculated: 99.99
+12:11:59.455 [main] INFO com.urbanvogue.order_service.service.OrderService -- Processing payment for orderId: 61252
+12:11:59.456 [main] INFO com.urbanvogue.order_service.service.OrderService -- Payment link generated successfully. Order is PENDING for orderId: 61252
+12:11:59.456 [main] INFO com.urbanvogue.order_service.service.OrderService -- Order completed with status: PENDING
+12:11:59.456 [main] INFO com.urbanvogue.order_service.service.OrderService -- Creating order for userId: 95
+12:11:59.456 [main] INFO com.urbanvogue.order_service.service.OrderService -- Fetching product details for productId: 1
+12:11:59.456 [main] INFO com.urbanvogue.order_service.service.OrderService -- Checking inventory for productId: 1
+12:11:59.456 [main] INFO com.urbanvogue.order_service.service.OrderService -- Deducting inventory for productId: 1, quantity: 1
+12:11:59.456 [main] INFO com.urbanvogue.order_service.service.OrderService -- Total order amount calculated: 99.99
+12:11:59.456 [main] INFO com.urbanvogue.order_service.service.OrderService -- Processing payment for orderId: 78259
+12:11:59.456 [main] INFO com.urbanvogue.order_service.service.OrderService -- Payment link generated successfully. Order is PENDING for orderId: 78259
+12:11:59.458 [main] INFO com.urbanvogue.order_service.service.OrderService -- Order completed with status: PENDING
+12:11:59.458 [main] INFO com.urbanvogue.order_service.service.OrderService -- Creating order for userId: 96
+12:11:59.458 [main] INFO com.urbanvogue.order_service.service.OrderService -- Fetching product details for productId: 1
+12:11:59.458 [main] INFO com.urbanvogue.order_service.service.OrderService -- Checking inventory for productId: 1
+12:11:59.458 [main] INFO com.urbanvogue.order_service.service.OrderService -- Deducting inventory for productId: 1, quantity: 1
+12:11:59.458 [main] INFO com.urbanvogue.order_service.service.OrderService -- Total order amount calculated: 99.99
+12:11:59.458 [main] INFO com.urbanvogue.order_service.service.OrderService -- Processing payment for orderId: 79942
+12:11:59.459 [main] INFO com.urbanvogue.order_service.service.OrderService -- Payment link generated successfully. Order is PENDING for orderId: 79942
+12:11:59.459 [main] INFO com.urbanvogue.order_service.service.OrderService -- Order completed with status: PENDING
+12:11:59.459 [main] INFO com.urbanvogue.order_service.service.OrderService -- Creating order for userId: 97
+12:11:59.459 [main] INFO com.urbanvogue.order_service.service.OrderService -- Fetching product details for productId: 1
+12:11:59.460 [main] INFO com.urbanvogue.order_service.service.OrderService -- Checking inventory for productId: 1
+12:11:59.460 [main] INFO com.urbanvogue.order_service.service.OrderService -- Deducting inventory for productId: 1, quantity: 1
+12:11:59.460 [main] INFO com.urbanvogue.order_service.service.OrderService -- Total order amount calculated: 99.99
+12:11:59.460 [main] INFO com.urbanvogue.order_service.service.OrderService -- Processing payment for orderId: 83990
+12:11:59.461 [main] INFO com.urbanvogue.order_service.service.OrderService -- Payment link generated successfully. Order is PENDING for orderId: 83990
+12:11:59.461 [main] INFO com.urbanvogue.order_service.service.OrderService -- Order completed with status: PENDING
+12:11:59.461 [main] INFO com.urbanvogue.order_service.service.OrderService -- Creating order for userId: 98
+12:11:59.461 [main] INFO com.urbanvogue.order_service.service.OrderService -- Fetching product details for productId: 1
+12:11:59.461 [main] INFO com.urbanvogue.order_service.service.OrderService -- Checking inventory for productId: 1
+12:11:59.461 [main] INFO com.urbanvogue.order_service.service.OrderService -- Deducting inventory for productId: 1, quantity: 1
+12:11:59.461 [main] INFO com.urbanvogue.order_service.service.OrderService -- Total order amount calculated: 99.99
+12:11:59.461 [main] INFO com.urbanvogue.order_service.service.OrderService -- Processing payment for orderId: 40917
+12:11:59.461 [main] INFO com.urbanvogue.order_service.service.OrderService -- Payment link generated successfully. Order is PENDING for orderId: 40917
+12:11:59.463 [main] INFO com.urbanvogue.order_service.service.OrderService -- Order completed with status: PENDING
+12:11:59.463 [main] INFO com.urbanvogue.order_service.service.OrderService -- Creating order for userId: 99
+12:11:59.463 [main] INFO com.urbanvogue.order_service.service.OrderService -- Fetching product details for productId: 1
+12:11:59.463 [main] INFO com.urbanvogue.order_service.service.OrderService -- Checking inventory for productId: 1
+12:11:59.463 [main] INFO com.urbanvogue.order_service.service.OrderService -- Deducting inventory for productId: 1, quantity: 1
+12:11:59.463 [main] INFO com.urbanvogue.order_service.service.OrderService -- Total order amount calculated: 99.99
+12:11:59.464 [main] INFO com.urbanvogue.order_service.service.OrderService -- Processing payment for orderId: 98294
+12:11:59.465 [main] INFO com.urbanvogue.order_service.service.OrderService -- Payment link generated successfully. Order is PENDING for orderId: 98294
+12:11:59.465 [main] INFO com.urbanvogue.order_service.service.OrderService -- Order completed with status: PENDING
+  ? 100 sequential orders in 158ms
+  ? Throughput: 632.9 orders/sec
+  ? 1000 order lookups in 35ms
+  ? Throughput: 28571 lookups/sec
+12:11:59.544 [pool-2-thread-1] INFO com.urbanvogue.order_service.service.OrderService -- Creating order for userId: 0
+12:11:59.544 [pool-2-thread-2] INFO com.urbanvogue.order_service.service.OrderService -- Creating order for userId: 1
+12:11:59.544 [pool-2-thread-2] INFO com.urbanvogue.order_service.service.OrderService -- Fetching product details for productId: 1
+12:11:59.544 [pool-2-thread-1] INFO com.urbanvogue.order_service.service.OrderService -- Fetching product details for productId: 1
+12:11:59.544 [pool-2-thread-3] INFO com.urbanvogue.order_service.service.OrderService -- Creating order for userId: 2
+12:11:59.544 [pool-2-thread-3] INFO com.urbanvogue.order_service.service.OrderService -- Fetching product details for productId: 1
+12:11:59.544 [pool-2-thread-2] INFO com.urbanvogue.order_service.service.OrderService -- Checking inventory for productId: 1
+12:11:59.544 [pool-2-thread-3] INFO com.urbanvogue.order_service.service.OrderService -- Checking inventory for productId: 1
+12:11:59.544 [pool-2-thread-2] INFO com.urbanvogue.order_service.service.OrderService -- Deducting inventory for productId: 1, quantity: 1
+12:11:59.544 [pool-2-thread-3] INFO com.urbanvogue.order_service.service.OrderService -- Deducting inventory for productId: 1, quantity: 1
+12:11:59.546 [pool-2-thread-1] INFO com.urbanvogue.order_service.service.OrderService -- Checking inventory for productId: 1
+12:11:59.546 [pool-2-thread-4] INFO com.urbanvogue.order_service.service.OrderService -- Creating order for userId: 3
+12:11:59.546 [pool-2-thread-1] INFO com.urbanvogue.order_service.service.OrderService -- Deducting inventory for productId: 1, quantity: 1
+12:11:59.546 [pool-2-thread-4] INFO com.urbanvogue.order_service.service.OrderService -- Fetching product details for productId: 1
+12:11:59.546 [pool-2-thread-5] INFO com.urbanvogue.order_service.service.OrderService -- Creating order for userId: 4
+12:11:59.546 [pool-2-thread-2] INFO com.urbanvogue.order_service.service.OrderService -- Total order amount calculated: 99.99
+12:11:59.546 [pool-2-thread-1] INFO com.urbanvogue.order_service.service.OrderService -- Total order amount calculated: 99.99
+12:11:59.546 [pool-2-thread-3] INFO com.urbanvogue.order_service.service.OrderService -- Total order amount calculated: 99.99
+12:11:59.546 [pool-2-thread-5] INFO com.urbanvogue.order_service.service.OrderService -- Fetching product details for productId: 1
+12:11:59.546 [pool-2-thread-3] INFO com.urbanvogue.order_service.service.OrderService -- Processing payment for orderId: 31278
+12:11:59.546 [pool-2-thread-2] INFO com.urbanvogue.order_service.service.OrderService -- Processing payment for orderId: 51606
+12:11:59.546 [pool-2-thread-1] INFO com.urbanvogue.order_service.service.OrderService -- Processing payment for orderId: 70820
+12:11:59.547 [pool-2-thread-4] INFO com.urbanvogue.order_service.service.OrderService -- Checking inventory for productId: 1
+12:11:59.547 [pool-2-thread-4] INFO com.urbanvogue.order_service.service.OrderService -- Deducting inventory for productId: 1, quantity: 1
+12:11:59.547 [pool-2-thread-5] INFO com.urbanvogue.order_service.service.OrderService -- Checking inventory for productId: 1
+12:11:59.547 [pool-2-thread-4] INFO com.urbanvogue.order_service.service.OrderService -- Total order amount calculated: 99.99
+12:11:59.547 [pool-2-thread-4] INFO com.urbanvogue.order_service.service.OrderService -- Processing payment for orderId: 85729
+12:11:59.547 [pool-2-thread-5] INFO com.urbanvogue.order_service.service.OrderService -- Deducting inventory for productId: 1, quantity: 1
+12:11:59.547 [pool-2-thread-5] INFO com.urbanvogue.order_service.service.OrderService -- Total order amount calculated: 99.99
+12:11:59.547 [pool-2-thread-6] INFO com.urbanvogue.order_service.service.OrderService -- Creating order for userId: 5
+12:11:59.547 [pool-2-thread-2] INFO com.urbanvogue.order_service.service.OrderService -- Payment link generated successfully. Order is PENDING for orderId: 51606
+12:11:59.547 [pool-2-thread-4] INFO com.urbanvogue.order_service.service.OrderService -- Payment link generated successfully. Order is PENDING for orderId: 85729
+12:11:59.547 [pool-2-thread-1] INFO com.urbanvogue.order_service.service.OrderService -- Payment link generated successfully. Order is PENDING for orderId: 70820
+12:11:59.547 [pool-2-thread-5] INFO com.urbanvogue.order_service.service.OrderService -- Processing payment for orderId: 94155
+12:11:59.547 [pool-2-thread-4] INFO com.urbanvogue.order_service.service.OrderService -- Order completed with status: PENDING
+12:11:59.547 [pool-2-thread-2] INFO com.urbanvogue.order_service.service.OrderService -- Order completed with status: PENDING
+12:11:59.547 [pool-2-thread-3] INFO com.urbanvogue.order_service.service.OrderService -- Payment link generated successfully. Order is PENDING for orderId: 31278
+12:11:59.547 [pool-2-thread-6] INFO com.urbanvogue.order_service.service.OrderService -- Fetching product details for productId: 1
+12:11:59.547 [pool-2-thread-1] INFO com.urbanvogue.order_service.service.OrderService -- Order completed with status: PENDING
+12:11:59.547 [pool-2-thread-3] INFO com.urbanvogue.order_service.service.OrderService -- Order completed with status: PENDING
+12:11:59.547 [pool-2-thread-7] INFO com.urbanvogue.order_service.service.OrderService -- Creating order for userId: 6
+12:11:59.547 [pool-2-thread-7] INFO com.urbanvogue.order_service.service.OrderService -- Fetching product details for productId: 1
+12:11:59.547 [pool-2-thread-5] INFO com.urbanvogue.order_service.service.OrderService -- Payment link generated successfully. Order is PENDING for orderId: 94155
+12:11:59.547 [pool-2-thread-5] INFO com.urbanvogue.order_service.service.OrderService -- Order completed with status: PENDING
+12:11:59.547 [pool-2-thread-6] INFO com.urbanvogue.order_service.service.OrderService -- Checking inventory for productId: 1
+12:11:59.547 [pool-2-thread-8] INFO com.urbanvogue.order_service.service.OrderService -- Creating order for userId: 7
+12:11:59.547 [pool-2-thread-6] INFO com.urbanvogue.order_service.service.OrderService -- Deducting inventory for productId: 1, quantity: 1
+12:11:59.547 [pool-2-thread-8] INFO com.urbanvogue.order_service.service.OrderService -- Fetching product details for productId: 1
+12:11:59.547 [pool-2-thread-7] INFO com.urbanvogue.order_service.service.OrderService -- Checking inventory for productId: 1
+12:11:59.547 [pool-2-thread-6] INFO com.urbanvogue.order_service.service.OrderService -- Total order amount calculated: 99.99
+12:11:59.547 [pool-2-thread-7] INFO com.urbanvogue.order_service.service.OrderService -- Deducting inventory for productId: 1, quantity: 1
+12:11:59.548 [pool-2-thread-6] INFO com.urbanvogue.order_service.service.OrderService -- Processing payment for orderId: 70142
+12:11:59.548 [pool-2-thread-7] INFO com.urbanvogue.order_service.service.OrderService -- Total order amount calculated: 99.99
+12:11:59.548 [pool-2-thread-7] INFO com.urbanvogue.order_service.service.OrderService -- Processing payment for orderId: 20507
+12:11:59.548 [pool-2-thread-8] INFO com.urbanvogue.order_service.service.OrderService -- Checking inventory for productId: 1
+12:11:59.548 [pool-2-thread-8] INFO com.urbanvogue.order_service.service.OrderService -- Deducting inventory for productId: 1, quantity: 1
+12:11:59.548 [pool-2-thread-8] INFO com.urbanvogue.order_service.service.OrderService -- Total order amount calculated: 99.99
+12:11:59.548 [pool-2-thread-8] INFO com.urbanvogue.order_service.service.OrderService -- Processing payment for orderId: 36724
+12:11:59.548 [pool-2-thread-6] INFO com.urbanvogue.order_service.service.OrderService -- Payment link generated successfully. Order is PENDING for orderId: 70142
+12:11:59.548 [pool-2-thread-7] INFO com.urbanvogue.order_service.service.OrderService -- Payment link generated successfully. Order is PENDING for orderId: 20507
+12:11:59.548 [pool-2-thread-6] INFO com.urbanvogue.order_service.service.OrderService -- Order completed with status: PENDING
+12:11:59.548 [pool-2-thread-9] INFO com.urbanvogue.order_service.service.OrderService -- Creating order for userId: 8
+12:11:59.548 [pool-2-thread-7] INFO com.urbanvogue.order_service.service.OrderService -- Order completed with status: PENDING
+12:11:59.548 [pool-2-thread-8] INFO com.urbanvogue.order_service.service.OrderService -- Payment link generated successfully. Order is PENDING for orderId: 36724
+12:11:59.548 [pool-2-thread-9] INFO com.urbanvogue.order_service.service.OrderService -- Fetching product details for productId: 1
+12:11:59.548 [pool-2-thread-8] INFO com.urbanvogue.order_service.service.OrderService -- Order completed with status: PENDING
+12:11:59.548 [pool-2-thread-10] INFO com.urbanvogue.order_service.service.OrderService -- Creating order for userId: 9
+12:11:59.549 [pool-2-thread-10] INFO com.urbanvogue.order_service.service.OrderService -- Fetching product details for productId: 1
+12:11:59.549 [pool-2-thread-9] INFO com.urbanvogue.order_service.service.OrderService -- Checking inventory for productId: 1
+12:11:59.549 [pool-2-thread-9] INFO com.urbanvogue.order_service.service.OrderService -- Deducting inventory for productId: 1, quantity: 1
+12:11:59.549 [pool-2-thread-9] INFO com.urbanvogue.order_service.service.OrderService -- Total order amount calculated: 99.99
+12:11:59.549 [pool-2-thread-10] INFO com.urbanvogue.order_service.service.OrderService -- Checking inventory for productId: 1
+12:11:59.549 [pool-2-thread-9] INFO com.urbanvogue.order_service.service.OrderService -- Processing payment for orderId: 49667
+12:11:59.549 [pool-2-thread-10] INFO com.urbanvogue.order_service.service.OrderService -- Deducting inventory for productId: 1, quantity: 1
+12:11:59.549 [pool-2-thread-10] INFO com.urbanvogue.order_service.service.OrderService -- Total order amount calculated: 99.99
+12:11:59.549 [pool-2-thread-9] INFO com.urbanvogue.order_service.service.OrderService -- Payment link generated successfully. Order is PENDING for orderId: 49667
+12:11:59.549 [pool-2-thread-9] INFO com.urbanvogue.order_service.service.OrderService -- Order completed with status: PENDING
+12:11:59.549 [pool-2-thread-10] INFO com.urbanvogue.order_service.service.OrderService -- Processing payment for orderId: 4706
+12:11:59.550 [pool-2-thread-9] INFO com.urbanvogue.order_service.service.OrderService -- Creating order for userId: 10
+12:11:59.550 [pool-2-thread-9] INFO com.urbanvogue.order_service.service.OrderService -- Fetching product details for productId: 1
+12:11:59.550 [pool-2-thread-9] INFO com.urbanvogue.order_service.service.OrderService -- Checking inventory for productId: 1
+12:11:59.550 [pool-2-thread-9] INFO com.urbanvogue.order_service.service.OrderService -- Deducting inventory for productId: 1, quantity: 1
+12:11:59.550 [pool-2-thread-10] INFO com.urbanvogue.order_service.service.OrderService -- Payment link generated successfully. Order is PENDING for orderId: 4706
+12:11:59.550 [pool-2-thread-9] INFO com.urbanvogue.order_service.service.OrderService -- Total order amount calculated: 99.99
+12:11:59.550 [pool-2-thread-10] INFO com.urbanvogue.order_service.service.OrderService -- Order completed with status: PENDING
+12:11:59.550 [pool-2-thread-9] INFO com.urbanvogue.order_service.service.OrderService -- Processing payment for orderId: 85820
+12:11:59.550 [pool-2-thread-10] INFO com.urbanvogue.order_service.service.OrderService -- Creating order for userId: 11
+12:11:59.550 [pool-2-thread-10] INFO com.urbanvogue.order_service.service.OrderService -- Fetching product details for productId: 1
+12:11:59.550 [pool-2-thread-10] INFO com.urbanvogue.order_service.service.OrderService -- Checking inventory for productId: 1
+12:11:59.550 [pool-2-thread-2] INFO com.urbanvogue.order_service.service.OrderService -- Creating order for userId: 12
+12:11:59.550 [pool-2-thread-10] INFO com.urbanvogue.order_service.service.OrderService -- Deducting inventory for productId: 1, quantity: 1
+12:11:59.550 [pool-2-thread-2] INFO com.urbanvogue.order_service.service.OrderService -- Fetching product details for productId: 1
+12:11:59.550 [pool-2-thread-3] INFO com.urbanvogue.order_service.service.OrderService -- Creating order for userId: 13
+12:11:59.550 [pool-2-thread-2] INFO com.urbanvogue.order_service.service.OrderService -- Checking inventory for productId: 1
+12:11:59.550 [pool-2-thread-3] INFO com.urbanvogue.order_service.service.OrderService -- Fetching product details for productId: 1
+12:11:59.550 [pool-2-thread-9] INFO com.urbanvogue.order_service.service.OrderService -- Payment link generated successfully. Order is PENDING for orderId: 85820
+12:11:59.550 [pool-2-thread-5] INFO com.urbanvogue.order_service.service.OrderService -- Creating order for userId: 14
+12:11:59.550 [pool-2-thread-2] INFO com.urbanvogue.order_service.service.OrderService -- Deducting inventory for productId: 1, quantity: 1
+12:11:59.550 [pool-2-thread-10] INFO com.urbanvogue.order_service.service.OrderService -- Total order amount calculated: 99.99
+12:11:59.550 [pool-2-thread-1] INFO com.urbanvogue.order_service.service.OrderService -- Creating order for userId: 17
+12:11:59.550 [pool-2-thread-7] INFO com.urbanvogue.order_service.service.OrderService -- Creating order for userId: 18
+12:11:59.550 [pool-2-thread-4] INFO com.urbanvogue.order_service.service.OrderService -- Creating order for userId: 15
+12:11:59.550 [pool-2-thread-7] INFO com.urbanvogue.order_service.service.OrderService -- Fetching product details for productId: 1
+12:11:59.550 [pool-2-thread-3] INFO com.urbanvogue.order_service.service.OrderService -- Checking inventory for productId: 1
+12:11:59.550 [pool-2-thread-4] INFO com.urbanvogue.order_service.service.OrderService -- Fetching product details for productId: 1
+12:11:59.550 [pool-2-thread-6] INFO com.urbanvogue.order_service.service.OrderService -- Creating order for userId: 16
+12:11:59.550 [pool-2-thread-3] INFO com.urbanvogue.order_service.service.OrderService -- Deducting inventory for productId: 1, quantity: 1
+12:11:59.550 [pool-2-thread-5] INFO com.urbanvogue.order_service.service.OrderService -- Fetching product details for productId: 1
+12:11:59.550 [pool-2-thread-6] INFO com.urbanvogue.order_service.service.OrderService -- Fetching product details for productId: 1
+12:11:59.550 [pool-2-thread-9] INFO com.urbanvogue.order_service.service.OrderService -- Order completed with status: PENDING
+12:11:59.550 [pool-2-thread-2] INFO com.urbanvogue.order_service.service.OrderService -- Total order amount calculated: 99.99
+12:11:59.550 [pool-2-thread-9] INFO com.urbanvogue.order_service.service.OrderService -- Creating order for userId: 20
+12:11:59.550 [pool-2-thread-6] INFO com.urbanvogue.order_service.service.OrderService -- Checking inventory for productId: 1
+12:11:59.550 [pool-2-thread-1] INFO com.urbanvogue.order_service.service.OrderService -- Fetching product details for productId: 1
+12:11:59.550 [pool-2-thread-10] INFO com.urbanvogue.order_service.service.OrderService -- Processing payment for orderId: 41086
+12:11:59.550 [pool-2-thread-8] INFO com.urbanvogue.order_service.service.OrderService -- Creating order for userId: 19
+12:11:59.550 [pool-2-thread-7] INFO com.urbanvogue.order_service.service.OrderService -- Checking inventory for productId: 1
+12:11:59.551 [pool-2-thread-8] INFO com.urbanvogue.order_service.service.OrderService -- Fetching product details for productId: 1
+12:11:59.550 [pool-2-thread-4] INFO com.urbanvogue.order_service.service.OrderService -- Checking inventory for productId: 1
+12:11:59.551 [pool-2-thread-8] INFO com.urbanvogue.order_service.service.OrderService -- Checking inventory for productId: 1
+12:11:59.550 [pool-2-thread-3] INFO com.urbanvogue.order_service.service.OrderService -- Total order amount calculated: 99.99
+12:11:59.550 [pool-2-thread-5] INFO com.urbanvogue.order_service.service.OrderService -- Checking inventory for productId: 1
+12:11:59.551 [pool-2-thread-7] INFO com.urbanvogue.order_service.service.OrderService -- Deducting inventory for productId: 1, quantity: 1
+12:11:59.551 [pool-2-thread-8] INFO com.urbanvogue.order_service.service.OrderService -- Deducting inventory for productId: 1, quantity: 1
+12:11:59.550 [pool-2-thread-9] INFO com.urbanvogue.order_service.service.OrderService -- Fetching product details for productId: 1
+12:11:59.550 [pool-2-thread-6] INFO com.urbanvogue.order_service.service.OrderService -- Deducting inventory for productId: 1, quantity: 1
+12:11:59.551 [pool-2-thread-2] INFO com.urbanvogue.order_service.service.OrderService -- Processing payment for orderId: 62056
+12:11:59.551 [pool-2-thread-1] INFO com.urbanvogue.order_service.service.OrderService -- Checking inventory for productId: 1
+12:11:59.551 [pool-2-thread-8] INFO com.urbanvogue.order_service.service.OrderService -- Total order amount calculated: 99.99
+12:11:59.551 [pool-2-thread-7] INFO com.urbanvogue.order_service.service.OrderService -- Total order amount calculated: 99.99
+12:11:59.551 [pool-2-thread-9] INFO com.urbanvogue.order_service.service.OrderService -- Checking inventory for productId: 1
+12:11:59.551 [pool-2-thread-4] INFO com.urbanvogue.order_service.service.OrderService -- Deducting inventory for productId: 1, quantity: 1
+12:11:59.551 [pool-2-thread-6] INFO com.urbanvogue.order_service.service.OrderService -- Total order amount calculated: 99.99
+12:11:59.551 [pool-2-thread-3] INFO com.urbanvogue.order_service.service.OrderService -- Processing payment for orderId: 88481
+12:11:59.551 [pool-2-thread-9] INFO com.urbanvogue.order_service.service.OrderService -- Deducting inventory for productId: 1, quantity: 1
+12:11:59.551 [pool-2-thread-5] INFO com.urbanvogue.order_service.service.OrderService -- Deducting inventory for productId: 1, quantity: 1
+12:11:59.551 [pool-2-thread-8] INFO com.urbanvogue.order_service.service.OrderService -- Processing payment for orderId: 97022
+12:11:59.551 [pool-2-thread-1] INFO com.urbanvogue.order_service.service.OrderService -- Deducting inventory for productId: 1, quantity: 1
+12:11:59.551 [pool-2-thread-4] INFO com.urbanvogue.order_service.service.OrderService -- Total order amount calculated: 99.99
+12:11:59.551 [pool-2-thread-7] INFO com.urbanvogue.order_service.service.OrderService -- Processing payment for orderId: 26481
+12:11:59.551 [pool-2-thread-1] INFO com.urbanvogue.order_service.service.OrderService -- Total order amount calculated: 99.99
+12:11:59.551 [pool-2-thread-6] INFO com.urbanvogue.order_service.service.OrderService -- Processing payment for orderId: 76761
+12:11:59.551 [pool-2-thread-5] INFO com.urbanvogue.order_service.service.OrderService -- Total order amount calculated: 99.99
+12:11:59.551 [pool-2-thread-1] INFO com.urbanvogue.order_service.service.OrderService -- Processing payment for orderId: 87613
+12:11:59.551 [pool-2-thread-9] INFO com.urbanvogue.order_service.service.OrderService -- Total order amount calculated: 99.99
+12:11:59.551 [pool-2-thread-8] INFO com.urbanvogue.order_service.service.OrderService -- Payment link generated successfully. Order is PENDING for orderId: 97022
+12:11:59.551 [pool-2-thread-2] INFO com.urbanvogue.order_service.service.OrderService -- Payment link generated successfully. Order is PENDING for orderId: 62056
+12:11:59.552 [pool-2-thread-5] INFO com.urbanvogue.order_service.service.OrderService -- Processing payment for orderId: 40008
+12:11:59.552 [pool-2-thread-8] INFO com.urbanvogue.order_service.service.OrderService -- Order completed with status: PENDING
+12:11:59.551 [pool-2-thread-10] INFO com.urbanvogue.order_service.service.OrderService -- Payment link generated successfully. Order is PENDING for orderId: 41086
+12:11:59.552 [pool-2-thread-8] INFO com.urbanvogue.order_service.service.OrderService -- Creating order for userId: 21
+12:11:59.551 [pool-2-thread-3] INFO com.urbanvogue.order_service.service.OrderService -- Payment link generated successfully. Order is PENDING for orderId: 88481
+12:11:59.552 [pool-2-thread-8] INFO com.urbanvogue.order_service.service.OrderService -- Fetching product details for productId: 1
+12:11:59.552 [pool-2-thread-6] INFO com.urbanvogue.order_service.service.OrderService -- Payment link generated successfully. Order is PENDING for orderId: 76761
+12:11:59.551 [pool-2-thread-4] INFO com.urbanvogue.order_service.service.OrderService -- Processing payment for orderId: 69327
+12:11:59.552 [pool-2-thread-10] INFO com.urbanvogue.order_service.service.OrderService -- Order completed with status: PENDING
+12:11:59.552 [pool-2-thread-9] INFO com.urbanvogue.order_service.service.OrderService -- Processing payment for orderId: 61706
+12:11:59.552 [pool-2-thread-6] INFO com.urbanvogue.order_service.service.OrderService -- Order completed with status: PENDING
+12:11:59.552 [pool-2-thread-10] INFO com.urbanvogue.order_service.service.OrderService -- Creating order for userId: 22
+12:11:59.552 [pool-2-thread-2] INFO com.urbanvogue.order_service.service.OrderService -- Order completed with status: PENDING
+12:11:59.552 [pool-2-thread-6] INFO com.urbanvogue.order_service.service.OrderService -- Creating order for userId: 23
+12:11:59.552 [pool-2-thread-10] INFO com.urbanvogue.order_service.service.OrderService -- Fetching product details for productId: 1
+12:11:59.552 [pool-2-thread-7] INFO com.urbanvogue.order_service.service.OrderService -- Payment link generated successfully. Order is PENDING for orderId: 26481
+12:11:59.552 [pool-2-thread-6] INFO com.urbanvogue.order_service.service.OrderService -- Fetching product details for productId: 1
+12:11:59.552 [pool-2-thread-5] INFO com.urbanvogue.order_service.service.OrderService -- Payment link generated successfully. Order is PENDING for orderId: 40008
+12:11:59.552 [pool-2-thread-10] INFO com.urbanvogue.order_service.service.OrderService -- Checking inventory for productId: 1
+12:11:59.552 [pool-2-thread-3] INFO com.urbanvogue.order_service.service.OrderService -- Order completed with status: PENDING
+12:11:59.552 [pool-2-thread-5] INFO com.urbanvogue.order_service.service.OrderService -- Order completed with status: PENDING
+12:11:59.552 [pool-2-thread-7] INFO com.urbanvogue.order_service.service.OrderService -- Order completed with status: PENDING
+12:11:59.552 [pool-2-thread-10] INFO com.urbanvogue.order_service.service.OrderService -- Deducting inventory for productId: 1, quantity: 1
+12:11:59.552 [pool-2-thread-5] INFO com.urbanvogue.order_service.service.OrderService -- Creating order for userId: 25
+12:11:59.552 [pool-2-thread-8] INFO com.urbanvogue.order_service.service.OrderService -- Checking inventory for productId: 1
+12:11:59.552 [pool-2-thread-9] INFO com.urbanvogue.order_service.service.OrderService -- Payment link generated successfully. Order is PENDING for orderId: 61706
+12:11:59.552 [pool-2-thread-1] INFO com.urbanvogue.order_service.service.OrderService -- Payment link generated successfully. Order is PENDING for orderId: 87613
+12:11:59.552 [pool-2-thread-10] INFO com.urbanvogue.order_service.service.OrderService -- Total order amount calculated: 99.99
+12:11:59.552 [pool-2-thread-2] INFO com.urbanvogue.order_service.service.OrderService -- Creating order for userId: 24
+12:11:59.552 [pool-2-thread-9] INFO com.urbanvogue.order_service.service.OrderService -- Order completed with status: PENDING
+12:11:59.552 [pool-2-thread-6] INFO com.urbanvogue.order_service.service.OrderService -- Checking inventory for productId: 1
+12:11:59.552 [pool-2-thread-7] INFO com.urbanvogue.order_service.service.OrderService -- Creating order for userId: 27
+12:11:59.552 [pool-2-thread-7] INFO com.urbanvogue.order_service.service.OrderService -- Fetching product details for productId: 1
+12:11:59.552 [pool-2-thread-3] INFO com.urbanvogue.order_service.service.OrderService -- Creating order for userId: 26
+12:11:59.552 [pool-2-thread-2] INFO com.urbanvogue.order_service.service.OrderService -- Fetching product details for productId: 1
+12:11:59.552 [pool-2-thread-3] INFO com.urbanvogue.order_service.service.OrderService -- Fetching product details for productId: 1
+12:11:59.552 [pool-2-thread-4] INFO com.urbanvogue.order_service.service.OrderService -- Payment link generated successfully. Order is PENDING for orderId: 69327
+12:11:59.552 [pool-2-thread-5] INFO com.urbanvogue.order_service.service.OrderService -- Fetching product details for productId: 1
+12:11:59.552 [pool-2-thread-3] INFO com.urbanvogue.order_service.service.OrderService -- Checking inventory for productId: 1
+12:11:59.552 [pool-2-thread-2] INFO com.urbanvogue.order_service.service.OrderService -- Checking inventory for productId: 1
+12:11:59.552 [pool-2-thread-8] INFO com.urbanvogue.order_service.service.OrderService -- Deducting inventory for productId: 1, quantity: 1
+12:11:59.552 [pool-2-thread-2] INFO com.urbanvogue.order_service.service.OrderService -- Deducting inventory for productId: 1, quantity: 1
+12:11:59.552 [pool-2-thread-1] INFO com.urbanvogue.order_service.service.OrderService -- Order completed with status: PENDING
+12:11:59.552 [pool-2-thread-8] INFO com.urbanvogue.order_service.service.OrderService -- Total order amount calculated: 99.99
+12:11:59.552 [pool-2-thread-1] INFO com.urbanvogue.order_service.service.OrderService -- Creating order for userId: 29
+12:11:59.552 [pool-2-thread-2] INFO com.urbanvogue.order_service.service.OrderService -- Total order amount calculated: 99.99
+12:11:59.552 [pool-2-thread-1] INFO com.urbanvogue.order_service.service.OrderService -- Fetching product details for productId: 1
+12:11:59.552 [pool-2-thread-10] INFO com.urbanvogue.order_service.service.OrderService -- Processing payment for orderId: 17641
+12:11:59.552 [pool-2-thread-2] INFO com.urbanvogue.order_service.service.OrderService -- Processing payment for orderId: 30721
+12:11:59.552 [pool-2-thread-1] INFO com.urbanvogue.order_service.service.OrderService -- Checking inventory for productId: 1
+12:11:59.552 [pool-2-thread-9] INFO com.urbanvogue.order_service.service.OrderService -- Creating order for userId: 28
+12:11:59.552 [pool-2-thread-6] INFO com.urbanvogue.order_service.service.OrderService -- Deducting inventory for productId: 1, quantity: 1
+12:11:59.552 [pool-2-thread-7] INFO com.urbanvogue.order_service.service.OrderService -- Checking inventory for productId: 1
+12:11:59.552 [pool-2-thread-4] INFO com.urbanvogue.order_service.service.OrderService -- Order completed with status: PENDING
+12:11:59.552 [pool-2-thread-3] INFO com.urbanvogue.order_service.service.OrderService -- Deducting inventory for productId: 1, quantity: 1
+12:11:59.553 [pool-2-thread-6] INFO com.urbanvogue.order_service.service.OrderService -- Total order amount calculated: 99.99
+12:11:59.552 [pool-2-thread-5] INFO com.urbanvogue.order_service.service.OrderService -- Checking inventory for productId: 1
+12:11:59.552 [pool-2-thread-8] INFO com.urbanvogue.order_service.service.OrderService -- Processing payment for orderId: 20284
+12:11:59.553 [pool-2-thread-9] INFO com.urbanvogue.order_service.service.OrderService -- Fetching product details for productId: 1
+12:11:59.553 [pool-2-thread-5] INFO com.urbanvogue.order_service.service.OrderService -- Deducting inventory for productId: 1, quantity: 1
+12:11:59.553 [pool-2-thread-1] INFO com.urbanvogue.order_service.service.OrderService -- Deducting inventory for productId: 1, quantity: 1
+12:11:59.553 [pool-2-thread-6] INFO com.urbanvogue.order_service.service.OrderService -- Processing payment for orderId: 95650
+12:11:59.553 [pool-2-thread-2] INFO com.urbanvogue.order_service.service.OrderService -- Payment link generated successfully. Order is PENDING for orderId: 30721
+12:11:59.553 [pool-2-thread-9] INFO com.urbanvogue.order_service.service.OrderService -- Checking inventory for productId: 1
+12:11:59.553 [pool-2-thread-10] INFO com.urbanvogue.order_service.service.OrderService -- Payment link generated successfully. Order is PENDING for orderId: 17641
+12:11:59.553 [pool-2-thread-7] INFO com.urbanvogue.order_service.service.OrderService -- Deducting inventory for productId: 1, quantity: 1
+12:11:59.553 [pool-2-thread-2] INFO com.urbanvogue.order_service.service.OrderService -- Order completed with status: PENDING
+12:11:59.553 [pool-2-thread-4] INFO com.urbanvogue.order_service.service.OrderService -- Creating order for userId: 30
+12:11:59.553 [pool-2-thread-3] INFO com.urbanvogue.order_service.service.OrderService -- Total order amount calculated: 99.99
+12:11:59.553 [pool-2-thread-5] INFO com.urbanvogue.order_service.service.OrderService -- Total order amount calculated: 99.99
+12:11:59.553 [pool-2-thread-10] INFO com.urbanvogue.order_service.service.OrderService -- Order completed with status: PENDING
+12:11:59.553 [pool-2-thread-1] INFO com.urbanvogue.order_service.service.OrderService -- Total order amount calculated: 99.99
+12:11:59.553 [pool-2-thread-7] INFO com.urbanvogue.order_service.service.OrderService -- Total order amount calculated: 99.99
+12:11:59.553 [pool-2-thread-10] INFO com.urbanvogue.order_service.service.OrderService -- Creating order for userId: 32
+12:11:59.553 [pool-2-thread-5] INFO com.urbanvogue.order_service.service.OrderService -- Processing payment for orderId: 27912
+12:11:59.553 [pool-2-thread-9] INFO com.urbanvogue.order_service.service.OrderService -- Deducting inventory for productId: 1, quantity: 1
+12:11:59.554 [pool-2-thread-7] INFO com.urbanvogue.order_service.service.OrderService -- Processing payment for orderId: 26026
+12:11:59.554 [pool-2-thread-10] INFO com.urbanvogue.order_service.service.OrderService -- Fetching product details for productId: 1
+12:11:59.553 [pool-2-thread-2] INFO com.urbanvogue.order_service.service.OrderService -- Creating order for userId: 31
+12:11:59.554 [pool-2-thread-1] INFO com.urbanvogue.order_service.service.OrderService -- Processing payment for orderId: 35998
+12:11:59.553 [pool-2-thread-4] INFO com.urbanvogue.order_service.service.OrderService -- Fetching product details for productId: 1
+12:11:59.554 [pool-2-thread-10] INFO com.urbanvogue.order_service.service.OrderService -- Checking inventory for productId: 1
+12:11:59.554 [pool-2-thread-9] INFO com.urbanvogue.order_service.service.OrderService -- Total order amount calculated: 99.99
+12:11:59.553 [pool-2-thread-3] INFO com.urbanvogue.order_service.service.OrderService -- Processing payment for orderId: 12804
+12:11:59.554 [pool-2-thread-9] INFO com.urbanvogue.order_service.service.OrderService -- Processing payment for orderId: 72252
+12:11:59.554 [pool-2-thread-6] INFO com.urbanvogue.order_service.service.OrderService -- Payment link generated successfully. Order is PENDING for orderId: 95650
+12:11:59.554 [pool-2-thread-8] INFO com.urbanvogue.order_service.service.OrderService -- Payment link generated successfully. Order is PENDING for orderId: 20284
+12:11:59.554 [pool-2-thread-6] INFO com.urbanvogue.order_service.service.OrderService -- Order completed with status: PENDING
+12:11:59.554 [pool-2-thread-8] INFO com.urbanvogue.order_service.service.OrderService -- Order completed with status: PENDING
+12:11:59.554 [pool-2-thread-2] INFO com.urbanvogue.order_service.service.OrderService -- Fetching product details for productId: 1
+12:11:59.554 [pool-2-thread-6] INFO com.urbanvogue.order_service.service.OrderService -- Creating order for userId: 34
+12:11:59.554 [pool-2-thread-4] INFO com.urbanvogue.order_service.service.OrderService -- Checking inventory for productId: 1
+12:11:59.554 [pool-2-thread-5] INFO com.urbanvogue.order_service.service.OrderService -- Payment link generated successfully. Order is PENDING for orderId: 27912
+12:11:59.554 [pool-2-thread-1] INFO com.urbanvogue.order_service.service.OrderService -- Payment link generated successfully. Order is PENDING for orderId: 35998
+12:11:59.554 [pool-2-thread-2] INFO com.urbanvogue.order_service.service.OrderService -- Checking inventory for productId: 1
+12:11:59.554 [pool-2-thread-10] INFO com.urbanvogue.order_service.service.OrderService -- Deducting inventory for productId: 1, quantity: 1
+12:11:59.554 [pool-2-thread-7] INFO com.urbanvogue.order_service.service.OrderService -- Payment link generated successfully. Order is PENDING for orderId: 26026
+12:11:59.554 [pool-2-thread-1] INFO com.urbanvogue.order_service.service.OrderService -- Order completed with status: PENDING
+12:11:59.554 [pool-2-thread-8] INFO com.urbanvogue.order_service.service.OrderService -- Creating order for userId: 33
+12:11:59.554 [pool-2-thread-7] INFO com.urbanvogue.order_service.service.OrderService -- Order completed with status: PENDING
+12:11:59.554 [pool-2-thread-1] INFO com.urbanvogue.order_service.service.OrderService -- Creating order for userId: 35
+12:11:59.554 [pool-2-thread-10] INFO com.urbanvogue.order_service.service.OrderService -- Total order amount calculated: 99.99
+12:11:59.554 [pool-2-thread-9] INFO com.urbanvogue.order_service.service.OrderService -- Payment link generated successfully. Order is PENDING for orderId: 72252
+12:11:59.554 [pool-2-thread-7] INFO com.urbanvogue.order_service.service.OrderService -- Creating order for userId: 36
+12:11:59.554 [pool-2-thread-6] INFO com.urbanvogue.order_service.service.OrderService -- Fetching product details for productId: 1
+12:11:59.554 [pool-2-thread-7] INFO com.urbanvogue.order_service.service.OrderService -- Fetching product details for productId: 1
+12:11:59.554 [pool-2-thread-4] INFO com.urbanvogue.order_service.service.OrderService -- Deducting inventory for productId: 1, quantity: 1
+12:11:59.554 [pool-2-thread-6] INFO com.urbanvogue.order_service.service.OrderService -- Checking inventory for productId: 1
+12:11:59.554 [pool-2-thread-5] INFO com.urbanvogue.order_service.service.OrderService -- Order completed with status: PENDING
+12:11:59.554 [pool-2-thread-2] INFO com.urbanvogue.order_service.service.OrderService -- Deducting inventory for productId: 1, quantity: 1
+12:11:59.554 [pool-2-thread-6] INFO com.urbanvogue.order_service.service.OrderService -- Deducting inventory for productId: 1, quantity: 1
+12:11:59.554 [pool-2-thread-3] INFO com.urbanvogue.order_service.service.OrderService -- Payment link generated successfully. Order is PENDING for orderId: 12804
+12:11:59.554 [pool-2-thread-4] INFO com.urbanvogue.order_service.service.OrderService -- Total order amount calculated: 99.99
+12:11:59.554 [pool-2-thread-8] INFO com.urbanvogue.order_service.service.OrderService -- Fetching product details for productId: 1
+12:11:59.554 [pool-2-thread-1] INFO com.urbanvogue.order_service.service.OrderService -- Fetching product details for productId: 1
+12:11:59.554 [pool-2-thread-10] INFO com.urbanvogue.order_service.service.OrderService -- Processing payment for orderId: 79087
+12:11:59.555 [pool-2-thread-8] INFO com.urbanvogue.order_service.service.OrderService -- Checking inventory for productId: 1
+12:11:59.555 [pool-2-thread-1] INFO com.urbanvogue.order_service.service.OrderService -- Checking inventory for productId: 1
+12:11:59.554 [pool-2-thread-9] INFO com.urbanvogue.order_service.service.OrderService -- Order completed with status: PENDING
+12:11:59.555 [pool-2-thread-8] INFO com.urbanvogue.order_service.service.OrderService -- Deducting inventory for productId: 1, quantity: 1
+12:11:59.555 [pool-2-thread-1] INFO com.urbanvogue.order_service.service.OrderService -- Deducting inventory for productId: 1, quantity: 1
+12:11:59.554 [pool-2-thread-7] INFO com.urbanvogue.order_service.service.OrderService -- Checking inventory for productId: 1
+12:11:59.555 [pool-2-thread-9] INFO com.urbanvogue.order_service.service.OrderService -- Creating order for userId: 38
+12:11:59.554 [pool-2-thread-5] INFO com.urbanvogue.order_service.service.OrderService -- Creating order for userId: 37
+12:11:59.554 [pool-2-thread-6] INFO com.urbanvogue.order_service.service.OrderService -- Total order amount calculated: 99.99
+12:11:59.555 [pool-2-thread-1] INFO com.urbanvogue.order_service.service.OrderService -- Total order amount calculated: 99.99
+12:11:59.555 [pool-2-thread-9] INFO com.urbanvogue.order_service.service.OrderService -- Fetching product details for productId: 1
+12:11:59.554 [pool-2-thread-3] INFO com.urbanvogue.order_service.service.OrderService -- Order completed with status: PENDING
+12:11:59.555 [pool-2-thread-1] INFO com.urbanvogue.order_service.service.OrderService -- Processing payment for orderId: 82673
+12:11:59.555 [pool-2-thread-9] INFO com.urbanvogue.order_service.service.OrderService -- Checking inventory for productId: 1
+12:11:59.555 [pool-2-thread-6] INFO com.urbanvogue.order_service.service.OrderService -- Processing payment for orderId: 1504
+12:11:59.554 [pool-2-thread-2] INFO com.urbanvogue.order_service.service.OrderService -- Total order amount calculated: 99.99
+12:11:59.555 [pool-2-thread-9] INFO com.urbanvogue.order_service.service.OrderService -- Deducting inventory for productId: 1, quantity: 1
+12:11:59.555 [pool-2-thread-4] INFO com.urbanvogue.order_service.service.OrderService -- Processing payment for orderId: 7223
+12:11:59.555 [pool-2-thread-8] INFO com.urbanvogue.order_service.service.OrderService -- Total order amount calculated: 99.99
+12:11:59.555 [pool-2-thread-9] INFO com.urbanvogue.order_service.service.OrderService -- Total order amount calculated: 99.99
+12:11:59.555 [pool-2-thread-2] INFO com.urbanvogue.order_service.service.OrderService -- Processing payment for orderId: 49350
+12:11:59.555 [pool-2-thread-7] INFO com.urbanvogue.order_service.service.OrderService -- Deducting inventory for productId: 1, quantity: 1
+12:11:59.555 [pool-2-thread-6] INFO com.urbanvogue.order_service.service.OrderService -- Payment link generated successfully. Order is PENDING for orderId: 1504
+12:11:59.555 [pool-2-thread-9] INFO com.urbanvogue.order_service.service.OrderService -- Processing payment for orderId: 37435
+12:11:59.555 [pool-2-thread-5] INFO com.urbanvogue.order_service.service.OrderService -- Fetching product details for productId: 1
+12:11:59.555 [pool-2-thread-6] INFO com.urbanvogue.order_service.service.OrderService -- Order completed with status: PENDING
+12:11:59.555 [pool-2-thread-3] INFO com.urbanvogue.order_service.service.OrderService -- Creating order for userId: 39
+12:11:59.555 [pool-2-thread-10] INFO com.urbanvogue.order_service.service.OrderService -- Payment link generated successfully. Order is PENDING for orderId: 79087
+12:11:59.555 [pool-2-thread-5] INFO com.urbanvogue.order_service.service.OrderService -- Checking inventory for productId: 1
+12:11:59.555 [pool-2-thread-3] INFO com.urbanvogue.order_service.service.OrderService -- Fetching product details for productId: 1
+12:11:59.555 [pool-2-thread-1] INFO com.urbanvogue.order_service.service.OrderService -- Payment link generated successfully. Order is PENDING for orderId: 82673
+12:11:59.555 [pool-2-thread-7] INFO com.urbanvogue.order_service.service.OrderService -- Total order amount calculated: 99.99
+12:11:59.555 [pool-2-thread-8] INFO com.urbanvogue.order_service.service.OrderService -- Processing payment for orderId: 20495
+12:11:59.555 [pool-2-thread-3] INFO com.urbanvogue.order_service.service.OrderService -- Checking inventory for productId: 1
+12:11:59.555 [pool-2-thread-2] INFO com.urbanvogue.order_service.service.OrderService -- Payment link generated successfully. Order is PENDING for orderId: 49350
+12:11:59.555 [pool-2-thread-7] INFO com.urbanvogue.order_service.service.OrderService -- Processing payment for orderId: 57520
+12:11:59.555 [pool-2-thread-6] INFO com.urbanvogue.order_service.service.OrderService -- Creating order for userId: 40
+12:11:59.555 [pool-2-thread-4] INFO com.urbanvogue.order_service.service.OrderService -- Payment link generated successfully. Order is PENDING for orderId: 7223
+12:11:59.556 [pool-2-thread-2] INFO com.urbanvogue.order_service.service.OrderService -- Order completed with status: PENDING
+12:11:59.555 [pool-2-thread-5] INFO com.urbanvogue.order_service.service.OrderService -- Deducting inventory for productId: 1, quantity: 1
+12:11:59.556 [pool-2-thread-2] INFO com.urbanvogue.order_service.service.OrderService -- Creating order for userId: 41
+12:11:59.555 [pool-2-thread-10] INFO com.urbanvogue.order_service.service.OrderService -- Order completed with status: PENDING
+12:11:59.556 [pool-2-thread-2] INFO com.urbanvogue.order_service.service.OrderService -- Fetching product details for productId: 1
+12:11:59.556 [pool-2-thread-4] INFO com.urbanvogue.order_service.service.OrderService -- Order completed with status: PENDING
+12:11:59.556 [pool-2-thread-10] INFO com.urbanvogue.order_service.service.OrderService -- Creating order for userId: 42
+12:11:59.556 [pool-2-thread-2] INFO com.urbanvogue.order_service.service.OrderService -- Checking inventory for productId: 1
+12:11:59.556 [pool-2-thread-8] INFO com.urbanvogue.order_service.service.OrderService -- Payment link generated successfully. Order is PENDING for orderId: 20495
+12:11:59.555 [pool-2-thread-1] INFO com.urbanvogue.order_service.service.OrderService -- Order completed with status: PENDING
+12:11:59.556 [pool-2-thread-5] INFO com.urbanvogue.order_service.service.OrderService -- Total order amount calculated: 99.99
+12:11:59.556 [pool-2-thread-7] INFO com.urbanvogue.order_service.service.OrderService -- Payment link generated successfully. Order is PENDING for orderId: 57520
+12:11:59.556 [pool-2-thread-5] INFO com.urbanvogue.order_service.service.OrderService -- Processing payment for orderId: 35902
+12:11:59.556 [pool-2-thread-7] INFO com.urbanvogue.order_service.service.OrderService -- Order completed with status: PENDING
+12:11:59.556 [pool-2-thread-3] INFO com.urbanvogue.order_service.service.OrderService -- Deducting inventory for productId: 1, quantity: 1
+12:11:59.556 [pool-2-thread-7] INFO com.urbanvogue.order_service.service.OrderService -- Creating order for userId: 45
+12:11:59.556 [pool-2-thread-9] INFO com.urbanvogue.order_service.service.OrderService -- Payment link generated successfully. Order is PENDING for orderId: 37435
+12:11:59.556 [pool-2-thread-7] INFO com.urbanvogue.order_service.service.OrderService -- Fetching product details for productId: 1
+12:11:59.556 [pool-2-thread-6] INFO com.urbanvogue.order_service.service.OrderService -- Fetching product details for productId: 1
+12:11:59.556 [pool-2-thread-7] INFO com.urbanvogue.order_service.service.OrderService -- Checking inventory for productId: 1
+12:11:59.556 [pool-2-thread-10] INFO com.urbanvogue.order_service.service.OrderService -- Fetching product details for productId: 1
+12:11:59.556 [pool-2-thread-4] INFO com.urbanvogue.order_service.service.OrderService -- Creating order for userId: 43
+12:11:59.556 [pool-2-thread-10] INFO com.urbanvogue.order_service.service.OrderService -- Checking inventory for productId: 1
+12:11:59.556 [pool-2-thread-2] INFO com.urbanvogue.order_service.service.OrderService -- Deducting inventory for productId: 1, quantity: 1
+12:11:59.556 [pool-2-thread-10] INFO com.urbanvogue.order_service.service.OrderService -- Deducting inventory for productId: 1, quantity: 1
+12:11:59.556 [pool-2-thread-8] INFO com.urbanvogue.order_service.service.OrderService -- Order completed with status: PENDING
+12:11:59.556 [pool-2-thread-1] INFO com.urbanvogue.order_service.service.OrderService -- Creating order for userId: 44
+12:11:59.556 [pool-2-thread-8] INFO com.urbanvogue.order_service.service.OrderService -- Creating order for userId: 46
+12:11:59.556 [pool-2-thread-1] INFO com.urbanvogue.order_service.service.OrderService -- Fetching product details for productId: 1
+12:11:59.556 [pool-2-thread-3] INFO com.urbanvogue.order_service.service.OrderService -- Total order amount calculated: 99.99
+12:11:59.556 [pool-2-thread-1] INFO com.urbanvogue.order_service.service.OrderService -- Checking inventory for productId: 1
+12:11:59.556 [pool-2-thread-9] INFO com.urbanvogue.order_service.service.OrderService -- Order completed with status: PENDING
+12:11:59.556 [pool-2-thread-3] INFO com.urbanvogue.order_service.service.OrderService -- Processing payment for orderId: 35341
+12:11:59.556 [pool-2-thread-1] INFO com.urbanvogue.order_service.service.OrderService -- Deducting inventory for productId: 1, quantity: 1
+12:11:59.556 [pool-2-thread-9] INFO com.urbanvogue.order_service.service.OrderService -- Creating order for userId: 47
+12:11:59.556 [pool-2-thread-6] INFO com.urbanvogue.order_service.service.OrderService -- Checking inventory for productId: 1
+12:11:59.557 [pool-2-thread-9] INFO com.urbanvogue.order_service.service.OrderService -- Fetching product details for productId: 1
+12:11:59.557 [pool-2-thread-1] INFO com.urbanvogue.order_service.service.OrderService -- Total order amount calculated: 99.99
+12:11:59.557 [pool-2-thread-9] INFO com.urbanvogue.order_service.service.OrderService -- Checking inventory for productId: 1
+12:11:59.557 [pool-2-thread-6] INFO com.urbanvogue.order_service.service.OrderService -- Deducting inventory for productId: 1, quantity: 1
+12:11:59.557 [pool-2-thread-9] INFO com.urbanvogue.order_service.service.OrderService -- Deducting inventory for productId: 1, quantity: 1
+12:11:59.557 [pool-2-thread-9] INFO com.urbanvogue.order_service.service.OrderService -- Total order amount calculated: 99.99
+12:11:59.557 [pool-2-thread-6] INFO com.urbanvogue.order_service.service.OrderService -- Total order amount calculated: 99.99
+12:11:59.556 [pool-2-thread-7] INFO com.urbanvogue.order_service.service.OrderService -- Deducting inventory for productId: 1, quantity: 1
+12:11:59.557 [pool-2-thread-6] INFO com.urbanvogue.order_service.service.OrderService -- Processing payment for orderId: 28486
+12:11:59.556 [pool-2-thread-5] INFO com.urbanvogue.order_service.service.OrderService -- Payment link generated successfully. Order is PENDING for orderId: 35902
+12:11:59.556 [pool-2-thread-4] INFO com.urbanvogue.order_service.service.OrderService -- Fetching product details for productId: 1
+12:11:59.558 [pool-2-thread-4] INFO com.urbanvogue.order_service.service.OrderService -- Checking inventory for productId: 1
+12:11:59.556 [pool-2-thread-2] INFO com.urbanvogue.order_service.service.OrderService -- Total order amount calculated: 99.99
+12:11:59.556 [pool-2-thread-10] INFO com.urbanvogue.order_service.service.OrderService -- Total order amount calculated: 99.99
+12:11:59.556 [pool-2-thread-8] INFO com.urbanvogue.order_service.service.OrderService -- Fetching product details for productId: 1
+12:11:59.557 [pool-2-thread-1] INFO com.urbanvogue.order_service.service.OrderService -- Processing payment for orderId: 37899
+12:11:59.557 [pool-2-thread-9] INFO com.urbanvogue.order_service.service.OrderService -- Processing payment for orderId: 46826
+12:11:59.558 [pool-2-thread-10] INFO com.urbanvogue.order_service.service.OrderService -- Processing payment for orderId: 87630
+12:11:59.558 [pool-2-thread-8] INFO com.urbanvogue.order_service.service.OrderService -- Checking inventory for productId: 1
+12:11:59.558 [pool-2-thread-4] INFO com.urbanvogue.order_service.service.OrderService -- Deducting inventory for productId: 1, quantity: 1
+12:11:59.558 [pool-2-thread-8] INFO com.urbanvogue.order_service.service.OrderService -- Deducting inventory for productId: 1, quantity: 1
+12:11:59.558 [pool-2-thread-10] INFO com.urbanvogue.order_service.service.OrderService -- Payment link generated successfully. Order is PENDING for orderId: 87630
+12:11:59.558 [pool-2-thread-4] INFO com.urbanvogue.order_service.service.OrderService -- Total order amount calculated: 99.99
+12:11:59.558 [pool-2-thread-3] INFO com.urbanvogue.order_service.service.OrderService -- Payment link generated successfully. Order is PENDING for orderId: 35341
+12:11:59.558 [pool-2-thread-7] INFO com.urbanvogue.order_service.service.OrderService -- Total order amount calculated: 99.99
+12:11:59.558 [pool-2-thread-4] INFO com.urbanvogue.order_service.service.OrderService -- Processing payment for orderId: 27800
+12:11:59.558 [pool-2-thread-5] INFO com.urbanvogue.order_service.service.OrderService -- Order completed with status: PENDING
+12:11:59.558 [pool-2-thread-2] INFO com.urbanvogue.order_service.service.OrderService -- Processing payment for orderId: 56262
+12:11:59.558 [pool-2-thread-7] INFO com.urbanvogue.order_service.service.OrderService -- Processing payment for orderId: 41019
+12:11:59.558 [pool-2-thread-5] INFO com.urbanvogue.order_service.service.OrderService -- Creating order for userId: 48
+12:11:59.558 [pool-2-thread-6] INFO com.urbanvogue.order_service.service.OrderService -- Payment link generated successfully. Order is PENDING for orderId: 28486
+12:11:59.558 [pool-2-thread-5] INFO com.urbanvogue.order_service.service.OrderService -- Fetching product details for productId: 1
+12:11:59.558 [pool-2-thread-8] INFO com.urbanvogue.order_service.service.OrderService -- Total order amount calculated: 99.99
+12:11:59.558 [pool-2-thread-6] INFO com.urbanvogue.order_service.service.OrderService -- Order completed with status: PENDING
+12:11:59.558 [pool-2-thread-5] INFO com.urbanvogue.order_service.service.OrderService -- Checking inventory for productId: 1
+12:11:59.558 [pool-2-thread-8] INFO com.urbanvogue.order_service.service.OrderService -- Processing payment for orderId: 90368
+12:11:59.558 [pool-2-thread-4] INFO com.urbanvogue.order_service.service.OrderService -- Payment link generated successfully. Order is PENDING for orderId: 27800
+12:11:59.558 [pool-2-thread-10] INFO com.urbanvogue.order_service.service.OrderService -- Order completed with status: PENDING
+12:11:59.558 [pool-2-thread-7] INFO com.urbanvogue.order_service.service.OrderService -- Payment link generated successfully. Order is PENDING for orderId: 41019
+12:11:59.558 [pool-2-thread-8] INFO com.urbanvogue.order_service.service.OrderService -- Payment link generated successfully. Order is PENDING for orderId: 90368
+12:11:59.558 [pool-2-thread-1] INFO com.urbanvogue.order_service.service.OrderService -- Payment link generated successfully. Order is PENDING for orderId: 37899
+12:11:59.558 [pool-2-thread-7] INFO com.urbanvogue.order_service.service.OrderService -- Order completed with status: PENDING
+12:11:59.558 [pool-2-thread-1] INFO com.urbanvogue.order_service.service.OrderService -- Order completed with status: PENDING
+12:11:59.558 [pool-2-thread-9] INFO com.urbanvogue.order_service.service.OrderService -- Payment link generated successfully. Order is PENDING for orderId: 46826
+12:11:59.558 [pool-2-thread-3] INFO com.urbanvogue.order_service.service.OrderService -- Order completed with status: PENDING
+12:11:59.558 [pool-2-thread-9] INFO com.urbanvogue.order_service.service.OrderService -- Order completed with status: PENDING
+12:11:59.558 [pool-2-thread-6] INFO com.urbanvogue.order_service.service.OrderService -- Creating order for userId: 49
+12:11:59.558 [pool-2-thread-5] INFO com.urbanvogue.order_service.service.OrderService -- Deducting inventory for productId: 1, quantity: 1
+12:11:59.558 [pool-2-thread-4] INFO com.urbanvogue.order_service.service.OrderService -- Order completed with status: PENDING
+12:11:59.558 [pool-2-thread-8] INFO com.urbanvogue.order_service.service.OrderService -- Order completed with status: PENDING
+12:11:59.558 [pool-2-thread-2] INFO com.urbanvogue.order_service.service.OrderService -- Payment link generated successfully. Order is PENDING for orderId: 56262
+12:11:59.560 [pool-2-thread-6] INFO com.urbanvogue.order_service.service.OrderService -- Fetching product details for productId: 1
+12:11:59.560 [pool-2-thread-2] INFO com.urbanvogue.order_service.service.OrderService -- Order completed with status: PENDING
+12:11:59.560 [pool-2-thread-6] INFO com.urbanvogue.order_service.service.OrderService -- Checking inventory for productId: 1
+12:11:59.560 [pool-2-thread-5] INFO com.urbanvogue.order_service.service.OrderService -- Total order amount calculated: 99.99
+12:11:59.560 [pool-2-thread-6] INFO com.urbanvogue.order_service.service.OrderService -- Deducting inventory for productId: 1, quantity: 1
+12:11:59.560 [pool-2-thread-5] INFO com.urbanvogue.order_service.service.OrderService -- Processing payment for orderId: 47102
+12:11:59.560 [pool-2-thread-6] INFO com.urbanvogue.order_service.service.OrderService -- Total order amount calculated: 99.99
+12:11:59.560 [pool-2-thread-6] INFO com.urbanvogue.order_service.service.OrderService -- Processing payment for orderId: 3104
+12:11:59.561 [pool-2-thread-6] INFO com.urbanvogue.order_service.service.OrderService -- Payment link generated successfully. Order is PENDING for orderId: 3104
+12:11:59.561 [pool-2-thread-6] INFO com.urbanvogue.order_service.service.OrderService -- Order completed with status: PENDING
+12:11:59.561 [pool-2-thread-5] INFO com.urbanvogue.order_service.service.OrderService -- Payment link generated successfully. Order is PENDING for orderId: 47102
+12:11:59.561 [pool-2-thread-5] INFO com.urbanvogue.order_service.service.OrderService -- Order completed with status: PENDING
+
+  ???????????????????????????????????????????
+  ? CONCURRENT ORDER CREATION RESULTS
+  ???????????????????????????????????????????
+  ? Concurrent users:  50
+  ? Successful:        50
+  ? Failed:            0
+  ? Total time:        24ms
+  ? Avg response:      1.6ms
+  ? Min response:      0ms
+  ? Max response:      3ms
+  ? P95 response:      3ms
+  ? Throughput:        2083.3 req/sec
+  ???????????????????????????????????????????
+
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.453 s -- in OrderService - Performance Tests
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  6.162 s
+[INFO] Finished at: 2026-04-06T12:11:59+05:30
+[INFO] ------------------------------------------------------------------------

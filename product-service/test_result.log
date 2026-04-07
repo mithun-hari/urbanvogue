@@ -1,0 +1,58 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -------------------< com.urbanvogue:product-service >-------------------
+[INFO] Building product-service 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ product-service ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.14.1:compile (default-compile) @ product-service ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ product-service ---
+[INFO] skip non existing resourceDirectory C:\Users\mithu\Desktop\urbanvogue\product-service\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.14.1:testCompile (default-testCompile) @ product-service ---
+[INFO] Recompiling the module because of added or removed source files.
+[INFO] Compiling 2 source files with javac [debug parameters release 17] to target\test-classes
+[INFO] 
+[INFO] --- surefire:3.5.4:test (default-test) @ product-service ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running com.urbanvogue.product_service.service.ProductServiceTest
+Mockito is currently self-attaching to enable the inline-mock-maker. This will no longer work in future releases of the JDK. Please add Mockito as an agent to your build as described in Mockito's documentation: https://javadoc.io/doc/org.mockito/mockito-core/latest/org.mockito/org/mockito/Mockito.html#0.3
+WARNING: A Java agent has been loaded dynamically (C:\Users\mithu\.m2\repository\net\bytebuddy\byte-buddy-agent\1.17.8\byte-buddy-agent-1.17.8.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+Java HotSpot(TM) 64-Bit Server VM warning: Sharing is only supported for boot loader classes because bootstrap classpath has been appended
+12:05:27.501 [main] INFO com.urbanvogue.product_service.service.ProductService -- Updating product with id: 1
+12:05:27.512 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product updated successfully with id: 1
+12:05:27.582 [main] INFO com.urbanvogue.product_service.service.ProductService -- Fetching product with id: 1
+12:05:27.583 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product found: Urban Sneaker
+12:05:27.588 [main] INFO com.urbanvogue.product_service.service.ProductService -- Fetching all products
+12:05:27.588 [main] INFO com.urbanvogue.product_service.service.ProductService -- Total products fetched: 2
+12:05:27.602 [main] INFO com.urbanvogue.product_service.service.ProductService -- Deleting product with id: 999
+12:05:27.603 [main] ERROR com.urbanvogue.product_service.service.ProductService -- Cannot delete. Product not found with id: 999
+12:05:27.634 [main] INFO com.urbanvogue.product_service.service.ProductService -- Fetching product with id: 999
+12:05:27.634 [main] ERROR com.urbanvogue.product_service.service.ProductService -- Product not found with id: 999
+12:05:27.640 [main] INFO com.urbanvogue.product_service.service.ProductService -- Creating product with name: Urban Sneaker
+12:05:27.641 [main] INFO com.urbanvogue.product_service.service.ProductService -- Product created successfully with id: 1
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.733 s -- in com.urbanvogue.product_service.service.ProductServiceTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  6.978 s
+[INFO] Finished at: 2026-04-06T12:05:27+05:30
+[INFO] ------------------------------------------------------------------------

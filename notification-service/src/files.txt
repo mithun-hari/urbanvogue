@@ -1,0 +1,8 @@
+C:\Users\mithu\Desktop\urbanvogue\notification-service\src\main\java\com\urbanvogue\notification_service\NotificationServiceApplication.java
+C:\Users\mithu\Desktop\urbanvogue\notification-service\src\main\java\com\urbanvogue\notification_service\config\MessagingConfig.java
+C:\Users\mithu\Desktop\urbanvogue\notification-service\src\main\java\com\urbanvogue\notification_service\controller\NotificationController.java
+C:\Users\mithu\Desktop\urbanvogue\notification-service\src\main\java\com\urbanvogue\notification_service\dto\EmailRequest.java
+C:\Users\mithu\Desktop\urbanvogue\notification-service\src\main\java\com\urbanvogue\notification_service\dto\OrderPaidEvent.java
+C:\Users\mithu\Desktop\urbanvogue\notification-service\src\main\java\com\urbanvogue\notification_service\messaging\OrderPaidListener.java
+C:\Users\mithu\Desktop\urbanvogue\notification-service\src\main\java\com\urbanvogue\notification_service\service\EmailService.java
+C:\Users\mithu\Desktop\urbanvogue\notification-service\src\test\java\com\urbanvogue\notification_service\NotificationServiceApplicationTests.java
