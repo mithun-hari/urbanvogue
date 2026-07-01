@@ -1,0 +1,56 @@
+# IDE
+.idea/
+.vscode/
+*.iml
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Java / Maven
+target/
+*.jar
+*.war
+*.class
+
+# Logs
+*.log
+*.log.*
+
+# Test results / temp files
+*-test-result.txt
+test_*.json
+test-e2e.ps1
+lt_output.txt
+status.txt
+compile_error.txt
+files.txt
+
+# Generated documentation (not README.md)
+CONVERSION_GUIDE_AND_FAQ.txt
+DOCUMENTATION_INVENTORY.md
+EXECUTIVE_SUMMARY.md
+PROJECT_REPORT.md
+PROJECT_SUMMARY_STATISTICS.md
+QUICK_START.md
+README_DOCUMENTATION.md
+START_HERE_FIRST.txt
+SUMMARY_WHAT_WAS_CREATED.txt
+TECHNICAL_SPECIFICATIONS.md
+VISUAL_PROJECT_OVERVIEW.md
+architecture_diagram.md
+db_schema.txt
+db_schema_utf8.txt
+
+# Node
+node_modules/
+dist/
+build/
+.env
+.env.local
+.env.*.local
+
+# Misc
+*.bak
+*.tmp
+*.swp
